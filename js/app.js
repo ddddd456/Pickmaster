@@ -1,18 +1,12 @@
-// ============================================================
-//  app.js — полная версия (герои, админка, пикер)
-// ============================================================
-
 import { HEROES as BASE_HEROES, ATTRIBUTES, POSITIONS } from './data.js';
 
 console.log(`✅ Базовых героев: ${BASE_HEROES.length}`);
 
-// ── Константы ──────────────────────────────
 const STORAGE_KEY = 'pm_custom_heroes';
 const IMAGES_KEY  = 'pm_hero_images';
 const ITEM_IMG_KEY = 'pm_item_images';
 const ADMIN_PASSWORD = 'талант82';
 
-// ── Состояние ──────────────────────────────
 let customHeroes = loadCustomHeroes();
 let heroImages   = loadJSON(IMAGES_KEY, {});
 let itemImages   = loadJSON(ITEM_IMG_KEY, {});
@@ -23,7 +17,6 @@ let searchQuery       = '';
 let activeAdminHeroId = null;
 let isAdminLoggedIn   = false;
 
-// ── Состояние пикера ──────────────────────
 let enemyTeam = [];
 let ourPicks = {};
 let currentPickerRole = null;
@@ -35,24 +28,19 @@ const ROLE_NAMES = {
   5: '⑤ Хард Саппорт'
 };
 
-// ── DOM-ссылки ─────────────────────────────
 const heroGrid = document.getElementById('heroGrid');
 const heroCount = document.getElementById('heroCount');
 const heroSearch = document.getElementById('heroSearch');
 
-// ── Инициализация ──────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
   initTabs();
   initHeroGrid();
   initFilters();
   initModal();
   initAdmin();
-  initDraft(); // пикер инициализируется всегда, но отрисовка будет при активации вкладки
+  initDraft();
 });
 
-// ════════════════════════════════════════════
-//  ВКЛАДКИ + ПАРОЛЬ
-// ════════════════════════════════════════════
 function initTabs() {
   document.querySelectorAll('.nav-btn').forEach(btn => {
     btn.addEventListener('click', () => {
@@ -72,16 +60,13 @@ function initTabs() {
       }
 
       if (tabId === 'draft') {
-        // Если пикер ещё не инициализирован, инициализируем
         if (typeof initDraft === 'function') initDraft();
-        // Перерисовываем, если уже есть данные
         renderDraft();
       }
     });
   });
 }
 
-// ── Вход в админку ─────────────────────────
 function showAdminLogin() {
   const panel = document.getElementById('adminFormPanel');
   if (!panel) return;
@@ -110,6 +95,29 @@ function showAdminLogin() {
   });
 }
 
+window.togglePhase = function(element) {
+  const body = element.nextElementSibling;
+  const arrow = element.querySelector('.phase-arrow');
+  if (body.style.display === 'none') {
+    body.style.display = 'block';
+    if (arrow) arrow.style.transform = 'rotate(0deg)';
+  } else {
+    body.style.display = 'none';
+    if (arrow) arrow.style.transform = 'rotate(-90deg)';
+  }
+};
+
+function getPhaseLabel(phase) {
+  const map = { 
+    starting: 'Стартовые', 
+    early: 'Ранняя игра', 
+    mid: 'Середина игры', 
+    late: 'Поздняя игра', 
+    situational: 'Ситуативные' 
+  };
+  return map[phase] || phase;
+}
+
 function restoreAdminPanel() {
   const panel = document.getElementById('adminFormPanel');
   if (!panel) return;
@@ -119,9 +127,9 @@ function restoreAdminPanel() {
       <p>Выбери героя из списка или создай нового</p>
     </div>
     <form class="admin-form hidden" id="adminForm">
-      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;flex-wrap:wrap;gap:8px;">
         <h3 id="adminFormTitle" style="font-family:var(--font-display);font-size:20px;font-weight:700;margin:0;">Новый герой</h3>
-        <div style="display:flex;gap:8px;">
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
           <button type="button" class="btn-secondary" id="adminExportBtn" style="font-size:12px;">📤 Экспорт</button>
           <button type="button" class="btn-secondary" id="adminImportBtn" style="font-size:12px;">📥 Импорт</button>
           <button type="button" class="btn-secondary" id="adminLogoutBtn" style="font-size:12px;">🚪 Выйти</button>
@@ -162,12 +170,12 @@ function restoreAdminPanel() {
       </div>
 
       <!-- Секции закупа (аккордеон) -->
-      <div class="form-section-title">Закуп предметов</div>
+      <div class="form-section-title">🛒 Закуп предметов</div>
       ${['starting','early','mid','late','situational'].map(phase => `
         <div class="items-phase">
-          <div class="items-phase-header" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'">
+          <div class="items-phase-header" onclick="togglePhase(this)">
             <span style="font-weight:600;font-size:13px;">${getPhaseLabel(phase)}</span>
-            <span style="color:var(--text-muted);font-size:12px;">▼</span>
+            <span style="color:var(--text-muted);font-size:12px;transition:transform 0.2s;" class="phase-arrow">▼</span>
           </div>
           <div class="items-phase-body" style="display:block;">
             <div class="items-slots" id="slots-${phase}"></div>
@@ -177,19 +185,35 @@ function restoreAdminPanel() {
       `).join('')}
 
       <!-- Скиллбилд (уровни 1-30) -->
-      <div class="form-section-title">Прокачка (1-30)</div>
-      <div class="skill-build-editor" id="skillBuildEditor"></div>
-
-      <!-- Таланты -->
-      <div class="form-section-title">Таланты</div>
-      <div class="talents-editor" id="talentsEditor">
-        <div class="talent-row"><span>Уровень 10:</span><input type="text" id="talent-10-left" placeholder="Лево"><input type="text" id="talent-10-right" placeholder="Право"></div>
-        <div class="talent-row"><span>Уровень 15:</span><input type="text" id="talent-15-left" placeholder="Лево"><input type="text" id="talent-15-right" placeholder="Право"></div>
-        <div class="talent-row"><span>Уровень 20:</span><input type="text" id="talent-20-left" placeholder="Лево"><input type="text" id="talent-20-right" placeholder="Право"></div>
-        <div class="talent-row"><span>Уровень 25:</span><input type="text" id="talent-25-left" placeholder="Лево"><input type="text" id="talent-25-right" placeholder="Право"></div>
+      <div class="form-section-title" style="margin-top:20px;">📈 Прокачка (1-30)</div>
+      <div class="items-phase">
+        <div class="items-phase-header" onclick="togglePhase(this)">
+          <span style="font-weight:600;font-size:13px;">Уровни 1-30</span>
+          <span style="color:var(--text-muted);font-size:12px;transition:transform 0.2s;" class="phase-arrow">▼</span>
+        </div>
+        <div class="items-phase-body" style="display:block;max-height:400px;overflow-y:auto;">
+          <div class="skill-build-editor" id="skillBuildEditor"></div>
+        </div>
       </div>
 
-      <div class="form-section-title">Контрпики этого героя</div>
+      <!-- Таланты -->
+      <div class="form-section-title" style="margin-top:20px;">⭐ Таланты</div>
+      <div class="items-phase">
+        <div class="items-phase-header" onclick="togglePhase(this)">
+          <span style="font-weight:600;font-size:13px;">Таланты по уровням</span>
+          <span style="color:var(--text-muted);font-size:12px;transition:transform 0.2s;" class="phase-arrow">▼</span>
+        </div>
+        <div class="items-phase-body" style="display:block;">
+          <div class="talents-editor" id="talentsEditor">
+            <div class="talent-row"><span>Уровень 10:</span><input type="text" id="talent-10-left" placeholder="Лево"><input type="text" id="talent-10-right" placeholder="Право"></div>
+            <div class="talent-row"><span>Уровень 15:</span><input type="text" id="talent-15-left" placeholder="Лево"><input type="text" id="talent-15-right" placeholder="Право"></div>
+            <div class="talent-row"><span>Уровень 20:</span><input type="text" id="talent-20-left" placeholder="Лево"><input type="text" id="talent-20-right" placeholder="Право"></div>
+            <div class="talent-row"><span>Уровень 25:</span><input type="text" id="talent-25-left" placeholder="Лево"><input type="text" id="talent-25-right" placeholder="Право"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-section-title" style="margin-top:20px;">⚔ Контрпики этого героя</div>
       <div class="counters-editor" id="countersEditor"></div>
       <button type="button" class="btn-add-counter" id="addCounterBtn">+ Добавить контрпик</button>
 
@@ -199,7 +223,6 @@ function restoreAdminPanel() {
       </div>
     </form>
   `;
-  // Привязываем события
   document.getElementById('adminLogoutBtn').addEventListener('click', () => {
     isAdminLoggedIn = false;
     showAdminLogin();
@@ -208,385 +231,41 @@ function restoreAdminPanel() {
   document.getElementById('adminForm').addEventListener('submit', saveAdminHero);
   document.getElementById('adminDeleteBtn').addEventListener('click', deleteAdminHero);
   document.getElementById('addCounterBtn').addEventListener('click', addCounterChip);
-  // Экспорт/Импорт
   document.getElementById('adminExportBtn').addEventListener('click', exportData);
   document.getElementById('adminImportBtn').addEventListener('click', importData);
-  // Загрузка картинки героя
   document.getElementById('heroImageBox').addEventListener('click', () => document.getElementById('heroImageInput').click());
   document.getElementById('heroImageInput').addEventListener('change', handleHeroImageUpload);
-  // Кнопки добавления предметов
+  
   document.querySelectorAll('.btn-add-item').forEach(btn => {
     btn.addEventListener('click', () => openItemModal(btn.dataset.phase));
   });
-  // Модалка предмета
+  
   document.getElementById('imCancel').addEventListener('click', closeItemModal);
   document.getElementById('imConfirm').addEventListener('click', confirmItemAdd);
   document.getElementById('itemImageBox').addEventListener('click', () => document.getElementById('itemImageInput').click());
   document.getElementById('itemImageInput').addEventListener('change', handleItemImageUpload);
-}
 
-function getPhaseLabel(phase) {
-  const map = { starting:'Стартовые', early:'Ранняя игра', mid:'Середина игры', late:'Поздняя игра', situational:'Ситуативные' };
-  return map[phase] || phase;
-}
-
-// ── Экспорт/Импорт данных ──────────────────
-function exportData() {
-  const data = {
-    heroes: allHeroes(),
-    heroImages: heroImages,
-    itemImages: itemImages
-  };
-  const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = 'pickmaster_data.json';
-  a.click();
-  URL.revokeObjectURL(url);
-}
-
-function importData() {
-  const input = document.createElement('input');
-  input.type = 'file';
-  input.accept = '.json';
-  input.onchange = (e) => {
-    const file = e.target.files[0];
-    if (!file) return;
-    const reader = new FileReader();
-    reader.onload = (ev) => {
-      try {
-        const data = JSON.parse(ev.target.result);
-        if (data.heroes && Array.isArray(data.heroes)) {
-          customHeroes = data.heroes;
-          heroImages = data.heroImages || {};
-          itemImages = data.itemImages || {};
-          saveCustomHeroes();
-          saveJSON(IMAGES_KEY, heroImages);
-          saveJSON(ITEM_IMG_KEY, itemImages);
-          renderGrid();
-          refreshAdminList();
-          alert('Данные успешно импортированы!');
-        } else {
-          alert('Неверный формат файла');
-        }
-      } catch (err) {
-        alert('Ошибка чтения файла: ' + err.message);
-      }
-    };
-    reader.readAsText(file);
-  };
-  input.click();
-}
-
-// ════════════════════════════════════════════
-//  ВСЕ ГЕРОИ
-// ════════════════════════════════════════════
-function allHeroes() {
-  const merged = [...BASE_HEROES];
-  customHeroes.forEach(ch => {
-    const idx = merged.findIndex(h => h.id === ch.id);
-    if (idx >= 0) merged[idx] = ch;
-    else merged.push(ch);
+  document.getElementById('itemModal').addEventListener('click', (e) => {
+    if (e.target === e.currentTarget) closeItemModal();
   });
-  return merged;
-}
 
-// ════════════════════════════════════════════
-//  СЕТКА ГЕРОЕВ
-// ════════════════════════════════════════════
-function initHeroGrid() { renderGrid(); }
-
-function renderGrid() {
-  if (!heroGrid || !heroCount) return;
-  const query = searchQuery.toLowerCase();
-  const filtered = allHeroes().filter(h => {
-    const attrOk = currentAttrFilter === 'all' || h.attr === currentAttrFilter;
-    const posOk  = currentPosFilter  === 'all' || (h.positions && h.positions.includes(+currentPosFilter));
-    const nameOk = !query || h.name.toLowerCase().includes(query);
-    return attrOk && posOk && nameOk;
-  });
-  heroCount.textContent = filtered.length;
-  if (!filtered.length) {
-    heroGrid.innerHTML = '<div class="no-results">Герои не найдены.</div>';
-    return;
-  }
-  heroGrid.innerHTML = filtered.map(h => heroCardHTML(h)).join('');
-  heroGrid.querySelectorAll('.hero-card').forEach(card => {
-    card.addEventListener('click', () => openHeroModal(card.dataset.heroId));
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      const modal = document.getElementById('itemModal');
+      if (modal && !modal.classList.contains('hidden')) closeItemModal();
+    }
   });
 }
 
-function heroCardHTML(h) {
-  const imgSrc = heroImages[h.id];
-  const imgHTML = imgSrc
-    ? `<img src="${imgSrc}" alt="${h.name}" style="width:100%;height:100%;object-fit:cover;">`
-    : `<div class="hero-img-placeholder"><div class="hero-init">${h.name[0]}</div><div class="hero-img-label">нет фото</div></div>`;
-
-  const posTags = (h.positions || []).map(p =>
-    `<span class="pos-tag">${POSITIONS[p]?.short || p}</span>`
-  ).join('');
-
-  return `
-    <div class="hero-card" data-hero-id="${h.id}" data-attr="${h.attr}">
-      <div class="hero-card-img">${imgHTML}</div>
-      <div class="hero-card-info">
-        <div class="hero-card-name">${h.name}</div>
-        <div class="hero-card-meta">
-          <span class="hero-attr-badge ${h.attr}">${ATTRIBUTES[h.attr]?.label || h.attr}</span>
-          <div class="hero-pos-tags">${posTags}</div>
-        </div>
-      </div>
-    </div>`;
-}
-
-// ════════════════════════════════════════════
-//  ФИЛЬТРЫ
-// ════════════════════════════════════════════
-function initFilters() {
-  document.querySelectorAll('.attr-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.attr-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      currentAttrFilter = btn.dataset.attr;
-      renderGrid();
-    });
-  });
-  document.querySelectorAll('.pos-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.pos-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      currentPosFilter = btn.dataset.pos;
-      renderGrid();
-    });
-  });
-  if (heroSearch) {
-    heroSearch.addEventListener('input', e => {
-      searchQuery = e.target.value;
-      renderGrid();
-    });
+function initAdmin() {
+  if (!isAdminLoggedIn) {
+    showAdminLogin();
+  } else {
+    restoreAdminPanel();
+    refreshAdminList();
   }
 }
 
-// ════════════════════════════════════════════
-//  МОДАЛКА ГЕРОЯ
-// ════════════════════════════════════════════
-function initModal() {
-  const overlay = document.getElementById('heroModal');
-  const closeBtn = document.getElementById('modalClose');
-  if (!overlay || !closeBtn) return;
-  closeBtn.addEventListener('click', closeModal);
-  overlay.addEventListener('click', e => { if (e.target === overlay) closeModal(); });
-  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
-}
-
-function openHeroModal(heroId) {
-  const hero = allHeroes().find(h => h.id === heroId);
-  if (!hero) return;
-  const content = document.getElementById('modalContent');
-  if (!content) return;
-  content.innerHTML = buildModalHTML(hero);
-  document.getElementById('heroModal').classList.add('open');
-  document.body.style.overflow = 'hidden';
-
-  document.querySelectorAll('.modal-tab-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.modal-tab-btn').forEach(b => b.classList.remove('active'));
-      document.querySelectorAll('.modal-tab-pane').forEach(p => p.classList.remove('active'));
-      btn.classList.add('active');
-      const pane = document.getElementById('mpane-' + btn.dataset.pane);
-      if (pane) pane.classList.add('active');
-    });
-  });
-}
-
-function closeModal() {
-  const modal = document.getElementById('heroModal');
-  if (modal) modal.classList.remove('open');
-  document.body.style.overflow = '';
-}
-
-function buildModalHTML(h) {
-  const imgSrc = heroImages[h.id];
-  const portrait = imgSrc
-    ? `<img src="${imgSrc}" alt="${h.name}">`
-    : `<div class="modal-hero-portrait-placeholder">${h.name[0]}</div>`;
-
-  const tags = (h.tags || []).map(t => `<span class="tag-pill">${t}</span>`).join('');
-  const attrLabel = ATTRIBUTES[h.attr]?.label || h.attr;
-  const attackLabel = h.attackType === 'melee' ? '⚔ Ближний бой' : '🏹 Дальний бой';
-
-  return `
-    <div class="modal-hero-header" data-attr="${h.attr}">
-      <div class="modal-hero-portrait">${portrait}</div>
-      <div class="modal-hero-meta">
-        <div class="modal-hero-name">${h.name}</div>
-        <div class="modal-hero-badges">
-          <span class="hero-attr-badge ${h.attr}">${attrLabel}</span>
-          <span class="attack-type">${attackLabel}</span>
-          ${tags}
-        </div>
-        <div class="modal-hero-summary">${h.summary || ''}</div>
-      </div>
-    </div>
-    <div class="modal-tabs">
-      <button class="modal-tab-btn active" data-pane="items">Закуп</button>
-      <button class="modal-tab-btn" data-pane="skills">Прокачка</button>
-      <button class="modal-tab-btn" data-pane="abilities">Способности</button>
-      <button class="modal-tab-btn" data-pane="counters">Контрпики</button>
-      <button class="modal-tab-btn" data-pane="talents">Таланты</button>
-    </div>
-    <div class="modal-tab-content">
-      <div class="modal-tab-pane active" id="mpane-items">${buildItemsPane(h)}</div>
-      <div class="modal-tab-pane" id="mpane-skills">${buildSkillBuildPane(h)}</div>
-      <div class="modal-tab-pane" id="mpane-abilities">${buildAbilitiesPane(h)}</div>
-      <div class="modal-tab-pane" id="mpane-counters">${buildCountersPane(h)}</div>
-      <div class="modal-tab-pane" id="mpane-talents">${buildTalentsPane(h)}</div>
-    </div>`;
-}
-
-function buildItemsPane(h) {
-  const items = h.items || {};
-  const phaseHTML = (list, label, emoji) => {
-    if (!list || !list.length) return '';
-    const slots = list.map(item => {
-      const img = itemImages[item.id];
-      return `<div class="item-slot">
-        <div class="item-slot-img">${img ? `<img src="${img}">` : '🎒'}</div>
-        <div class="item-slot-info">
-          <div class="item-slot-name">${item.name || item}</div>
-          ${item.timing ? `<div class="item-slot-timing">${item.timing}</div>` : ''}
-          ${item.reason ? `<div class="item-slot-reason">${item.reason}</div>` : ''}
-        </div>
-      </div>`;
-    }).join('');
-    return `<div class="items-section">
-      <div class="items-section-title">${emoji} ${label}</div>
-      <div class="items-row">${slots}</div>
-    </div>`;
-  };
-
-  let html = '';
-  html += phaseHTML(items.starting, 'Стартовые предметы', '🟢');
-  html += phaseHTML(items.early, 'Ранняя игра', '🔵');
-  html += phaseHTML(items.mid, 'Середина игры', '🟡');
-  html += phaseHTML(items.late, 'Поздняя игра', '🔴');
-  html += phaseHTML(items.situational, 'Ситуативные', '⚪');
-  return html || '<p style="color:var(--text-muted);padding:20px 0;">Данные о закупе отсутствуют.</p>';
-}
-
-function buildSkillBuildPane(h) {
-  if (!h.skillBuild || !h.skillBuild.length)
-    return '<p style="color:var(--text-muted);padding:20px 0;">Данные о прокачке отсутствуют.</p>';
-  const rows = h.skillBuild.map(s => `
-    <div class="skill-row">
-      <div class="skill-lvl">${s.level}</div>
-      <div class="skill-name">${s.skill}</div>
-      <div class="skill-note">${s.note || ''}</div>
-    </div>`).join('');
-  return `<div class="skill-build">${rows}</div>`;
-}
-
-function buildAbilitiesPane(h) {
-  if (!h.abilities || !h.abilities.length)
-    return '<p style="color:var(--text-muted);padding:20px 0;">Данные о способностях отсутствуют.</p>';
-  const cards = h.abilities.map(ab => {
-    const dmgClass = ab.damageType ? `dmg-${ab.damageType}` : '';
-    return `<div class="ability-card">
-      <div class="ability-header">
-        <div class="ability-icon">✨</div>
-        <div>
-          <div class="ability-name">${ab.name}</div>
-          <div class="ability-stats">
-            ${ab.cooldown && ab.cooldown !== '—' ? `<span class="ab-stat">КД <span>${ab.cooldown}</span></span>` : ''}
-            ${ab.manaCost && ab.manaCost !== '—' ? `<span class="ab-stat">Мана <span>${ab.manaCost}</span></span>` : ''}
-            ${ab.range ? `<span class="ab-stat">Дальность <span>${ab.range}</span></span>` : ''}
-            ${ab.damageType && ab.damageType !== 'none' ? `<span class="ab-stat ${dmgClass}">Урон <span>${ab.damageType}</span></span>` : ''}
-          </div>
-        </div>
-      </div>
-      <div class="ability-desc">${ab.description}</div>
-    </div>`;
-  }).join('');
-  return `<div class="abilities-grid">${cards}</div>`;
-}
-
-function buildCountersPane(h) {
-  let html = '';
-  if (h.counters && h.counters.length) {
-    const rows = h.counters.map(c => {
-      const counter = allHeroes().find(x => x.id === c.heroId);
-      const name    = counter ? counter.name : c.heroId;
-      const wr      = c.winrateAgainst;
-      return `<div class="counter-hero-row">
-        <div class="counter-hero-portrait">${name[0]}</div>
-        <div class="counter-info">
-          <div class="counter-hero-name">${name}</div>
-          <div class="counter-reason">${c.reason}</div>
-        </div>
-        ${wr ? `<div class="counter-wr bad">${wr}% WR</div>` : ''}
-      </div>`;
-    }).join('');
-    html += `<div style="margin-bottom:24px">
-      <div class="items-section-title">⚔ Контрпики (кто сильнее ${h.name})</div>
-      <div class="counters-list">${rows}</div>
-    </div>`;
-  }
-
-  if (h.counterItems && h.counterItems.length) {
-    const rows = h.counterItems.map(ci => `
-      <div class="counter-hero-row">
-        <div class="counter-hero-portrait">🎒</div>
-        <div class="counter-info">
-          <div class="counter-hero-name">${ci.name}</div>
-          <div class="counter-reason">${ci.reason}</div>
-        </div>
-      </div>`).join('');
-    html += `<div style="margin-bottom:24px">
-      <div class="items-section-title">🎒 Предметы против ${h.name}</div>
-      <div class="counters-list">${rows}</div>
-    </div>`;
-  }
-
-  if (h.allies && h.allies.length) {
-    const rows = h.allies.map(a => {
-      const ally   = allHeroes().find(x => x.id === a.heroId);
-      const name   = ally ? ally.name : a.heroId;
-      return `<div class="counter-hero-row">
-        <div class="counter-hero-portrait">${name[0]}</div>
-        <div class="counter-info">
-          <div class="counter-hero-name">${name}</div>
-          <div class="counter-reason">${a.reason}</div>
-        </div>
-        ${a.winrate ? `<div class="counter-wr good">${a.winrate}% WR</div>` : ''}
-      </div>`;
-    }).join('');
-    html += `<div>
-      <div class="items-section-title">🤝 Союзники</div>
-      <div class="counters-list">${rows}</div>
-    </div>`;
-  }
-
-  return html || '<p style="color:var(--text-muted);padding:20px 0;">Данные о контрпиках отсутствуют.</p>';
-}
-
-function buildTalentsPane(h) {
-  if (!h.talents || !h.talents.length)
-    return '<p style="color:var(--text-muted);padding:20px 0;">Данные о талантах отсутствуют.</p>';
-  const rows = [...h.talents].reverse().map(t => `
-    <tr>
-      <td class="talent-option">${t.left}</td>
-      <td class="talent-vs">или</td>
-      <td class="talent-lvl">уровень ${t.level}</td>
-      <td class="talent-vs">или</td>
-      <td class="talent-option">${t.right}</td>
-    </tr>`).join('');
-  return `<table class="talents-table"><tbody>${rows}</tbody></table>`;
-}
-
-// ════════════════════════════════════════════
-//  АДМИНКА (полная)
-// ════════════════════════════════════════════
 function refreshAdminList() {
   const list = document.getElementById('adminHeroList');
   if (!list) return;
@@ -867,7 +546,17 @@ function openItemModal(phase) {
   document.getElementById('im-reason').value = '';
   document.getElementById('itemImgPreview').innerHTML = `<div class="img-placeholder-icon">🎒</div><span>PNG/JPG</span>`;
   document.getElementById('itemImageBox').dataset.pendingImg = '';
-  document.getElementById('im-timing-group').style.display = phase === 'starting' ? 'none' : '';
+  document.getElementById('im-timing-group').style.display = phase === 'starting' ? 'none' : 'block';
+  const phaseNames = {
+    starting: 'Стартовый предмет',
+    early: 'Предмет ранней игры',
+    mid: 'Предмет середины игры',
+    late: 'Предмет поздней игры',
+    situational: 'Ситуативный предмет'
+  };
+  const title = document.querySelector('.item-modal-box h3');
+  if (title) title.textContent = `➕ Добавить ${phaseNames[phase] || 'предмет'}`;
+  
   document.getElementById('itemModal').classList.remove('hidden');
 }
 
@@ -900,6 +589,7 @@ function confirmItemAdd() {
   chip.innerHTML = `
     <div class="chip-img">${imgSrc ? `<img src="${imgSrc}">` : '🎒'}</div>
     <span>${name}</span>
+    ${timing ? `<span style="font-size:10px;color:var(--cyan);margin-left:4px;">${timing}</span>` : ''}
     <button class="item-chip-remove" data-phase="${phase}" data-idx="${idx}" type="button">✕</button>`;
   chip.querySelector('.item-chip-remove').addEventListener('click', () => removeItemChip(phase, idx));
   container.appendChild(chip);
@@ -955,10 +645,344 @@ function addCounterChipData(heroId, reason) {
   chip.querySelector('.counter-chip-remove').addEventListener('click', () => chip.remove());
   ed.appendChild(chip);
 }
+function exportData() {
+  const data = {
+    heroes: allHeroes(),
+    heroImages: heroImages,
+    itemImages: itemImages
+  };
+  const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'pickmaster_data.json';
+  a.click();
+  URL.revokeObjectURL(url);
+}
 
-// ════════════════════════════════════════════
-//  ХРАНИЛИЩЕ
-// ════════════════════════════════════════════
+function importData() {
+  const input = document.createElement('input');
+  input.type = 'file';
+  input.accept = '.json';
+  input.onchange = (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = (ev) => {
+      try {
+        const data = JSON.parse(ev.target.result);
+        if (data.heroes && Array.isArray(data.heroes)) {
+          customHeroes = data.heroes;
+          heroImages = data.heroImages || {};
+          itemImages = data.itemImages || {};
+          saveCustomHeroes();
+          saveJSON(IMAGES_KEY, heroImages);
+          saveJSON(ITEM_IMG_KEY, itemImages);
+          renderGrid();
+          refreshAdminList();
+          alert('Данные успешно импортированы!');
+        } else {
+          alert('Неверный формат файла');
+        }
+      } catch (err) {
+        alert('Ошибка чтения файла: ' + err.message);
+      }
+    };
+    reader.readAsText(file);
+  };
+  input.click();
+}
+
+function allHeroes() {
+  const merged = [...BASE_HEROES];
+  customHeroes.forEach(ch => {
+    const idx = merged.findIndex(h => h.id === ch.id);
+    if (idx >= 0) merged[idx] = ch;
+    else merged.push(ch);
+  });
+  return merged;
+}
+function initHeroGrid() { renderGrid(); }
+
+function renderGrid() {
+  if (!heroGrid || !heroCount) return;
+  const query = searchQuery.toLowerCase();
+  const filtered = allHeroes().filter(h => {
+    const attrOk = currentAttrFilter === 'all' || h.attr === currentAttrFilter;
+    const posOk  = currentPosFilter  === 'all' || (h.positions && h.positions.includes(+currentPosFilter));
+    const nameOk = !query || h.name.toLowerCase().includes(query);
+    return attrOk && posOk && nameOk;
+  });
+  heroCount.textContent = filtered.length;
+  if (!filtered.length) {
+    heroGrid.innerHTML = '<div class="no-results">Герои не найдены.</div>';
+    return;
+  }
+  heroGrid.innerHTML = filtered.map(h => heroCardHTML(h)).join('');
+  heroGrid.querySelectorAll('.hero-card').forEach(card => {
+    card.addEventListener('click', () => openHeroModal(card.dataset.heroId));
+  });
+}
+
+function heroCardHTML(h) {
+  const imgSrc = heroImages[h.id];
+  const imgHTML = imgSrc
+    ? `<img src="${imgSrc}" alt="${h.name}" style="width:100%;height:100%;object-fit:cover;">`
+    : `<div class="hero-img-placeholder"><div class="hero-init">${h.name[0]}</div><div class="hero-img-label">нет фото</div></div>`;
+
+  const posTags = (h.positions || []).map(p =>
+    `<span class="pos-tag">${POSITIONS[p]?.short || p}</span>`
+  ).join('');
+
+  return `
+    <div class="hero-card" data-hero-id="${h.id}" data-attr="${h.attr}">
+      <div class="hero-card-img">${imgHTML}</div>
+      <div class="hero-card-info">
+        <div class="hero-card-name">${h.name}</div>
+        <div class="hero-card-meta">
+          <span class="hero-attr-badge ${h.attr}">${ATTRIBUTES[h.attr]?.label || h.attr}</span>
+          <div class="hero-pos-tags">${posTags}</div>
+        </div>
+      </div>
+    </div>`;
+}
+function initFilters() {
+  document.querySelectorAll('.attr-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.attr-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentAttrFilter = btn.dataset.attr;
+      renderGrid();
+    });
+  });
+  document.querySelectorAll('.pos-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.pos-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentPosFilter = btn.dataset.pos;
+      renderGrid();
+    });
+  });
+  if (heroSearch) {
+    heroSearch.addEventListener('input', e => {
+      searchQuery = e.target.value;
+      renderGrid();
+    });
+  }
+}
+function initModal() {
+  const overlay = document.getElementById('heroModal');
+  const closeBtn = document.getElementById('modalClose');
+  if (!overlay || !closeBtn) return;
+  closeBtn.addEventListener('click', closeModal);
+  overlay.addEventListener('click', e => { if (e.target === overlay) closeModal(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+}
+
+function openHeroModal(heroId) {
+  const hero = allHeroes().find(h => h.id === heroId);
+  if (!hero) return;
+  const content = document.getElementById('modalContent');
+  if (!content) return;
+  content.innerHTML = buildModalHTML(hero);
+  document.getElementById('heroModal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+
+  document.querySelectorAll('.modal-tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.modal-tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.modal-tab-pane').forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      const pane = document.getElementById('mpane-' + btn.dataset.pane);
+      if (pane) pane.classList.add('active');
+    });
+  });
+}
+
+function closeModal() {
+  const modal = document.getElementById('heroModal');
+  if (modal) modal.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function buildModalHTML(h) {
+  const imgSrc = heroImages[h.id];
+  const portrait = imgSrc
+    ? `<img src="${imgSrc}" alt="${h.name}">`
+    : `<div class="modal-hero-portrait-placeholder">${h.name[0]}</div>`;
+
+  const tags = (h.tags || []).map(t => `<span class="tag-pill">${t}</span>`).join('');
+  const attrLabel = ATTRIBUTES[h.attr]?.label || h.attr;
+  const attackLabel = h.attackType === 'melee' ? '⚔ Ближний бой' : '🏹 Дальний бой';
+
+  return `
+    <div class="modal-hero-header" data-attr="${h.attr}">
+      <div class="modal-hero-portrait">${portrait}</div>
+      <div class="modal-hero-meta">
+        <div class="modal-hero-name">${h.name}</div>
+        <div class="modal-hero-badges">
+          <span class="hero-attr-badge ${h.attr}">${attrLabel}</span>
+          <span class="attack-type">${attackLabel}</span>
+          ${tags}
+        </div>
+        <div class="modal-hero-summary">${h.summary || ''}</div>
+      </div>
+    </div>
+    <div class="modal-tabs">
+      <button class="modal-tab-btn active" data-pane="items">Закуп</button>
+      <button class="modal-tab-btn" data-pane="skills">Прокачка</button>
+      <button class="modal-tab-btn" data-pane="abilities">Способности</button>
+      <button class="modal-tab-btn" data-pane="counters">Контрпики</button>
+      <button class="modal-tab-btn" data-pane="talents">Таланты</button>
+    </div>
+    <div class="modal-tab-content">
+      <div class="modal-tab-pane active" id="mpane-items">${buildItemsPane(h)}</div>
+      <div class="modal-tab-pane" id="mpane-skills">${buildSkillBuildPane(h)}</div>
+      <div class="modal-tab-pane" id="mpane-abilities">${buildAbilitiesPane(h)}</div>
+      <div class="modal-tab-pane" id="mpane-counters">${buildCountersPane(h)}</div>
+      <div class="modal-tab-pane" id="mpane-talents">${buildTalentsPane(h)}</div>
+    </div>`;
+}
+
+function buildItemsPane(h) {
+  const items = h.items || {};
+  const phaseHTML = (list, label, emoji) => {
+    if (!list || !list.length) return '';
+    const slots = list.map(item => {
+      const img = itemImages[item.id];
+      return `<div class="item-slot">
+        <div class="item-slot-img">${img ? `<img src="${img}">` : '🎒'}</div>
+        <div class="item-slot-info">
+          <div class="item-slot-name">${item.name || item}</div>
+          ${item.timing ? `<div class="item-slot-timing">${item.timing}</div>` : ''}
+          ${item.reason ? `<div class="item-slot-reason">${item.reason}</div>` : ''}
+        </div>
+      </div>`;
+    }).join('');
+    return `<div class="items-section">
+      <div class="items-section-title">${emoji} ${label}</div>
+      <div class="items-row">${slots}</div>
+    </div>`;
+  };
+
+  let html = '';
+  html += phaseHTML(items.starting, 'Стартовые предметы', '🟢');
+  html += phaseHTML(items.early, 'Ранняя игра', '🔵');
+  html += phaseHTML(items.mid, 'Середина игры', '🟡');
+  html += phaseHTML(items.late, 'Поздняя игра', '🔴');
+  html += phaseHTML(items.situational, 'Ситуативные', '⚪');
+  return html || '<p style="color:var(--text-muted);padding:20px 0;">Данные о закупе отсутствуют.</p>';
+}
+
+function buildSkillBuildPane(h) {
+  if (!h.skillBuild || !h.skillBuild.length)
+    return '<p style="color:var(--text-muted);padding:20px 0;">Данные о прокачке отсутствуют.</p>';
+  const rows = h.skillBuild.map(s => `
+    <div class="skill-row">
+      <div class="skill-lvl">${s.level}</div>
+      <div class="skill-name">${s.skill}</div>
+      <div class="skill-note">${s.note || ''}</div>
+    </div>`).join('');
+  return `<div class="skill-build">${rows}</div>`;
+}
+
+function buildAbilitiesPane(h) {
+  if (!h.abilities || !h.abilities.length)
+    return '<p style="color:var(--text-muted);padding:20px 0;">Данные о способностях отсутствуют.</p>';
+  const cards = h.abilities.map(ab => {
+    const dmgClass = ab.damageType ? `dmg-${ab.damageType}` : '';
+    return `<div class="ability-card">
+      <div class="ability-header">
+        <div class="ability-icon">✨</div>
+        <div>
+          <div class="ability-name">${ab.name}</div>
+          <div class="ability-stats">
+            ${ab.cooldown && ab.cooldown !== '—' ? `<span class="ab-stat">КД <span>${ab.cooldown}</span></span>` : ''}
+            ${ab.manaCost && ab.manaCost !== '—' ? `<span class="ab-stat">Мана <span>${ab.manaCost}</span></span>` : ''}
+            ${ab.range ? `<span class="ab-stat">Дальность <span>${ab.range}</span></span>` : ''}
+            ${ab.damageType && ab.damageType !== 'none' ? `<span class="ab-stat ${dmgClass}">Урон <span>${ab.damageType}</span></span>` : ''}
+          </div>
+        </div>
+      </div>
+      <div class="ability-desc">${ab.description}</div>
+    </div>`;
+  }).join('');
+  return `<div class="abilities-grid">${cards}</div>`;
+}
+
+function buildCountersPane(h) {
+  let html = '';
+  if (h.counters && h.counters.length) {
+    const rows = h.counters.map(c => {
+      const counter = allHeroes().find(x => x.id === c.heroId);
+      const name    = counter ? counter.name : c.heroId;
+      const wr      = c.winrateAgainst;
+      return `<div class="counter-hero-row">
+        <div class="counter-hero-portrait">${name[0]}</div>
+        <div class="counter-info">
+          <div class="counter-hero-name">${name}</div>
+          <div class="counter-reason">${c.reason}</div>
+        </div>
+        ${wr ? `<div class="counter-wr bad">${wr}% WR</div>` : ''}
+      </div>`;
+    }).join('');
+    html += `<div style="margin-bottom:24px">
+      <div class="items-section-title">⚔ Контрпики (кто сильнее ${h.name})</div>
+      <div class="counters-list">${rows}</div>
+    </div>`;
+  }
+
+  if (h.counterItems && h.counterItems.length) {
+    const rows = h.counterItems.map(ci => `
+      <div class="counter-hero-row">
+        <div class="counter-hero-portrait">🎒</div>
+        <div class="counter-info">
+          <div class="counter-hero-name">${ci.name}</div>
+          <div class="counter-reason">${ci.reason}</div>
+        </div>
+      </div>`).join('');
+    html += `<div style="margin-bottom:24px">
+      <div class="items-section-title">🎒 Предметы против ${h.name}</div>
+      <div class="counters-list">${rows}</div>
+    </div>`;
+  }
+
+  if (h.allies && h.allies.length) {
+    const rows = h.allies.map(a => {
+      const ally   = allHeroes().find(x => x.id === a.heroId);
+      const name   = ally ? ally.name : a.heroId;
+      return `<div class="counter-hero-row">
+        <div class="counter-hero-portrait">${name[0]}</div>
+        <div class="counter-info">
+          <div class="counter-hero-name">${name}</div>
+          <div class="counter-reason">${a.reason}</div>
+        </div>
+        ${a.winrate ? `<div class="counter-wr good">${a.winrate}% WR</div>` : ''}
+      </div>`;
+    }).join('');
+    html += `<div>
+      <div class="items-section-title">🤝 Союзники</div>
+      <div class="counters-list">${rows}</div>
+    </div>`;
+  }
+
+  return html || '<p style="color:var(--text-muted);padding:20px 0;">Данные о контрпиках отсутствуют.</p>';
+}
+
+function buildTalentsPane(h) {
+  if (!h.talents || !h.talents.length)
+    return '<p style="color:var(--text-muted);padding:20px 0;">Данные о талантах отсутствуют.</p>';
+  const rows = [...h.talents].reverse().map(t => `
+    <tr>
+      <td class="talent-option">${t.left}</td>
+      <td class="talent-vs">или</td>
+      <td class="talent-lvl">уровень ${t.level}</td>
+      <td class="talent-vs">или</td>
+      <td class="talent-option">${t.right}</td>
+    </tr>`).join('');
+  return `<table class="talents-table"><tbody>${rows}</tbody></table>`;
+}
+
 function loadCustomHeroes() {
   try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || []; }
   catch { return []; }
@@ -974,16 +998,11 @@ function saveJSON(key, val) {
   localStorage.setItem(key, JSON.stringify(val));
 }
 
-// ════════════════════════════════════════════
-//  ПИКЕР (DRAFT TRAINER)
-// ════════════════════════════════════════════
 function initDraft() {
-  // Если вражеская команда пуста, генерируем
   if (enemyTeam.length === 0) generateEnemyTeam();
   renderEnemyTeam();
   renderOurPicks();
 
-  // Навешиваем обработчики
   document.getElementById('newEnemyBtn')?.addEventListener('click', () => {
     generateEnemyTeam();
     renderEnemyTeam();
@@ -994,13 +1013,11 @@ function initDraft() {
   document.getElementById('evaluateDraftBtn')?.addEventListener('click', evaluateDraft);
   document.getElementById('resetDraftBtn')?.addEventListener('click', resetDraft);
 
-  // Закрытие модалки
   document.getElementById('pickerModalClose')?.addEventListener('click', closePickerModal);
   document.getElementById('pickerModal')?.addEventListener('click', (e) => {
     if (e.target === e.currentTarget) closePickerModal();
   });
 
-  // Поиск в модалке
   document.getElementById('pickerSearch')?.addEventListener('input', (e) => {
     const query = e.target.value.trim().toLowerCase();
     renderPickerGrid(query);
@@ -1093,7 +1110,6 @@ function renderOurPicks() {
     `;
   }).join('');
 
-  // Навешиваем обработчики на кнопки "Выбрать"
   container.querySelectorAll('.btn-pick').forEach(btn => {
     btn.addEventListener('click', () => {
       const role = parseInt(btn.dataset.role);
@@ -1200,7 +1216,6 @@ function evaluateDraft() {
     let comments = [];
 
     enemyTeam.forEach(enemy => {
-      // 1. Наш герой — контр-пик врага?
       const enemyCounters = enemy.counters || [];
       const isCounter = enemyCounters.some(c => c.heroId === ourHero.id);
       if (isCounter) {
@@ -1208,7 +1223,6 @@ function evaluateDraft() {
         comments.push(`против ${enemy.name} (контр-пик)`);
       }
 
-      // 2. Наш герой — союзник врага? (плохо)
       const enemyAllies = enemy.allies || [];
       const isAlly = enemyAllies.some(a => a.heroId === ourHero.id);
       if (isAlly) {
@@ -1216,7 +1230,6 @@ function evaluateDraft() {
         comments.push(`против ${enemy.name} (синергия с врагом)`);
       }
 
-      // 3. Враг — контр-пик нашего героя?
       const ourCounters = ourHero.counters || [];
       const isOurCounter = ourCounters.some(c => c.heroId === enemy.id);
       if (isOurCounter) {
@@ -1302,5 +1315,3 @@ function renderDraft() {
   renderEnemyTeam();
   renderOurPicks();
 }
-
-// Если вкладка draft уже активна при загрузке, вызываем initDraft (она уже вызвана в DOMContentLoaded)
