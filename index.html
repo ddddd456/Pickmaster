@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PickMaster 7.41 — Гайды и сборки героев Dota 2</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/modal.css" />
+  <link rel="stylesheet" href="css/draft.css" />
+  <link rel="stylesheet" href="css/admin.css" />
+</head>
+<body>
+
+<!-- ═══ HEADER ═══ -->
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo">
+      <span class="logo-pick">PICK</span><span class="logo-master">MASTER</span>
+      <span class="logo-patch">7.41</span>
+    </div>
+    <nav class="main-nav">
+      <button class="nav-btn active" data-tab="heroes">Герои</button>
+      <button class="nav-btn" data-tab="draft">Пикер</button>
+      <button class="nav-btn" data-tab="admin">⚙ Редактор</button>
+    </nav>
+  </div>
+</header>
+
+<!-- ═══ HEROES TAB ═══ -->
+<main id="tab-heroes" class="tab-content active">
+  <div class="heroes-layout">
+    <aside class="filters-panel">
+      <div class="filter-section">
+        <h3 class="filter-label">Атрибут</h3>
+        <div class="attr-filters">
+          <button class="attr-btn active" data-attr="all">ВСЕ</button>
+          <button class="attr-btn str" data-attr="str">⚔ СИЛ</button>
+          <button class="attr-btn agi" data-attr="agi">🏹 ЛОВ</button>
+          <button class="attr-btn int" data-attr="int">✨ ИНТ</button>
+          <button class="attr-btn uni" data-attr="uni">◆ УНИ</button>
+        </div>
+      </div>
+      <div class="filter-section">
+        <h3 class="filter-label">Позиция</h3>
+        <div class="pos-filters">
+          <button class="pos-btn active" data-pos="all">Все</button>
+          <button class="pos-btn" data-pos="1">① Керри</button>
+          <button class="pos-btn" data-pos="2">② Мид</button>
+          <button class="pos-btn" data-pos="3">③ Офф</button>
+          <button class="pos-btn" data-pos="4">④ Сапп</button>
+          <button class="pos-btn" data-pos="5">⑤ Хард сап</button>
+        </div>
+      </div>
+      <div class="filter-section">
+        <h3 class="filter-label">Поиск</h3>
+        <input type="text" class="search-input" id="heroSearch" placeholder="Имя героя..." />
+      </div>
+    </aside>
+
+    <section class="heroes-grid-wrap">
+      <div class="heroes-count"><span id="heroCount">0</span> героев</div>
+      <div class="heroes-grid" id="heroGrid"></div>
+    </section>
+  </div>
+</main>
+
+<!-- ═══ DRAFT TAB ═══ -->
+<main id="tab-draft" class="tab-content">
+  <div class="draft-container">
+    <div class="draft-header">
+      <h2>🧠 Тренировка пика</h2>
+      <p>Выбери контр-пики против случайной вражеской команды</p>
+    </div>
+
+    <div class="draft-enemy-team">
+      <div class="enemy-team-header">
+        <span class="enemy-team-label">👹 Вражеская команда</span>
+        <button class="btn-primary" id="newEnemyBtn">🎲 Новая команда</button>
+      </div>
+      <div class="enemy-roles" id="enemyRoles"></div>
+    </div>
+
+    <div class="draft-our-team">
+      <div class="our-team-header">
+        <span class="our-team-label">🛡️ Ваша команда</span>
+      </div>
+      <div class="our-roles" id="ourRoles"></div>
+    </div>
+
+    <div class="draft-actions">
+      <button class="btn-primary" id="evaluateDraftBtn">📊 Оценить драфт</button>
+      <button class="btn-secondary" id="resetDraftBtn">🔄 Сбросить</button>
+    </div>
+
+    <div class="draft-result" id="draftResult" style="display: none;">
+      <div class="result-score">
+        <span class="score-number" id="scoreNumber">0</span>
+        <span class="score-label">/ 100</span>
+      </div>
+      <div class="result-feedback" id="resultFeedback"></div>
+      <div class="result-details" id="resultDetails"></div>
+    </div>
+  </div>
+</main>
+
+<!-- ═══ МОДАЛКА ВЫБОРА ГЕРОЯ ДЛЯ ПИКЕРА ═══ -->
+<div class="modal-overlay" id="pickerModal">
+  <div class="modal-box picker-modal-box">
+    <div class="picker-modal-header">
+      <h3 id="pickerModalTitle">Выберите героя</h3>
+      <button class="modal-close" id="pickerModalClose">✕</button>
+    </div>
+    <div class="picker-modal-body">
+      <input type="text" id="pickerSearch" placeholder="Поиск героя..." class="search-input" />
+      <div class="picker-grid" id="pickerGrid"></div>
+    </div>
+  </div>
+</div>
+</main>
+
+<!-- ═══ HERO DETAIL MODAL ═══ -->
+<div class="modal-overlay" id="heroModal">
+  <div class="modal-box">
+    <button class="modal-close" id="modalClose">✕</button>
+    <div class="modal-content" id="modalContent"></div>
+  </div>
+</div>
+
+<!-- ═══ ADMIN TAB ═══ -->
+<main id="tab-admin" class="tab-content">
+  <div class="admin-layout">
+    <div class="admin-header">
+      <h2>Редактор героев</h2>
+      <p>Добавляй и редактируй героев — данные сохраняются в браузере</p>
+    </div>
+    <div class="admin-split">
+      <div class="admin-list-panel">
+        <div class="admin-panel-header">
+          <span>Герои в базе</span>
+          <button class="btn-primary" id="adminNewHero">+ Новый герой</button>
+        </div>
+        <div class="admin-hero-list" id="adminHeroList"></div>
+      </div>
+
+      <div class="admin-form-panel" id="adminFormPanel">
+        <!-- Здесь динамически появляется форма редактирования (после логина) -->
+        <div class="admin-form-empty" id="adminFormEmpty">
+          <div class="empty-icon">⚔</div>
+          <p>Выбери героя из списка или создай нового</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- ═══ МОДАЛКА ДОБАВЛЕНИЯ ПРЕДМЕТА ═══ -->
+<div class="item-modal-overlay hidden" id="itemModal">
+  <div class="item-modal-box">
+    <h3>Добавить предмет</h3>
+    <div class="form-group">
+      <label>Название</label>
+      <input type="text" id="im-name" placeholder="Blink Dagger" />
+    </div>
+    <div class="form-group" id="im-timing-group">
+      <label>Тайминг (например, ~12 мин)</label>
+      <input type="text" id="im-timing" placeholder="~12 мин" />
+    </div>
+    <div class="form-group">
+      <label>Почему важен</label>
+      <textarea id="im-reason" rows="2" placeholder="Причина покупки..."></textarea>
+    </div>
+    <div class="form-group">
+      <label>Изображение предмета</label>
+      <div class="image-upload-box" id="itemImageBox">
+        <div class="img-preview small" id="itemImgPreview">
+          <div class="img-placeholder-icon">🎒</div>
+          <span>PNG/JPG</span>
+        </div>
+        <input type="file" accept="image/*" id="itemImageInput" style="display:none;" />
+      </div>
+    </div>
+    <div class="modal-actions">
+      <button class="btn-secondary" id="imCancel">Отмена</button>
+      <button class="btn-primary" id="imConfirm">Добавить</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ СКРИПТЫ ═══ -->
+<script type="module" src="js/data.js"></script>
+<script type="module" src="js/app.js"></script>
+
+</body>
+</html>
