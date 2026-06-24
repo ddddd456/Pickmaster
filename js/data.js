@@ -1,7 +1,3 @@
-// ============================================================
-//  data.js — все герои Dota 2 (патч 7.41)
-// ============================================================
-
 export const ATTRIBUTES = {
   str: { label: 'Сила', color: '#ff4d4d', icon: 'str' },
   agi: { label: 'Ловкость', color: '#3ddc84', icon: 'agi' },
@@ -23,8 +19,6 @@ export const DAMAGE_TYPES = {
   pure: 'Чистый',
   none: '—'
 };
-
-// ============ ВСЕ ГЕРОИ (124) ============
 export const HEROES = [
   // ---- STRENGTH ----
   { id: 'axe', name: 'Axe', attr: 'str', positions: [], attackType: 'melee' },
@@ -64,7 +58,6 @@ export const HEROES = [
   { id: 'undying', name: 'Undying', attr: 'str', positions: [], attackType: 'melee' },
   { id: 'wraith_king', name: 'Wraith King', attr: 'str', positions: [], attackType: 'melee' },
 
-  // ---- AGILITY ----
   { id: 'anti_mage', name: 'Anti-Mage', attr: 'agi', positions: [], attackType: 'melee' },
   { id: 'arc_warden', name: 'Arc Warden', attr: 'agi', positions: [], attackType: 'ranged' },
   { id: 'bloodseeker', name: 'Bloodseeker', attr: 'agi', positions: [], attackType: 'melee' },
@@ -105,7 +98,6 @@ export const HEROES = [
   { id: 'weaver', name: 'Weaver', attr: 'agi', positions: [], attackType: 'ranged' },
   { id: 'windranger', name: 'Windranger', attr: 'agi', positions: [], attackType: 'ranged' },
 
-  // ---- INTELLIGENCE ----
   { id: 'ancient_apparition', name: 'Ancient Apparition', attr: 'int', positions: [], attackType: 'ranged' },
   { id: 'bane', name: 'Bane', attr: 'int', positions: [], attackType: 'ranged' },
   { id: 'batrider', name: 'Batrider', attr: 'int', positions: [], attackType: 'ranged' },
@@ -146,7 +138,6 @@ export const HEROES = [
   { id: 'witch_doctor', name: 'Witch Doctor', attr: 'int', positions: [], attackType: 'ranged' },
   { id: 'zeus', name: 'Zeus', attr: 'int', positions: [], attackType: 'ranged' },
 
-  // ---- UNIVERSAL ----
   { id: 'abaddon', name: 'Abaddon', attr: 'uni', positions: [], attackType: 'melee' },
   { id: 'alchemist', name: 'Alchemist', attr: 'uni', positions: [], attackType: 'melee' },
   { id: 'clockwerk', name: 'Clockwerk', attr: 'uni', positions: [], attackType: 'melee' },
@@ -158,7 +149,6 @@ export const HEROES = [
 
 ];
 
-// Вспомогательные функции
 export function getHeroById(id) {
   return HEROES.find(h => h.id === id);
 }
