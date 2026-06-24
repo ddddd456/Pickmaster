@@ -1,4 +1,3 @@
-/* ===== draft.css ===== */
 .draft-container {
   max-width: 800px;
   margin: 0 auto;
@@ -186,7 +185,6 @@
     flex-wrap: wrap;
   }
 }
-/* ===== draft.css ===== */
 .draft-container {
   max-width: 1000px;
   margin: 0 auto;
@@ -362,7 +360,6 @@
 .result-detail-item .detail-bad { color: var(--str); }
 .result-detail-item .detail-neutral { color: var(--text-muted); }
 
-/* Модалка выбора героя */
 .picker-modal-box {
   max-width: 720px;
 }
