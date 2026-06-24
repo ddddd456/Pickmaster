@@ -50,4 +50,13 @@ Drag-and-drop для загрузки изображений
 
 Контрпики с указанием причины.
 
-📸 Скриншоты (будут добавлены)
+📸 Скриншоты 
+главное меню PickMaster
+<img width="1548" height="894" alt="{29896061-035E-41A5-9832-11ADD3B2D5A3}" src="https://github.com/user-attachments/assets/a26df98b-5b80-4cc9-aecd-e922aec10422" />
+Мини-игра пикер в PickMaster
+<img width="1560" height="891" alt="{7710DFAC-6120-4D2B-8B55-FAA44F1FA418}" src="https://github.com/user-attachments/assets/348b89ed-75c7-43c5-8307-c386dfb527d5" />
+Админ панель для создания сборок
+<img width="1565" height="892" alt="{181BAA61-4C8B-4803-9C22-88A787F83CA5}" src="https://github.com/user-attachments/assets/59ccc58f-0bcf-43ca-97bb-ee5399c095d0" />
+
+
+
