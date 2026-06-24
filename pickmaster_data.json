@@ -6,46 +6,107 @@
       "nameRu": "Axe",
       "attr": "str",
       "attackType": "melee",
-      "positions": [3],
+      "positions": [
+        3
+      ],
       "tags": [],
-      "summary": "",
+      "summary": "пропал",
       "abilities": [],
       "talents": [],
       "skillBuild": [],
       "items": {
         "starting": [
-          {"id": "tango", "name": "tango"},
-          {"id": "gauntles_of_strenght", "name": "gauntles of strenght"},
-          {"id": "circlet", "name": "circlet"},
-          {"id": "quelling_blade", "name": "quelling blade"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"}
+          {
+            "id": "tango",
+            "name": "tango"
+          },
+          {
+            "id": "gauntles_of_strenght",
+            "name": "gauntles of strenght"
+          },
+          {
+            "id": "circlet",
+            "name": "circlet"
+          },
+          {
+            "id": "quelling_blade",
+            "name": "quelling blade"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          }
         ],
         "early": [
-          {"id": "phase_boots", "name": "phase boots"},
-          {"id": "vanguard", "name": "vanguard"},
-          {"id": "blade_mail", "name": "blade mail"},
-          {"id": "magic_wand", "name": "magic wand"}
+          {
+            "id": "phase_boots",
+            "name": "phase boots"
+          },
+          {
+            "id": "vanguard",
+            "name": "vanguard"
+          },
+          {
+            "id": "blade_mail",
+            "name": "blade mail"
+          },
+          {
+            "id": "magic_wand",
+            "name": "magic wand"
+          }
         ],
         "mid": [
-          {"id": "blink_dagger", "name": "blink dagger"},
-          {"id": "bracer", "name": "bracer"}
+          {
+            "id": "blink_dagger",
+            "name": "blink dagger"
+          },
+          {
+            "id": "black_king_bar",
+            "name": "Black King Bar"
+          }
         ],
         "late": [
-          {"id": "aghanim_shard", "name": "aghanim shard"},
-          {"id": "force_staff", "name": "force staff"}
+          {
+            "id": "aghanim_scepter",
+            "name": "Aghanim Scepter"
+          }
         ],
         "situational": [
-          {"id": "black_king_bar", "name": "Black King Bar"},
-          {"id": "aghanim_scepter", "name": "Aghanim Scepter"}
+          {
+            "id": "lotus_orb",
+            "name": "Lotus Orb"
+          },
+          {
+            "id": "refresher",
+            "name": "Refresher"
+          }
         ]
       },
       "counters": [
-        {"heroId": "lifesteler", "reason": ""},
-        {"heroId": "timbersaw", "reason": ""},
-        {"heroId": "viper", "reason": ""},
-        {"heroId": "shadow_demon", "reason": ""},
-        {"heroId": "necrophos", "reason": ""}
+        {
+          "heroId": "lifesteler",
+          "reason": ""
+        },
+        {
+          "heroId": "timbersaw",
+          "reason": ""
+        },
+        {
+          "heroId": "viper",
+          "reason": ""
+        },
+        {
+          "heroId": "shadow_demon",
+          "reason": ""
+        },
+        {
+          "heroId": "necrophos",
+          "reason": ""
+        }
       ],
       "counterItems": [],
       "allies": []
@@ -56,7 +117,10 @@
       "nameRu": "Beastmaster",
       "attr": "str",
       "attackType": "melee",
-      "positions": [2, 3],
+      "positions": [
+        2,
+        3
+      ],
       "tags": [],
       "summary": "",
       "abilities": [],
@@ -64,33 +128,89 @@
       "skillBuild": [],
       "items": {
         "starting": [
-          {"id": "tango", "name": "tango"},
-          {"id": "gauntles_of_strenght", "name": "gauntles of strenght"},
-          {"id": "circlet", "name": "circlet"},
-          {"id": "quelling_blade", "name": "quelling blade"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"}
+          {
+            "id": "tango",
+            "name": "tango"
+          },
+          {
+            "id": "gauntles_of_strenght",
+            "name": "gauntles of strenght"
+          },
+          {
+            "id": "circlet",
+            "name": "circlet"
+          },
+          {
+            "id": "quelling_blade",
+            "name": "quelling blade"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          }
         ],
         "early": [
-          {"id": "phase_boots", "name": "phase boots"},
-          {"id": "magic_wand", "name": "magic wand"},
-          {"id": "vladimir_offering", "name": "vladimir offering"}
+          {
+            "id": "phase_boots",
+            "name": "phase boots"
+          },
+          {
+            "id": "magic_wand",
+            "name": "magic wand"
+          },
+          {
+            "id": "vladimir_offering",
+            "name": "vladimir offering"
+          }
         ],
         "mid": [
-          {"id": "drum_of_endurance", "name": "drum of endurance"},
-          {"id": "blink_dagger", "name": "blink dagger"}
+          {
+            "id": "drum_of_endurance",
+            "name": "drum of endurance"
+          },
+          {
+            "id": "blink_dagger",
+            "name": "blink dagger"
+          }
         ],
-        "late": [],
+        "late": [
+          {
+            "id": "aghanim_scepter",
+            "name": "Aghanim scepter"
+          },
+          {
+            "id": "refresher",
+            "name": "Refresher"
+          },
+          {
+            "id": "black_king_bar",
+            "name": "Black King Bar"
+          }
+        ],
         "situational": [
-          {"id": "aghanim_shard", "name": "aghanim shard"},
-          {"id": "black_king_bar", "name": "Black King Bar"},
-          {"id": "aghanim_scepter", "name": "Aghanim Scepter"}
+          {
+            "id": "manta_style",
+            "name": "Manta Style"
+          }
         ]
       },
       "counters": [
-        {"heroId": "phantom_assassin", "reason": "легко добирается до зверей"},
-        {"heroId": "sven", "reason": "ваншотит прислужников"},
-        {"heroId": "tidehunter", "reason": "аннигилирует пуш"}
+        {
+          "heroId": "phantom_assassin",
+          "reason": "легко добирается до зверей"
+        },
+        {
+          "heroId": "sven",
+          "reason": "ваншотит прислужников"
+        },
+        {
+          "heroId": "tidehunter",
+          "reason": "аннигилирует пуш"
+        }
       ],
       "counterItems": [],
       "allies": []
@@ -101,7 +221,9 @@
       "nameRu": "Brewmaster",
       "attr": "str",
       "attackType": "melee",
-      "positions": [3],
+      "positions": [
+        3
+      ],
       "tags": [],
       "summary": "",
       "abilities": [],
@@ -109,34 +231,93 @@
       "skillBuild": [],
       "items": {
         "starting": [
-          {"id": "tango", "name": "tango"},
-          {"id": "gauntles_of_strenght", "name": "gauntles of strenght"},
-          {"id": "circlet", "name": "circlet"},
-          {"id": "quelling_blade", "name": "quelling blade"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"}
+          {
+            "id": "tango",
+            "name": "tango"
+          },
+          {
+            "id": "gauntles_of_strenght",
+            "name": "gauntles of strenght"
+          },
+          {
+            "id": "circlet",
+            "name": "circlet"
+          },
+          {
+            "id": "quelling_blade",
+            "name": "quelling blade"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          }
         ],
         "early": [
-          {"id": "phase_boots", "name": "phase boots"},
-          {"id": "magic_wand", "name": "magic wand"},
-          {"id": "vanguard", "name": "vanguard"}
+          {
+            "id": "phase_boots",
+            "name": "phase boots"
+          },
+          {
+            "id": "vladmir_offering",
+            "name": "Vladmir Offering"
+          },
+          {
+            "id": "blink_dagger",
+            "name": "Blink Dagger"
+          }
         ],
         "mid": [
-          {"id": "blink_dagger", "name": "blink dagger"},
-          {"id": "vladimir_offering", "name": "vladimir offering"}
+          {
+            "id": "radiance",
+            "name": "Radiance"
+          },
+          {
+            "id": "aghanim_scepter",
+            "name": "Aghanim Scepter"
+          }
         ],
-        "late": [],
+        "late": [
+          {
+            "id": "assult_cuirass",
+            "name": "Assult Cuirass"
+          },
+          {
+            "id": "refresher",
+            "name": "Refresher"
+          }
+        ],
         "situational": [
-          {"id": "aghanim_shard", "name": "aghanim shard"},
-          {"id": "solar_crest", "name": "solar crest"},
-          {"id": "black_king_bar", "name": "Black King Bar"},
-          {"id": "aghanim_scepter", "name": "Aghanim Scepter"}
+          {
+            "id": "boots_of_travel",
+            "name": "Boots of Travel"
+          },
+          {
+            "id": "aghanim_shard",
+            "name": "Aghanim Shard"
+          },
+          {
+            "id": "spirit_vessel",
+            "name": "Spirit Vessel"
+          }
         ]
       },
       "counters": [
-        {"heroId": "lich", "reason": "щит не даёт ультовать"},
-        {"heroId": "doom", "reason": "дум снимает Brewmaster с поля боя"},
-        {"heroId": "shadow_demon", "reason": "диспел и сейв"}
+        {
+          "heroId": "lich",
+          "reason": "щит не даёт ультовать"
+        },
+        {
+          "heroId": "doom",
+          "reason": "дум снимает Brewmaster с поля боя"
+        },
+        {
+          "heroId": "shadow_demon",
+          "reason": "диспел и сейв"
+        }
       ],
       "counterItems": [],
       "allies": []
@@ -147,7 +328,9 @@
       "nameRu": "Bristleback",
       "attr": "str",
       "attackType": "melee",
-      "positions": [3],
+      "positions": [
+        3
+      ],
       "tags": [],
       "summary": "",
       "abilities": [],
@@ -155,37 +338,97 @@
       "skillBuild": [],
       "items": {
         "starting": [
-          {"id": "tango", "name": "tango"},
-          {"id": "gauntles_of_strenght", "name": "gauntles of strenght"},
-          {"id": "circlet", "name": "circlet"},
-          {"id": "quelling_blade", "name": "quelling blade"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"}
+          {
+            "id": "tango",
+            "name": "tango"
+          },
+          {
+            "id": "gauntles_of_strenght",
+            "name": "gauntles of strenght"
+          },
+          {
+            "id": "circlet",
+            "name": "circlet"
+          },
+          {
+            "id": "quelling_blade",
+            "name": "quelling blade"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          }
         ],
         "early": [
-          {"id": "phase_boots", "name": "phase boots"},
-          {"id": "vanguard", "name": "vanguard"},
-          {"id": "magic_wand", "name": "magic wand"}
+          {
+            "id": "phase_boots",
+            "name": "phase boots"
+          },
+          {
+            "id": "vanguard",
+            "name": "vanguard"
+          },
+          {
+            "id": "magic_wand",
+            "name": "magic wand"
+          }
         ],
         "mid": [
-          {"id": "blade_mail", "name": "blade mail"},
-          {"id": "aghanim_shard", "name": "aghanim shard"}
+          {
+            "id": "blade_mail",
+            "name": "blade mail"
+          },
+          {
+            "id": "aghanim_shard",
+            "name": "aghanim shard"
+          }
         ],
         "late": [
-          {"id": "aghanim_scepter", "name": "aghanim scepter"},
-          {"id": "black_king_bar", "name": "Black King Bar"}
+          {
+            "id": "aghanim_scepter",
+            "name": "aghanim scepter"
+          },
+          {
+            "id": "black_king_bar",
+            "name": "Black King Bar"
+          }
         ],
         "situational": [
-          {"id": "bracer", "name": "bracer"},
-          {"id": "heart_of_tarrasq", "name": "Heart of Tarrasq"},
-          {"id": "assult_cuirass", "name": "Assult Cuirass"},
-          {"id": "linken_sphere", "name": "Linken Sphere"}
+          {
+            "id": "bracer",
+            "name": "bracer"
+          },
+          {
+            "id": "heart_of_tarrasq",
+            "name": "Heart of Tarrasq"
+          },
+          {
+            "id": "assult_cuirass",
+            "name": "Assult Cuirass"
+          },
+          {
+            "id": "linken_sphere",
+            "name": "Linken Sphere"
+          }
         ]
       },
       "counters": [
-        {"heroId": "necrophos", "reason": "аура быстро прожигает, ульт добивает"},
-        {"heroId": "viper", "reason": "ломает пассивку"},
-        {"heroId": "shadow_demon", "reason": "сейв и проклятие"}
+        {
+          "heroId": "necrophos",
+          "reason": "аура быстро прожигает, ульт добивает"
+        },
+        {
+          "heroId": "viper",
+          "reason": "ломает пассивку"
+        },
+        {
+          "heroId": "shadow_demon",
+          "reason": "сейв и проклятие"
+        }
       ],
       "counterItems": [],
       "allies": []
@@ -196,7 +439,10 @@
       "nameRu": "Centaur Warrunner",
       "attr": "str",
       "attackType": "melee",
-      "positions": [3, 4],
+      "positions": [
+        3,
+        4
+      ],
       "tags": [],
       "summary": "",
       "abilities": [],
@@ -204,34 +450,88 @@
       "skillBuild": [],
       "items": {
         "starting": [
-          {"id": "tango", "name": "tango"},
-          {"id": "gauntles_of_strenght", "name": "gauntles of strenght"},
-          {"id": "circlet", "name": "circlet"},
-          {"id": "quelling_blade", "name": "quelling blade"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"}
+          {
+            "id": "tango",
+            "name": "tango"
+          },
+          {
+            "id": "gauntles_of_strenght",
+            "name": "gauntles of strenght"
+          },
+          {
+            "id": "circlet",
+            "name": "circlet"
+          },
+          {
+            "id": "quelling_blade",
+            "name": "quelling blade"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          }
         ],
         "early": [
-          {"id": "phase_boots", "name": "phase boots"},
-          {"id": "vanguard", "name": "vanguard"},
-          {"id": "magic_wand", "name": "magic wand"}
+          {
+            "id": "phase_boots",
+            "name": "phase boots"
+          },
+          {
+            "id": "vanguard",
+            "name": "vanguard"
+          },
+          {
+            "id": "magic_wand",
+            "name": "magic wand"
+          }
         ],
         "mid": [
-          {"id": "blink_dagger", "name": "blink dagger"},
-          {"id": "blade_mail", "name": "blade mail"}
+          {
+            "id": "blink_dagger",
+            "name": "blink dagger"
+          },
+          {
+            "id": "blade_mail",
+            "name": "blade mail"
+          }
         ],
         "late": [],
         "situational": [
-          {"id": "aghanim_shard", "name": "aghanim shard"},
-          {"id": "force_staff", "name": "force staff"},
-          {"id": "black_king_bar", "name": "Black King Bar"},
-          {"id": "aghanim_scepter", "name": "Aghanim Scepter"}
+          {
+            "id": "aghanim_shard",
+            "name": "aghanim shard"
+          },
+          {
+            "id": "force_staff",
+            "name": "force staff"
+          },
+          {
+            "id": "black_king_bar",
+            "name": "Black King Bar"
+          },
+          {
+            "id": "aghanim_scepter",
+            "name": "Aghanim Scepter"
+          }
         ]
       },
       "counters": [
-        {"heroId": "lifestealer", "reason": "рейдж против станов"},
-        {"heroId": "necrophos", "reason": "прожигает танка"},
-        {"heroId": "timbersaw", "reason": "режет броню"}
+        {
+          "heroId": "lifestealer",
+          "reason": "рейдж против станов"
+        },
+        {
+          "heroId": "necrophos",
+          "reason": "прожигает танка"
+        },
+        {
+          "heroId": "timbersaw",
+          "reason": "режет броню"
+        }
       ],
       "counterItems": [],
       "allies": []
@@ -242,7 +542,10 @@
       "nameRu": "Chaos Knight",
       "attr": "str",
       "attackType": "melee",
-      "positions": [1, 3],
+      "positions": [
+        1,
+        3
+      ],
       "tags": [],
       "summary": "",
       "abilities": [],
@@ -250,34 +553,88 @@
       "skillBuild": [],
       "items": {
         "starting": [
-          {"id": "tango", "name": "tango"},
-          {"id": "gauntles_of_strenght", "name": "gauntles of strenght"},
-          {"id": "circlet", "name": "circlet"},
-          {"id": "quelling_blade", "name": "quelling blade"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"}
+          {
+            "id": "tango",
+            "name": "tango"
+          },
+          {
+            "id": "gauntles_of_strenght",
+            "name": "gauntles of strenght"
+          },
+          {
+            "id": "circlet",
+            "name": "circlet"
+          },
+          {
+            "id": "quelling_blade",
+            "name": "quelling blade"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          }
         ],
         "early": [
-          {"id": "power_treads", "name": "power treads"},
-          {"id": "armlet_of_mobirgan", "name": "armlet of mobirgan"},
-          {"id": "magic_wand", "name": "magic wand"}
+          {
+            "id": "power_treads",
+            "name": "power treads"
+          },
+          {
+            "id": "armlet_of_mobirgan",
+            "name": "armlet of mobirgan"
+          },
+          {
+            "id": "magic_wand",
+            "name": "magic wand"
+          }
         ],
         "mid": [
-          {"id": "echo_sabre", "name": "echo sabre"},
-          {"id": "sange", "name": "sange"}
+          {
+            "id": "echo_sabre",
+            "name": "echo sabre"
+          },
+          {
+            "id": "sange",
+            "name": "sange"
+          }
         ],
         "late": [],
         "situational": [
-          {"id": "yasha", "name": "yasha"},
-          {"id": "aghanim_shard", "name": "aghanim shard"},
-          {"id": "black_king_bar", "name": "Black King Bar"},
-          {"id": "aghanim_scepter", "name": "Aghanim Scepter"}
+          {
+            "id": "yasha",
+            "name": "yasha"
+          },
+          {
+            "id": "aghanim_shard",
+            "name": "aghanim shard"
+          },
+          {
+            "id": "black_king_bar",
+            "name": "Black King Bar"
+          },
+          {
+            "id": "aghanim_scepter",
+            "name": "Aghanim Scepter"
+          }
         ]
       },
       "counters": [
-        {"heroId": "earthshaker", "reason": "эхо‑слэм против иллюзий"},
-        {"heroId": "sven", "reason": "ваншотит иллюзии"},
-        {"heroId": "timbersaw", "reason": "режет броню"}
+        {
+          "heroId": "earthshaker",
+          "reason": "эхо‑слэм против иллюзий"
+        },
+        {
+          "heroId": "sven",
+          "reason": "ваншотит иллюзии"
+        },
+        {
+          "heroId": "timbersaw",
+          "reason": "режет броню"
+        }
       ],
       "counterItems": [],
       "allies": []
@@ -288,7 +645,9 @@
       "nameRu": "Dawnbreaker",
       "attr": "str",
       "attackType": "melee",
-      "positions": [3],
+      "positions": [
+        3
+      ],
       "tags": [],
       "summary": "",
       "abilities": [],
@@ -296,33 +655,84 @@
       "skillBuild": [],
       "items": {
         "starting": [
-          {"id": "tango", "name": "tango"},
-          {"id": "gauntles_of_strenght", "name": "gauntles of strenght"},
-          {"id": "circlet", "name": "circlet"},
-          {"id": "quelling_blade", "name": "quelling blade"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"}
+          {
+            "id": "tango",
+            "name": "tango"
+          },
+          {
+            "id": "gauntles_of_strenght",
+            "name": "gauntles of strenght"
+          },
+          {
+            "id": "circlet",
+            "name": "circlet"
+          },
+          {
+            "id": "quelling_blade",
+            "name": "quelling blade"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          }
         ],
         "early": [
-          {"id": "phase_boots", "name": "phase boots"},
-          {"id": "magic_wand", "name": "magic wand"},
-          {"id": "bracer", "name": "bracer"}
+          {
+            "id": "phase_boots",
+            "name": "phase boots"
+          },
+          {
+            "id": "magic_wand",
+            "name": "magic wand"
+          },
+          {
+            "id": "bracer",
+            "name": "bracer"
+          }
         ],
         "mid": [
-          {"id": "blink_dagger", "name": "blink dagger"},
-          {"id": "aghanim_shard", "name": "aghanim shard"}
+          {
+            "id": "blink_dagger",
+            "name": "blink dagger"
+          },
+          {
+            "id": "aghanim_shard",
+            "name": "aghanim shard"
+          }
         ],
         "late": [],
         "situational": [
-          {"id": "blade_mail", "name": "blade mail"},
-          {"id": "black_king_bar", "name": "Black King Bar"},
-          {"id": "aghanim_scepter", "name": "Aghanim Scepter"}
+          {
+            "id": "blade_mail",
+            "name": "blade mail"
+          },
+          {
+            "id": "black_king_bar",
+            "name": "Black King Bar"
+          },
+          {
+            "id": "aghanim_scepter",
+            "name": "Aghanim Scepter"
+          }
         ]
       },
       "counters": [
-        {"heroId": "faceless_void", "reason": "хроносфера перекрывает ульт"},
-        {"heroId": "slardar", "reason": "оглушает до прыжка"},
-        {"heroId": "shadow_demon", "reason": "дизрапт"}
+        {
+          "heroId": "faceless_void",
+          "reason": "хроносфера перекрывает ульт"
+        },
+        {
+          "heroId": "slardar",
+          "reason": "оглушает до прыжка"
+        },
+        {
+          "heroId": "shadow_demon",
+          "reason": "дизрапт"
+        }
       ],
       "counterItems": [],
       "allies": []
@@ -333,7 +743,9 @@
       "nameRu": "Doom",
       "attr": "str",
       "attackType": "melee",
-      "positions": [3],
+      "positions": [
+        3
+      ],
       "tags": [],
       "summary": "",
       "abilities": [],
@@ -341,33 +753,84 @@
       "skillBuild": [],
       "items": {
         "starting": [
-          {"id": "tango", "name": "tango"},
-          {"id": "gauntles_of_strenght", "name": "gauntles of strenght"},
-          {"id": "circlet", "name": "circlet"},
-          {"id": "quelling_blade", "name": "quelling blade"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"}
+          {
+            "id": "tango",
+            "name": "tango"
+          },
+          {
+            "id": "gauntles_of_strenght",
+            "name": "gauntles of strenght"
+          },
+          {
+            "id": "circlet",
+            "name": "circlet"
+          },
+          {
+            "id": "quelling_blade",
+            "name": "quelling blade"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          }
         ],
         "early": [
-          {"id": "phase_boots", "name": "phase boots"},
-          {"id": "magic_wand", "name": "magic wand"},
-          {"id": "vanguard", "name": "vanguard"}
+          {
+            "id": "phase_boots",
+            "name": "phase boots"
+          },
+          {
+            "id": "magic_wand",
+            "name": "magic wand"
+          },
+          {
+            "id": "vanguard",
+            "name": "vanguard"
+          }
         ],
         "mid": [
-          {"id": "blink_dagger", "name": "blink dagger"}
+          {
+            "id": "blink_dagger",
+            "name": "blink dagger"
+          }
         ],
         "late": [],
         "situational": [
-          {"id": "aghanim_shard", "name": "aghanim shard"},
-          {"id": "drum_of_endurance", "name": "drum of endurance"},
-          {"id": "black_king_bar", "name": "Black King Bar"},
-          {"id": "aghanim_scepter", "name": "Aghanim Scepter"}
+          {
+            "id": "aghanim_shard",
+            "name": "aghanim shard"
+          },
+          {
+            "id": "drum_of_endurance",
+            "name": "drum of endurance"
+          },
+          {
+            "id": "black_king_bar",
+            "name": "Black King Bar"
+          },
+          {
+            "id": "aghanim_scepter",
+            "name": "Aghanim Scepter"
+          }
         ]
       },
       "counters": [
-        {"heroId": "oracle", "reason": "снимает дум"},
-        {"heroId": "abaddon", "reason": "щит убирает дум"},
-        {"heroId": "lion", "reason": "мана‑дрейн"}
+        {
+          "heroId": "oracle",
+          "reason": "снимает дум"
+        },
+        {
+          "heroId": "abaddon",
+          "reason": "щит убирает дум"
+        },
+        {
+          "heroId": "lion",
+          "reason": "мана‑дрейн"
+        }
       ],
       "counterItems": [],
       "allies": []
@@ -378,7 +841,10 @@
       "nameRu": "Dragon Knight",
       "attr": "str",
       "attackType": "melee",
-      "positions": [1, 3],
+      "positions": [
+        1,
+        3
+      ],
       "tags": [],
       "summary": "",
       "abilities": [],
@@ -386,34 +852,88 @@
       "skillBuild": [],
       "items": {
         "starting": [
-          {"id": "tango", "name": "tango"},
-          {"id": "gauntles_of_strenght", "name": "gauntles of strenght"},
-          {"id": "circlet", "name": "circlet"},
-          {"id": "quelling_blade", "name": "quelling blade"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"}
+          {
+            "id": "tango",
+            "name": "tango"
+          },
+          {
+            "id": "gauntles_of_strenght",
+            "name": "gauntles of strenght"
+          },
+          {
+            "id": "circlet",
+            "name": "circlet"
+          },
+          {
+            "id": "quelling_blade",
+            "name": "quelling blade"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          }
         ],
         "early": [
-          {"id": "power_treads", "name": "power treads"},
-          {"id": "armlet_of_mobirgan", "name": "armlet of mobirgan"},
-          {"id": "magic_wand", "name": "magic wand"}
+          {
+            "id": "power_treads",
+            "name": "power treads"
+          },
+          {
+            "id": "armlet_of_mobirgan",
+            "name": "armlet of mobirgan"
+          },
+          {
+            "id": "magic_wand",
+            "name": "magic wand"
+          }
         ],
         "mid": [
-          {"id": "dragon_lance", "name": "dragon lance"},
-          {"id": "sange", "name": "sange"}
+          {
+            "id": "dragon_lance",
+            "name": "dragon lance"
+          },
+          {
+            "id": "sange",
+            "name": "sange"
+          }
         ],
         "late": [],
         "situational": [
-          {"id": "blink_dagger", "name": "blink dagger"},
-          {"id": "aghanim_shard", "name": "aghanim shard"},
-          {"id": "black_king_bar", "name": "Black King Bar"},
-          {"id": "aghanim_scepter", "name": "Aghanim Scepter"}
+          {
+            "id": "blink_dagger",
+            "name": "blink dagger"
+          },
+          {
+            "id": "aghanim_shard",
+            "name": "aghanim shard"
+          },
+          {
+            "id": "black_king_bar",
+            "name": "Black King Bar"
+          },
+          {
+            "id": "aghanim_scepter",
+            "name": "Aghanim Scepter"
+          }
         ]
       },
       "counters": [
-        {"heroId": "necrophos", "reason": "прожигает танка"},
-        {"heroId": "lifestealer", "reason": "режет % здоровья"},
-        {"heroId": "viper", "reason": "ломает пассивки"}
+        {
+          "heroId": "necrophos",
+          "reason": "прожигает танка"
+        },
+        {
+          "heroId": "lifestealer",
+          "reason": "режет % здоровья"
+        },
+        {
+          "heroId": "viper",
+          "reason": "ломает пассивки"
+        }
       ],
       "counterItems": [],
       "allies": []
@@ -424,7 +944,9 @@
       "nameRu": "Earth Spirit",
       "attr": "str",
       "attackType": "melee",
-      "positions": [2],
+      "positions": [
+        2
+      ],
       "tags": [],
       "summary": "",
       "abilities": [],
@@ -432,34 +954,88 @@
       "skillBuild": [],
       "items": {
         "starting": [
-          {"id": "tango", "name": "tango"},
-          {"id": "gauntles_of_strenght", "name": "gauntles of strenght"},
-          {"id": "circlet", "name": "circlet"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"}
+          {
+            "id": "tango",
+            "name": "tango"
+          },
+          {
+            "id": "gauntles_of_strenght",
+            "name": "gauntles of strenght"
+          },
+          {
+            "id": "circlet",
+            "name": "circlet"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          }
         ],
         "early": [
-          {"id": "power_treads", "name": "power treads"},
-          {"id": "magic_wand", "name": "magic wand"},
-          {"id": "veil_of_discord", "name": "veil of discord"}
+          {
+            "id": "power_treads",
+            "name": "power treads"
+          },
+          {
+            "id": "magic_wand",
+            "name": "magic wand"
+          },
+          {
+            "id": "veil_of_discord",
+            "name": "veil of discord"
+          }
         ],
         "mid": [
-          {"id": "blink_dagger", "name": "blink dagger"},
-          {"id": "aghanim_shard", "name": "aghanim shard"}
+          {
+            "id": "blink_dagger",
+            "name": "blink dagger"
+          },
+          {
+            "id": "aghanim_shard",
+            "name": "aghanim shard"
+          }
         ],
         "late": [],
         "situational": [
-          {"id": "witch_blade", "name": "witch blade"},
-          {"id": "eul", "name": "eul"},
-          {"id": "black_king_bar", "name": "Black King Bar"},
-          {"id": "aghanim_scepter", "name": "Aghanim Scepter"}
+          {
+            "id": "witch_blade",
+            "name": "witch blade"
+          },
+          {
+            "id": "eul",
+            "name": "eul"
+          },
+          {
+            "id": "black_king_bar",
+            "name": "Black King Bar"
+          },
+          {
+            "id": "aghanim_scepter",
+            "name": "Aghanim Scepter"
+          }
         ]
       },
       "counters": [
-        {"heroId": "silencer", "reason": "глобала на комбо"},
-        {"heroId": "pudge", "reason": "рюк прерывает ролл"},
-        {"heroId": "shadow_demon", "reason": "диспэл"}
+        {
+          "heroId": "silencer",
+          "reason": "глобала на комбо"
+        },
+        {
+          "heroId": "pudge",
+          "reason": "рюк прерывает ролл"
+        },
+        {
+          "heroId": "shadow_demon",
+          "reason": "диспэл"
+        }
       ],
       "counterItems": [],
       "allies": []
@@ -470,7 +1046,12 @@
       "nameRu": "Earthshaker",
       "attr": "str",
       "attackType": "melee",
-      "positions": [2, 3, 4, 5],
+      "positions": [
+        2,
+        3,
+        4,
+        5
+      ],
       "tags": [],
       "summary": "",
       "abilities": [],
@@ -478,32 +1059,80 @@
       "skillBuild": [],
       "items": {
         "starting": [
-          {"id": "tango", "name": "tango"},
-          {"id": "gauntles_of_strenght", "name": "gauntles of strenght"},
-          {"id": "circlet", "name": "circlet"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"}
+          {
+            "id": "tango",
+            "name": "tango"
+          },
+          {
+            "id": "gauntles_of_strenght",
+            "name": "gauntles of strenght"
+          },
+          {
+            "id": "circlet",
+            "name": "circlet"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          }
         ],
         "early": [
-          {"id": "arcane_boots", "name": "arcane boots"},
-          {"id": "magic_wand", "name": "magic wand"}
+          {
+            "id": "arcane_boots",
+            "name": "arcane boots"
+          },
+          {
+            "id": "magic_wand",
+            "name": "magic wand"
+          }
         ],
         "mid": [
-          {"id": "blink_dagger", "name": "blink dagger"}
+          {
+            "id": "blink_dagger",
+            "name": "blink dagger"
+          }
         ],
         "late": [],
         "situational": [
-          {"id": "aghanim_shard", "name": "aghanim shard"},
-          {"id": "force_staff", "name": "force staff"},
-          {"id": "black_king_bar", "name": "Black King Bar"},
-          {"id": "aghanim_scepter", "name": "Aghanim Scepter"}
+          {
+            "id": "aghanim_shard",
+            "name": "aghanim shard"
+          },
+          {
+            "id": "force_staff",
+            "name": "force staff"
+          },
+          {
+            "id": "black_king_bar",
+            "name": "Black King Bar"
+          },
+          {
+            "id": "aghanim_scepter",
+            "name": "Aghanim Scepter"
+          }
         ]
       },
       "counters": [
-        {"heroId": "lifestealer", "reason": "рейдж против станов"},
-        {"heroId": "juggernaut", "reason": "спин против ульты"},
-        {"heroId": "silencer", "reason": "не даёт кастовать"}
+        {
+          "heroId": "lifestealer",
+          "reason": "рейдж против станов"
+        },
+        {
+          "heroId": "juggernaut",
+          "reason": "спин против ульты"
+        },
+        {
+          "heroId": "silencer",
+          "reason": "не даёт кастовать"
+        }
       ],
       "counterItems": [],
       "allies": []
@@ -514,7 +1143,11 @@
       "nameRu": "Elder Titan",
       "attr": "str",
       "attackType": "melee",
-      "positions": [3, 4, 5],
+      "positions": [
+        3,
+        4,
+        5
+      ],
       "tags": [],
       "summary": "",
       "abilities": [],
@@ -522,34 +1155,88 @@
       "skillBuild": [],
       "items": {
         "starting": [
-          {"id": "tango", "name": "tango"},
-          {"id": "gauntles_of_strenght", "name": "gauntles of strenght"},
-          {"id": "circlet", "name": "circlet"},
-          {"id": "quelling_blade", "name": "quelling blade"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"}
+          {
+            "id": "tango",
+            "name": "tango"
+          },
+          {
+            "id": "gauntles_of_strenght",
+            "name": "gauntles of strenght"
+          },
+          {
+            "id": "circlet",
+            "name": "circlet"
+          },
+          {
+            "id": "quelling_blade",
+            "name": "quelling blade"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          }
         ],
         "early": [
-          {"id": "phase_boots", "name": "phase boots"},
-          {"id": "magic_wand", "name": "magic wand"},
-          {"id": "vladimir_offering", "name": "vladimir offering"}
+          {
+            "id": "phase_boots",
+            "name": "phase boots"
+          },
+          {
+            "id": "magic_wand",
+            "name": "magic wand"
+          },
+          {
+            "id": "vladimir_offering",
+            "name": "vladimir offering"
+          }
         ],
         "mid": [
-          {"id": "blink_dagger", "name": "blink dagger"},
-          {"id": "drum_of_endurance", "name": "drum of endurance"}
+          {
+            "id": "blink_dagger",
+            "name": "blink dagger"
+          },
+          {
+            "id": "drum_of_endurance",
+            "name": "drum of endurance"
+          }
         ],
         "late": [],
         "situational": [
-          {"id": "aghanim_shard", "name": "aghanim shard"},
-          {"id": "force_staff", "name": "force staff"},
-          {"id": "black_king_bar", "name": "Black King Bar"},
-          {"id": "aghanim_scepter", "name": "Aghanim Scepter"}
+          {
+            "id": "aghanim_shard",
+            "name": "aghanim shard"
+          },
+          {
+            "id": "force_staff",
+            "name": "force staff"
+          },
+          {
+            "id": "black_king_bar",
+            "name": "Black King Bar"
+          },
+          {
+            "id": "aghanim_scepter",
+            "name": "Aghanim Scepter"
+          }
         ]
       },
       "counters": [
-        {"heroId": "lifestealer", "reason": "рейдж против комбо"},
-        {"heroId": "juggernaut", "reason": "спин уклоняется от ульты"},
-        {"heroId": "shadow_demon", "reason": "дизрапт спасает от станов"}
+        {
+          "heroId": "lifestealer",
+          "reason": "рейдж против комбо"
+        },
+        {
+          "heroId": "juggernaut",
+          "reason": "спин уклоняется от ульты"
+        },
+        {
+          "heroId": "shadow_demon",
+          "reason": "дизрапт спасает от станов"
+        }
       ],
       "counterItems": [],
       "allies": []
@@ -560,7 +1247,9 @@
       "nameRu": "Huskar",
       "attr": "str",
       "attackType": "ranged",
-      "positions": [2],
+      "positions": [
+        2
+      ],
       "tags": [],
       "summary": "",
       "abilities": [],
@@ -568,33 +1257,84 @@
       "skillBuild": [],
       "items": {
         "starting": [
-          {"id": "tango", "name": "tango"},
-          {"id": "gauntles_of_strenght", "name": "gauntles of strenght"},
-          {"id": "circlet", "name": "circlet"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"}
+          {
+            "id": "tango",
+            "name": "tango"
+          },
+          {
+            "id": "gauntles_of_strenght",
+            "name": "gauntles of strenght"
+          },
+          {
+            "id": "circlet",
+            "name": "circlet"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          }
         ],
         "early": [
-          {"id": "power_treads", "name": "power treads"},
-          {"id": "armlet_of_mobirgan", "name": "armlet of mobirgan"},
-          {"id": "magic_wand", "name": "magic wand"}
+          {
+            "id": "power_treads",
+            "name": "power treads"
+          },
+          {
+            "id": "armlet_of_mobirgan",
+            "name": "armlet of mobirgan"
+          },
+          {
+            "id": "magic_wand",
+            "name": "magic wand"
+          }
         ],
         "mid": [
-          {"id": "blade_mail", "name": "blade mail"},
-          {"id": "aghanim_shard", "name": "aghanim shard"}
+          {
+            "id": "blade_mail",
+            "name": "blade mail"
+          },
+          {
+            "id": "aghanim_shard",
+            "name": "aghanim shard"
+          }
         ],
         "late": [],
         "situational": [
-          {"id": "vanguard", "name": "vanguard"},
-          {"id": "black_king_bar", "name": "Black King Bar"},
-          {"id": "aghanim_scepter", "name": "Aghanim Scepter"}
+          {
+            "id": "vanguard",
+            "name": "vanguard"
+          },
+          {
+            "id": "black_king_bar",
+            "name": "Black King Bar"
+          },
+          {
+            "id": "aghanim_scepter",
+            "name": "Aghanim Scepter"
+          }
         ]
       },
       "counters": [
-        {"heroId": "viper", "reason": "ломает пассивку"},
-        {"heroId": "necrophos", "reason": "ульт добивает"},
-        {"heroId": "ancient_apparition", "reason": "ульт запрещает лечение"}
+        {
+          "heroId": "viper",
+          "reason": "ломает пассивку"
+        },
+        {
+          "heroId": "necrophos",
+          "reason": "ульт добивает"
+        },
+        {
+          "heroId": "ancient_apparition",
+          "reason": "ульт запрещает лечение"
+        }
       ],
       "counterItems": [],
       "allies": []
@@ -605,7 +1345,10 @@
       "nameRu": "Kunkka",
       "attr": "str",
       "attackType": "melee",
-      "positions": [2, 3],
+      "positions": [
+        2,
+        3
+      ],
       "tags": [],
       "summary": "",
       "abilities": [],
@@ -613,34 +1356,88 @@
       "skillBuild": [],
       "items": {
         "starting": [
-          {"id": "tango", "name": "tango"},
-          {"id": "gauntles_of_strenght", "name": "gauntles of strenght"},
-          {"id": "circlet", "name": "circlet"},
-          {"id": "quelling_blade", "name": "quelling blade"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"}
+          {
+            "id": "tango",
+            "name": "tango"
+          },
+          {
+            "id": "gauntles_of_strenght",
+            "name": "gauntles of strenght"
+          },
+          {
+            "id": "circlet",
+            "name": "circlet"
+          },
+          {
+            "id": "quelling_blade",
+            "name": "quelling blade"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          }
         ],
         "early": [
-          {"id": "phase_boots", "name": "phase boots"},
-          {"id": "magic_wand", "name": "magic wand"},
-          {"id": "bracer", "name": "bracer"}
+          {
+            "id": "phase_boots",
+            "name": "phase boots"
+          },
+          {
+            "id": "magic_wand",
+            "name": "magic wand"
+          },
+          {
+            "id": "bracer",
+            "name": "bracer"
+          }
         ],
         "mid": [
-          {"id": "blink_dagger", "name": "blink dagger"},
-          {"id": "armlet_of_mobirgan", "name": "armlet of mobirgan"}
+          {
+            "id": "blink_dagger",
+            "name": "blink dagger"
+          },
+          {
+            "id": "armlet_of_mobirgan",
+            "name": "armlet of mobirgan"
+          }
         ],
         "late": [],
         "situational": [
-          {"id": "aghanim_shard", "name": "aghanim shard"},
-          {"id": "veil_of_discord", "name": "veil of discord"},
-          {"id": "black_king_bar", "name": "Black King Bar"},
-          {"id": "aghanim_scepter", "name": "Aghanim Scepter"}
+          {
+            "id": "aghanim_shard",
+            "name": "aghanim shard"
+          },
+          {
+            "id": "veil_of_discord",
+            "name": "veil of discord"
+          },
+          {
+            "id": "black_king_bar",
+            "name": "Black King Bar"
+          },
+          {
+            "id": "aghanim_scepter",
+            "name": "Aghanim Scepter"
+          }
         ]
       },
       "counters": [
-        {"heroId": "silencer", "reason": "глобала до комбо"},
-        {"heroId": "shadow_demon", "reason": "сейв против X‑марк"},
-        {"heroId": "rubick", "reason": "кража тюльпана"}
+        {
+          "heroId": "silencer",
+          "reason": "глобала до комбо"
+        },
+        {
+          "heroId": "shadow_demon",
+          "reason": "сейв против X‑марк"
+        },
+        {
+          "heroId": "rubick",
+          "reason": "кража тюльпана"
+        }
       ],
       "counterItems": [],
       "allies": []
@@ -651,7 +1448,9 @@
       "nameRu": "Legion Commander",
       "attr": "str",
       "attackType": "melee",
-      "positions": [3],
+      "positions": [
+        3
+      ],
       "tags": [],
       "summary": "",
       "abilities": [],
@@ -659,34 +1458,88 @@
       "skillBuild": [],
       "items": {
         "starting": [
-          {"id": "tango", "name": "tango"},
-          {"id": "gauntles_of_strenght", "name": "gauntles of strenght"},
-          {"id": "circlet", "name": "circlet"},
-          {"id": "quelling_blade", "name": "quelling blade"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"}
+          {
+            "id": "tango",
+            "name": "tango"
+          },
+          {
+            "id": "gauntles_of_strenght",
+            "name": "gauntles of strenght"
+          },
+          {
+            "id": "circlet",
+            "name": "circlet"
+          },
+          {
+            "id": "quelling_blade",
+            "name": "quelling blade"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          }
         ],
         "early": [
-          {"id": "phase_boots", "name": "phase boots"},
-          {"id": "vanguard", "name": "vanguard"},
-          {"id": "magic_wand", "name": "magic wand"}
+          {
+            "id": "phase_boots",
+            "name": "phase boots"
+          },
+          {
+            "id": "vanguard",
+            "name": "vanguard"
+          },
+          {
+            "id": "magic_wand",
+            "name": "magic wand"
+          }
         ],
         "mid": [
-          {"id": "blink_dagger", "name": "blink dagger"},
-          {"id": "blade_mail", "name": "blade mail"}
+          {
+            "id": "blink_dagger",
+            "name": "blink dagger"
+          },
+          {
+            "id": "blade_mail",
+            "name": "blade mail"
+          }
         ],
         "late": [],
         "situational": [
-          {"id": "aghanim_shard", "name": "aghanim shard"},
-          {"id": "armlet_of_mobirgan", "name": "armlet of mobirgan"},
-          {"id": "black_king_bar", "name": "Black King Bar"},
-          {"id": "aghanim_scepter", "name": "Aghanim Scepter"}
+          {
+            "id": "aghanim_shard",
+            "name": "aghanim shard"
+          },
+          {
+            "id": "armlet_of_mobirgan",
+            "name": "armlet of mobirgan"
+          },
+          {
+            "id": "black_king_bar",
+            "name": "Black King Bar"
+          },
+          {
+            "id": "aghanim_scepter",
+            "name": "Aghanim Scepter"
+          }
         ]
       },
       "counters": [
-        {"heroId": "oracle", "reason": "ульт снимает дуэль"},
-        {"heroId": "shadow_demon", "reason": "диспел дуэли"},
-        {"heroId": "rubick", "reason": "кража дуэли"}
+        {
+          "heroId": "oracle",
+          "reason": "ульт снимает дуэль"
+        },
+        {
+          "heroId": "shadow_demon",
+          "reason": "диспел дуэли"
+        },
+        {
+          "heroId": "rubick",
+          "reason": "кража дуэли"
+        }
       ],
       "counterItems": [],
       "allies": []
@@ -697,7 +1550,9 @@
       "nameRu": "Lifestealer",
       "attr": "str",
       "attackType": "melee",
-      "positions": [1],
+      "positions": [
+        1
+      ],
       "tags": [],
       "summary": "",
       "abilities": [],
@@ -705,34 +1560,88 @@
       "skillBuild": [],
       "items": {
         "starting": [
-          {"id": "tango", "name": "tango"},
-          {"id": "gauntles_of_strenght", "name": "gauntles of strenght"},
-          {"id": "circlet", "name": "circlet"},
-          {"id": "quelling_blade", "name": "quelling blade"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"}
+          {
+            "id": "tango",
+            "name": "tango"
+          },
+          {
+            "id": "gauntles_of_strenght",
+            "name": "gauntles of strenght"
+          },
+          {
+            "id": "circlet",
+            "name": "circlet"
+          },
+          {
+            "id": "quelling_blade",
+            "name": "quelling blade"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          }
         ],
         "early": [
-          {"id": "phase_boots", "name": "phase boots"},
-          {"id": "armlet_of_mobirgan", "name": "armlet of mobirgan"},
-          {"id": "magic_wand", "name": "magic wand"}
+          {
+            "id": "phase_boots",
+            "name": "phase boots"
+          },
+          {
+            "id": "armlet_of_mobirgan",
+            "name": "armlet of mobirgan"
+          },
+          {
+            "id": "magic_wand",
+            "name": "magic wand"
+          }
         ],
         "mid": [
-          {"id": "maelstorm", "name": "maelstorm"},
-          {"id": "sange", "name": "sange"}
+          {
+            "id": "maelstorm",
+            "name": "maelstorm"
+          },
+          {
+            "id": "sange",
+            "name": "sange"
+          }
         ],
         "late": [],
         "situational": [
-          {"id": "yasha", "name": "yasha"},
-          {"id": "aghanim_shard", "name": "aghanim shard"},
-          {"id": "black_king_bar", "name": "Black King Bar"},
-          {"id": "aghanim_scepter", "name": "Aghanim Scepter"}
+          {
+            "id": "yasha",
+            "name": "yasha"
+          },
+          {
+            "id": "aghanim_shard",
+            "name": "aghanim shard"
+          },
+          {
+            "id": "black_king_bar",
+            "name": "Black King Bar"
+          },
+          {
+            "id": "aghanim_scepter",
+            "name": "Aghanim Scepter"
+          }
         ]
       },
       "counters": [
-        {"heroId": "faceless_void", "reason": "хроносфера"},
-        {"heroId": "viper", "reason": "снижает скорость атаки"},
-        {"heroId": "ursa", "reason": "взрывной урон"}
+        {
+          "heroId": "faceless_void",
+          "reason": "хроносфера"
+        },
+        {
+          "heroId": "viper",
+          "reason": "снижает скорость атаки"
+        },
+        {
+          "heroId": "ursa",
+          "reason": "взрывной урон"
+        }
       ],
       "counterItems": [],
       "allies": []
@@ -743,7 +1652,10 @@
       "nameRu": "Lycan",
       "attr": "str",
       "attackType": "melee",
-      "positions": [1, 3],
+      "positions": [
+        1,
+        3
+      ],
       "tags": [],
       "summary": "",
       "abilities": [],
@@ -751,33 +1663,84 @@
       "skillBuild": [],
       "items": {
         "starting": [
-          {"id": "tango", "name": "tango"},
-          {"id": "gauntles_of_strenght", "name": "gauntles of strenght"},
-          {"id": "circlet", "name": "circlet"},
-          {"id": "quelling_blade", "name": "quelling blade"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"}
+          {
+            "id": "tango",
+            "name": "tango"
+          },
+          {
+            "id": "gauntles_of_strenght",
+            "name": "gauntles of strenght"
+          },
+          {
+            "id": "circlet",
+            "name": "circlet"
+          },
+          {
+            "id": "quelling_blade",
+            "name": "quelling blade"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          }
         ],
         "early": [
-          {"id": "phase_boots", "name": "phase boots"},
-          {"id": "vladimir_offering", "name": "vladimir offering"},
-          {"id": "magic_wand", "name": "magic wand"}
+          {
+            "id": "phase_boots",
+            "name": "phase boots"
+          },
+          {
+            "id": "vladimir_offering",
+            "name": "vladimir offering"
+          },
+          {
+            "id": "magic_wand",
+            "name": "magic wand"
+          }
         ],
         "mid": [
-          {"id": "armlet_of_mobirgan", "name": "armlet of mobirgan"},
-          {"id": "aghanim_shard", "name": "aghanim shard"}
+          {
+            "id": "armlet_of_mobirgan",
+            "name": "armlet of mobirgan"
+          },
+          {
+            "id": "aghanim_shard",
+            "name": "aghanim shard"
+          }
         ],
         "late": [],
         "situational": [
-          {"id": "blink_dagger", "name": "blink dagger"},
-          {"id": "black_king_bar", "name": "Black King Bar"},
-          {"id": "aghanim_scepter", "name": "Aghanim Scepter"}
+          {
+            "id": "blink_dagger",
+            "name": "blink dagger"
+          },
+          {
+            "id": "black_king_bar",
+            "name": "Black King Bar"
+          },
+          {
+            "id": "aghanim_scepter",
+            "name": "Aghanim Scepter"
+          }
         ]
       },
       "counters": [
-        {"heroId": "sven", "reason": "ваншотит волков"},
-        {"heroId": "tidehunter", "reason": "урон по области"},
-        {"heroId": "shadow_demon", "reason": "диспел ульты"}
+        {
+          "heroId": "sven",
+          "reason": "ваншотит волков"
+        },
+        {
+          "heroId": "tidehunter",
+          "reason": "урон по области"
+        },
+        {
+          "heroId": "shadow_demon",
+          "reason": "диспел ульты"
+        }
       ],
       "counterItems": [],
       "allies": []
@@ -788,7 +1751,9 @@
       "nameRu": "Mars",
       "attr": "str",
       "attackType": "melee",
-      "positions": [3],
+      "positions": [
+        3
+      ],
       "tags": [],
       "summary": "",
       "abilities": [],
@@ -796,34 +1761,88 @@
       "skillBuild": [],
       "items": {
         "starting": [
-          {"id": "tango", "name": "tango"},
-          {"id": "gauntles_of_strenght", "name": "gauntles of strenght"},
-          {"id": "circlet", "name": "circlet"},
-          {"id": "quelling_blade", "name": "quelling blade"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"}
+          {
+            "id": "tango",
+            "name": "tango"
+          },
+          {
+            "id": "gauntles_of_strenght",
+            "name": "gauntles of strenght"
+          },
+          {
+            "id": "circlet",
+            "name": "circlet"
+          },
+          {
+            "id": "quelling_blade",
+            "name": "quelling blade"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          }
         ],
         "early": [
-          {"id": "phase_boots", "name": "phase boots"},
-          {"id": "magic_wand", "name": "magic wand"},
-          {"id": "vanguard", "name": "vanguard"}
+          {
+            "id": "phase_boots",
+            "name": "phase boots"
+          },
+          {
+            "id": "magic_wand",
+            "name": "magic wand"
+          },
+          {
+            "id": "vanguard",
+            "name": "vanguard"
+          }
         ],
         "mid": [
-          {"id": "blink_dagger", "name": "blink dagger"},
-          {"id": "blade_mail", "name": "blade mail"}
+          {
+            "id": "blink_dagger",
+            "name": "blink dagger"
+          },
+          {
+            "id": "blade_mail",
+            "name": "blade mail"
+          }
         ],
         "late": [],
         "situational": [
-          {"id": "aghanim_shard", "name": "aghanim shard"},
-          {"id": "force_staff", "name": "force staff"},
-          {"id": "black_king_bar", "name": "Black King Bar"},
-          {"id": "aghanim_scepter", "name": "Aghanim Scepter"}
+          {
+            "id": "aghanim_shard",
+            "name": "aghanim shard"
+          },
+          {
+            "id": "force_staff",
+            "name": "force staff"
+          },
+          {
+            "id": "black_king_bar",
+            "name": "Black King Bar"
+          },
+          {
+            "id": "aghanim_scepter",
+            "name": "Aghanim Scepter"
+          }
         ]
       },
       "counters": [
-        {"heroId": "pudge", "reason": "рюк через арену"},
-        {"heroId": "rubick", "reason": "кража арены"},
-        {"heroId": "silencer", "reason": "глобала до прыжка"}
+        {
+          "heroId": "pudge",
+          "reason": "рюк через арену"
+        },
+        {
+          "heroId": "rubick",
+          "reason": "кража арены"
+        },
+        {
+          "heroId": "silencer",
+          "reason": "глобала до прыжка"
+        }
       ],
       "counterItems": [],
       "allies": []
@@ -834,7 +1853,10 @@
       "nameRu": "Night Stalker",
       "attr": "str",
       "attackType": "melee",
-      "positions": [3, 4],
+      "positions": [
+        3,
+        4
+      ],
       "tags": [],
       "summary": "",
       "abilities": [],
@@ -842,33 +1864,84 @@
       "skillBuild": [],
       "items": {
         "starting": [
-          {"id": "tango", "name": "tango"},
-          {"id": "gauntles_of_strenght", "name": "gauntles of strenght"},
-          {"id": "circlet", "name": "circlet"},
-          {"id": "quelling_blade", "name": "quelling blade"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"}
+          {
+            "id": "tango",
+            "name": "tango"
+          },
+          {
+            "id": "gauntles_of_strenght",
+            "name": "gauntles of strenght"
+          },
+          {
+            "id": "circlet",
+            "name": "circlet"
+          },
+          {
+            "id": "quelling_blade",
+            "name": "quelling blade"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          }
         ],
         "early": [
-          {"id": "phase_boots", "name": "phase boots"},
-          {"id": "magic_wand", "name": "magic wand"},
-          {"id": "vanguard", "name": "vanguard"}
+          {
+            "id": "phase_boots",
+            "name": "phase boots"
+          },
+          {
+            "id": "magic_wand",
+            "name": "magic wand"
+          },
+          {
+            "id": "vanguard",
+            "name": "vanguard"
+          }
         ],
         "mid": [
-          {"id": "blink_dagger", "name": "blink dagger"},
-          {"id": "aghanim_shard", "name": "aghanim shard"}
+          {
+            "id": "blink_dagger",
+            "name": "blink dagger"
+          },
+          {
+            "id": "aghanim_shard",
+            "name": "aghanim shard"
+          }
         ],
         "late": [],
         "situational": [
-          {"id": "blade_mail", "name": "blade mail"},
-          {"id": "black_king_bar", "name": "Black King Bar"},
-          {"id": "aghanim_scepter", "name": "Aghanim Scepter"}
+          {
+            "id": "blade_mail",
+            "name": "blade mail"
+          },
+          {
+            "id": "black_king_bar",
+            "name": "Black King Bar"
+          },
+          {
+            "id": "aghanim_scepter",
+            "name": "Aghanim Scepter"
+          }
         ]
       },
       "counters": [
-        {"heroId": "bloodseeker", "reason": "разрывает в молчании"},
-        {"heroId": "sven", "reason": "броня против урона"},
-        {"heroId": "shadow_demon", "reason": "диспел"}
+        {
+          "heroId": "bloodseeker",
+          "reason": "разрывает в молчании"
+        },
+        {
+          "heroId": "sven",
+          "reason": "броня против урона"
+        },
+        {
+          "heroId": "shadow_demon",
+          "reason": "диспел"
+        }
       ],
       "counterItems": [],
       "allies": []
@@ -879,7 +1952,11 @@
       "nameRu": "Omniknight",
       "attr": "str",
       "attackType": "melee",
-      "positions": [3, 4, 5],
+      "positions": [
+        3,
+        4,
+        5
+      ],
       "tags": [],
       "summary": "",
       "abilities": [],
@@ -887,34 +1964,88 @@
       "skillBuild": [],
       "items": {
         "starting": [
-          {"id": "tango", "name": "tango"},
-          {"id": "gauntles_of_strenght", "name": "gauntles of strenght"},
-          {"id": "circlet", "name": "circlet"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"}
+          {
+            "id": "tango",
+            "name": "tango"
+          },
+          {
+            "id": "gauntles_of_strenght",
+            "name": "gauntles of strenght"
+          },
+          {
+            "id": "circlet",
+            "name": "circlet"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          }
         ],
         "early": [
-          {"id": "arcane_boots", "name": "arcane boots"},
-          {"id": "magic_wand", "name": "magic wand"},
-          {"id": "vladimir_offering", "name": "vladimir offering"}
+          {
+            "id": "arcane_boots",
+            "name": "arcane boots"
+          },
+          {
+            "id": "magic_wand",
+            "name": "magic wand"
+          },
+          {
+            "id": "vladimir_offering",
+            "name": "vladimir offering"
+          }
         ],
         "mid": [
-          {"id": "glimer_cape", "name": "glimer cape"},
-          {"id": "force_staff", "name": "force staff"}
+          {
+            "id": "glimer_cape",
+            "name": "glimer cape"
+          },
+          {
+            "id": "force_staff",
+            "name": "force staff"
+          }
         ],
         "late": [],
         "situational": [
-          {"id": "aghanim_shard", "name": "aghanim shard"},
-          {"id": "solar_crest", "name": "solar crest"},
-          {"id": "black_king_bar", "name": "Black King Bar"},
-          {"id": "aghanim_scepter", "name": "Aghanim Scepter"}
+          {
+            "id": "aghanim_shard",
+            "name": "aghanim shard"
+          },
+          {
+            "id": "solar_crest",
+            "name": "solar crest"
+          },
+          {
+            "id": "black_king_bar",
+            "name": "Black King Bar"
+          },
+          {
+            "id": "aghanim_scepter",
+            "name": "Aghanim Scepter"
+          }
         ]
       },
       "counters": [
-        {"heroId": "invoker", "reason": "эмп сжигает ману"},
-        {"heroId": "rubick", "reason": "кража ульты"},
-        {"heroId": "shadow_demon", "reason": "развеивает щиты"}
+        {
+          "heroId": "invoker",
+          "reason": "эмп сжигает ману"
+        },
+        {
+          "heroId": "rubick",
+          "reason": "кража ульты"
+        },
+        {
+          "heroId": "shadow_demon",
+          "reason": "развеивает щиты"
+        }
       ],
       "counterItems": [],
       "allies": []
@@ -925,7 +2056,10 @@
       "nameRu": "Phoenix",
       "attr": "str",
       "attackType": "ranged",
-      "positions": [4, 5],
+      "positions": [
+        4,
+        5
+      ],
       "tags": [],
       "summary": "",
       "abilities": [],
@@ -933,34 +2067,88 @@
       "skillBuild": [],
       "items": {
         "starting": [
-          {"id": "tango", "name": "tango"},
-          {"id": "circlet", "name": "circlet"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "gauntles_of_strenght", "name": "gauntles of strenght"}
+          {
+            "id": "tango",
+            "name": "tango"
+          },
+          {
+            "id": "circlet",
+            "name": "circlet"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "gauntles_of_strenght",
+            "name": "gauntles of strenght"
+          }
         ],
         "early": [
-          {"id": "arcane_boots", "name": "arcane boots"},
-          {"id": "veil_of_discord", "name": "veil of discord"},
-          {"id": "magic_wand", "name": "magic wand"}
+          {
+            "id": "arcane_boots",
+            "name": "arcane boots"
+          },
+          {
+            "id": "veil_of_discord",
+            "name": "veil of discord"
+          },
+          {
+            "id": "magic_wand",
+            "name": "magic wand"
+          }
         ],
         "mid": [
-          {"id": "glimer_cape", "name": "glimer cape"},
-          {"id": "aghanim_shard", "name": "aghanim shard"}
+          {
+            "id": "glimer_cape",
+            "name": "glimer cape"
+          },
+          {
+            "id": "aghanim_shard",
+            "name": "aghanim shard"
+          }
         ],
         "late": [],
         "situational": [
-          {"id": "force_staff", "name": "force staff"},
-          {"id": "eul", "name": "eul"},
-          {"id": "black_king_bar", "name": "Black King Bar"},
-          {"id": "aghanim_scepter", "name": "Aghanim Scepter"}
+          {
+            "id": "force_staff",
+            "name": "force staff"
+          },
+          {
+            "id": "eul",
+            "name": "eul"
+          },
+          {
+            "id": "black_king_bar",
+            "name": "Black King Bar"
+          },
+          {
+            "id": "aghanim_scepter",
+            "name": "Aghanim Scepter"
+          }
         ]
       },
       "counters": [
-        {"heroId": "ursa", "reason": "сбивает яйцо"},
-        {"heroId": "sniper", "reason": "сбивает яйцо с дистанции"},
-        {"heroId": "silencer", "reason": "не даёт кастовать"}
+        {
+          "heroId": "ursa",
+          "reason": "сбивает яйцо"
+        },
+        {
+          "heroId": "sniper",
+          "reason": "сбивает яйцо с дистанции"
+        },
+        {
+          "heroId": "silencer",
+          "reason": "не даёт кастовать"
+        }
       ],
       "counterItems": [],
       "allies": []
@@ -971,7 +2159,10 @@
       "nameRu": "Pudge",
       "attr": "str",
       "attackType": "melee",
-      "positions": [3, 4],
+      "positions": [
+        3,
+        4
+      ],
       "tags": [],
       "summary": "",
       "abilities": [],
@@ -979,34 +2170,88 @@
       "skillBuild": [],
       "items": {
         "starting": [
-          {"id": "tango", "name": "tango"},
-          {"id": "gauntles_of_strenght", "name": "gauntles of strenght"},
-          {"id": "circlet", "name": "circlet"},
-          {"id": "quelling_blade", "name": "quelling blade"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"}
+          {
+            "id": "tango",
+            "name": "tango"
+          },
+          {
+            "id": "gauntles_of_strenght",
+            "name": "gauntles of strenght"
+          },
+          {
+            "id": "circlet",
+            "name": "circlet"
+          },
+          {
+            "id": "quelling_blade",
+            "name": "quelling blade"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          }
         ],
         "early": [
-          {"id": "phase_boots", "name": "phase boots"},
-          {"id": "vanguard", "name": "vanguard"},
-          {"id": "magic_wand", "name": "magic wand"}
+          {
+            "id": "phase_boots",
+            "name": "phase boots"
+          },
+          {
+            "id": "vanguard",
+            "name": "vanguard"
+          },
+          {
+            "id": "magic_wand",
+            "name": "magic wand"
+          }
         ],
         "mid": [
-          {"id": "blink_dagger", "name": "blink dagger"},
-          {"id": "aghanim_shard", "name": "aghanim shard"}
+          {
+            "id": "blink_dagger",
+            "name": "blink dagger"
+          },
+          {
+            "id": "aghanim_shard",
+            "name": "aghanim shard"
+          }
         ],
         "late": [],
         "situational": [
-          {"id": "blade_mail", "name": "blade mail"},
-          {"id": "force_staff", "name": "force staff"},
-          {"id": "black_king_bar", "name": "Black King Bar"},
-          {"id": "aghanim_scepter", "name": "Aghanim Scepter"}
+          {
+            "id": "blade_mail",
+            "name": "blade mail"
+          },
+          {
+            "id": "force_staff",
+            "name": "force staff"
+          },
+          {
+            "id": "black_king_bar",
+            "name": "Black King Bar"
+          },
+          {
+            "id": "aghanim_scepter",
+            "name": "Aghanim Scepter"
+          }
         ]
       },
       "counters": [
-        {"heroId": "lifestealer", "reason": "рейдж против станов"},
-        {"heroId": "ursa", "reason": "взрывной урон"},
-        {"heroId": "silencer", "reason": "не даёт кастовать"}
+        {
+          "heroId": "lifestealer",
+          "reason": "рейдж против станов"
+        },
+        {
+          "heroId": "ursa",
+          "reason": "взрывной урон"
+        },
+        {
+          "heroId": "silencer",
+          "reason": "не даёт кастовать"
+        }
       ],
       "counterItems": [],
       "allies": []
@@ -1017,7 +2262,10 @@
       "nameRu": "Pugna",
       "attr": "str",
       "attackType": "ranged",
-      "positions": [4, 5],
+      "positions": [
+        4,
+        5
+      ],
       "tags": [],
       "summary": "",
       "abilities": [],
@@ -1025,34 +2273,88 @@
       "skillBuild": [],
       "items": {
         "starting": [
-          {"id": "tango", "name": "tango"},
-          {"id": "circlet", "name": "circlet"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "gauntles_of_strenght", "name": "gauntles of strenght"}
+          {
+            "id": "tango",
+            "name": "tango"
+          },
+          {
+            "id": "circlet",
+            "name": "circlet"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "gauntles_of_strenght",
+            "name": "gauntles of strenght"
+          }
         ],
         "early": [
-          {"id": "arcane_boots", "name": "arcane boots"},
-          {"id": "magic_wand", "name": "magic wand"},
-          {"id": "aether_lens", "name": "aether lens"}
+          {
+            "id": "arcane_boots",
+            "name": "arcane boots"
+          },
+          {
+            "id": "magic_wand",
+            "name": "magic wand"
+          },
+          {
+            "id": "aether_lens",
+            "name": "aether lens"
+          }
         ],
         "mid": [
-          {"id": "glimer_cape", "name": "glimer cape"},
-          {"id": "force_staff", "name": "force staff"}
+          {
+            "id": "glimer_cape",
+            "name": "glimer cape"
+          },
+          {
+            "id": "force_staff",
+            "name": "force staff"
+          }
         ],
         "late": [],
         "situational": [
-          {"id": "aghanim_shard", "name": "aghanim shard"},
-          {"id": "eul", "name": "eul"},
-          {"id": "black_king_bar", "name": "Black King Bar"},
-          {"id": "aghanim_scepter", "name": "Aghanim Scepter"}
+          {
+            "id": "aghanim_shard",
+            "name": "aghanim shard"
+          },
+          {
+            "id": "eul",
+            "name": "eul"
+          },
+          {
+            "id": "black_king_bar",
+            "name": "Black King Bar"
+          },
+          {
+            "id": "aghanim_scepter",
+            "name": "Aghanim Scepter"
+          }
         ]
       },
       "counters": [
-        {"heroId": "nyx_assassin", "reason": "мана-бёрн"},
-        {"heroId": "bounty_hunter", "reason": "трэкает и снимает"},
-        {"heroId": "rubick", "reason": "кража декрифая"}
+        {
+          "heroId": "nyx_assassin",
+          "reason": "мана-бёрн"
+        },
+        {
+          "heroId": "bounty_hunter",
+          "reason": "трэкает и снимает"
+        },
+        {
+          "heroId": "rubick",
+          "reason": "кража декрифая"
+        }
       ],
       "counterItems": [],
       "allies": []
@@ -1063,7 +2365,10 @@
       "nameRu": "Sand King",
       "attr": "str",
       "attackType": "melee",
-      "positions": [3, 4],
+      "positions": [
+        3,
+        4
+      ],
       "tags": [],
       "summary": "",
       "abilities": [],
@@ -1071,34 +2376,88 @@
       "skillBuild": [],
       "items": {
         "starting": [
-          {"id": "tango", "name": "tango"},
-          {"id": "gauntles_of_strenght", "name": "gauntles of strenght"},
-          {"id": "circlet", "name": "circlet"},
-          {"id": "quelling_blade", "name": "quelling blade"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"}
+          {
+            "id": "tango",
+            "name": "tango"
+          },
+          {
+            "id": "gauntles_of_strenght",
+            "name": "gauntles of strenght"
+          },
+          {
+            "id": "circlet",
+            "name": "circlet"
+          },
+          {
+            "id": "quelling_blade",
+            "name": "quelling blade"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          }
         ],
         "early": [
-          {"id": "arcane_boots", "name": "arcane boots"},
-          {"id": "magic_wand", "name": "magic wand"},
-          {"id": "veil_of_discord", "name": "veil of discord"}
+          {
+            "id": "arcane_boots",
+            "name": "arcane boots"
+          },
+          {
+            "id": "magic_wand",
+            "name": "magic wand"
+          },
+          {
+            "id": "veil_of_discord",
+            "name": "veil of discord"
+          }
         ],
         "mid": [
-          {"id": "blink_dagger", "name": "blink dagger"},
-          {"id": "aghanim_shard", "name": "aghanim shard"}
+          {
+            "id": "blink_dagger",
+            "name": "blink dagger"
+          },
+          {
+            "id": "aghanim_shard",
+            "name": "aghanim shard"
+          }
         ],
         "late": [],
         "situational": [
-          {"id": "force_staff", "name": "force staff"},
-          {"id": "eul", "name": "eul"},
-          {"id": "black_king_bar", "name": "Black King Bar"},
-          {"id": "aghanim_scepter", "name": "Aghanim Scepter"}
+          {
+            "id": "force_staff",
+            "name": "force staff"
+          },
+          {
+            "id": "eul",
+            "name": "eul"
+          },
+          {
+            "id": "black_king_bar",
+            "name": "Black King Bar"
+          },
+          {
+            "id": "aghanim_scepter",
+            "name": "Aghanim Scepter"
+          }
         ]
       },
       "counters": [
-        {"heroId": "lifestealer", "reason": "рейдж против станов"},
-        {"heroId": "silencer", "reason": "не даёт кастовать"},
-        {"heroId": "shadow_demon", "reason": "диспел"}
+        {
+          "heroId": "lifestealer",
+          "reason": "рейдж против станов"
+        },
+        {
+          "heroId": "silencer",
+          "reason": "не даёт кастовать"
+        },
+        {
+          "heroId": "shadow_demon",
+          "reason": "диспел"
+        }
       ],
       "counterItems": [],
       "allies": []
@@ -1109,7 +2468,9 @@
       "nameRu": "Slardar",
       "attr": "str",
       "attackType": "melee",
-      "positions": [3],
+      "positions": [
+        3
+      ],
       "tags": [],
       "summary": "",
       "abilities": [],
@@ -1117,34 +2478,88 @@
       "skillBuild": [],
       "items": {
         "starting": [
-          {"id": "tango", "name": "tango"},
-          {"id": "gauntles_of_strenght", "name": "gauntles of strenght"},
-          {"id": "circlet", "name": "circlet"},
-          {"id": "quelling_blade", "name": "quelling blade"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"}
+          {
+            "id": "tango",
+            "name": "tango"
+          },
+          {
+            "id": "gauntles_of_strenght",
+            "name": "gauntles of strenght"
+          },
+          {
+            "id": "circlet",
+            "name": "circlet"
+          },
+          {
+            "id": "quelling_blade",
+            "name": "quelling blade"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          }
         ],
         "early": [
-          {"id": "phase_boots", "name": "phase boots"},
-          {"id": "magic_wand", "name": "magic wand"},
-          {"id": "vanguard", "name": "vanguard"}
+          {
+            "id": "phase_boots",
+            "name": "phase boots"
+          },
+          {
+            "id": "magic_wand",
+            "name": "magic wand"
+          },
+          {
+            "id": "vanguard",
+            "name": "vanguard"
+          }
         ],
         "mid": [
-          {"id": "blink_dagger", "name": "blink dagger"},
-          {"id": "aghanim_shard", "name": "aghanim shard"}
+          {
+            "id": "blink_dagger",
+            "name": "blink dagger"
+          },
+          {
+            "id": "aghanim_shard",
+            "name": "aghanim shard"
+          }
         ],
         "late": [],
         "situational": [
-          {"id": "blade_mail", "name": "blade mail"},
-          {"id": "force_staff", "name": "force staff"},
-          {"id": "black_king_bar", "name": "Black King Bar"},
-          {"id": "aghanim_scepter", "name": "Aghanim Scepter"}
+          {
+            "id": "blade_mail",
+            "name": "blade mail"
+          },
+          {
+            "id": "force_staff",
+            "name": "force staff"
+          },
+          {
+            "id": "black_king_bar",
+            "name": "Black King Bar"
+          },
+          {
+            "id": "aghanim_scepter",
+            "name": "Aghanim Scepter"
+          }
         ]
       },
       "counters": [
-        {"heroId": "lifestealer", "reason": "рейдж против станов"},
-        {"heroId": "phantom_assassin", "reason": "уклонение"},
-        {"heroId": "shadow_demon", "reason": "диспел"}
+        {
+          "heroId": "lifestealer",
+          "reason": "рейдж против станов"
+        },
+        {
+          "heroId": "phantom_assassin",
+          "reason": "уклонение"
+        },
+        {
+          "heroId": "shadow_demon",
+          "reason": "диспел"
+        }
       ],
       "counterItems": [],
       "allies": []
@@ -1155,7 +2570,10 @@
       "nameRu": "Snapfire",
       "attr": "str",
       "attackType": "ranged",
-      "positions": [4, 5],
+      "positions": [
+        4,
+        5
+      ],
       "tags": [],
       "summary": "",
       "abilities": [],
@@ -1163,34 +2581,88 @@
       "skillBuild": [],
       "items": {
         "starting": [
-          {"id": "tango", "name": "tango"},
-          {"id": "circlet", "name": "circlet"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "gauntles_of_strenght", "name": "gauntles of strenght"}
+          {
+            "id": "tango",
+            "name": "tango"
+          },
+          {
+            "id": "circlet",
+            "name": "circlet"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "gauntles_of_strenght",
+            "name": "gauntles of strenght"
+          }
         ],
         "early": [
-          {"id": "arcane_boots", "name": "arcane boots"},
-          {"id": "magic_wand", "name": "magic wand"},
-          {"id": "glimer_cape", "name": "glimer cape"}
+          {
+            "id": "arcane_boots",
+            "name": "arcane boots"
+          },
+          {
+            "id": "magic_wand",
+            "name": "magic wand"
+          },
+          {
+            "id": "glimer_cape",
+            "name": "glimer cape"
+          }
         ],
         "mid": [
-          {"id": "force_staff", "name": "force staff"},
-          {"id": "aghanim_shard", "name": "aghanim shard"}
+          {
+            "id": "force_staff",
+            "name": "force staff"
+          },
+          {
+            "id": "aghanim_shard",
+            "name": "aghanim shard"
+          }
         ],
         "late": [],
         "situational": [
-          {"id": "aether_lens", "name": "aether lens"},
-          {"id": "veil_of_discord", "name": "veil of discord"},
-          {"id": "black_king_bar", "name": "Black King Bar"},
-          {"id": "aghanim_scepter", "name": "Aghanim Scepter"}
+          {
+            "id": "aether_lens",
+            "name": "aether lens"
+          },
+          {
+            "id": "veil_of_discord",
+            "name": "veil of discord"
+          },
+          {
+            "id": "black_king_bar",
+            "name": "Black King Bar"
+          },
+          {
+            "id": "aghanim_scepter",
+            "name": "Aghanim Scepter"
+          }
         ]
       },
       "counters": [
-        {"heroId": "phantom_assassin", "reason": "прыжок в упор"},
-        {"heroId": "silencer", "reason": "не даёт кастовать"},
-        {"heroId": "rubick", "reason": "кража ульты"}
+        {
+          "heroId": "phantom_assassin",
+          "reason": "прыжок в упор"
+        },
+        {
+          "heroId": "silencer",
+          "reason": "не даёт кастовать"
+        },
+        {
+          "heroId": "rubick",
+          "reason": "кража ульты"
+        }
       ],
       "counterItems": [],
       "allies": []
@@ -1201,7 +2673,10 @@
       "nameRu": "Spirit Breaker",
       "attr": "str",
       "attackType": "melee",
-      "positions": [3, 4],
+      "positions": [
+        3,
+        4
+      ],
       "tags": [],
       "summary": "",
       "abilities": [],
@@ -1209,33 +2684,84 @@
       "skillBuild": [],
       "items": {
         "starting": [
-          {"id": "tango", "name": "tango"},
-          {"id": "gauntles_of_strenght", "name": "gauntles of strenght"},
-          {"id": "circlet", "name": "circlet"},
-          {"id": "quelling_blade", "name": "quelling blade"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"}
+          {
+            "id": "tango",
+            "name": "tango"
+          },
+          {
+            "id": "gauntles_of_strenght",
+            "name": "gauntles of strenght"
+          },
+          {
+            "id": "circlet",
+            "name": "circlet"
+          },
+          {
+            "id": "quelling_blade",
+            "name": "quelling blade"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          }
         ],
         "early": [
-          {"id": "phase_boots", "name": "phase boots"},
-          {"id": "magic_wand", "name": "magic wand"},
-          {"id": "vanguard", "name": "vanguard"}
+          {
+            "id": "phase_boots",
+            "name": "phase boots"
+          },
+          {
+            "id": "magic_wand",
+            "name": "magic wand"
+          },
+          {
+            "id": "vanguard",
+            "name": "vanguard"
+          }
         ],
         "mid": [
-          {"id": "blade_mail", "name": "blade mail"},
-          {"id": "aghanim_shard", "name": "aghanim shard"}
+          {
+            "id": "blade_mail",
+            "name": "blade mail"
+          },
+          {
+            "id": "aghanim_shard",
+            "name": "aghanim shard"
+          }
         ],
         "late": [],
         "situational": [
-          {"id": "blink_dagger", "name": "blink dagger"},
-          {"id": "black_king_bar", "name": "Black King Bar"},
-          {"id": "aghanim_scepter", "name": "Aghanim Scepter"}
+          {
+            "id": "blink_dagger",
+            "name": "blink dagger"
+          },
+          {
+            "id": "black_king_bar",
+            "name": "Black King Bar"
+          },
+          {
+            "id": "aghanim_scepter",
+            "name": "Aghanim Scepter"
+          }
         ]
       },
       "counters": [
-        {"heroId": "bloodseeker", "reason": "разрывает на зарядке"},
-        {"heroId": "faceless_void", "reason": "хроносфера"},
-        {"heroId": "shadow_demon", "reason": "дизрапт"}
+        {
+          "heroId": "bloodseeker",
+          "reason": "разрывает на зарядке"
+        },
+        {
+          "heroId": "faceless_void",
+          "reason": "хроносфера"
+        },
+        {
+          "heroId": "shadow_demon",
+          "reason": "дизрапт"
+        }
       ],
       "counterItems": [],
       "allies": []
@@ -1246,7 +2772,9 @@
       "nameRu": "Sven",
       "attr": "str",
       "attackType": "melee",
-      "positions": [1],
+      "positions": [
+        1
+      ],
       "tags": [],
       "summary": "",
       "abilities": [],
@@ -1254,34 +2782,88 @@
       "skillBuild": [],
       "items": {
         "starting": [
-          {"id": "tango", "name": "tango"},
-          {"id": "gauntles_of_strenght", "name": "gauntles of strenght"},
-          {"id": "circlet", "name": "circlet"},
-          {"id": "quelling_blade", "name": "quelling blade"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"}
+          {
+            "id": "tango",
+            "name": "tango"
+          },
+          {
+            "id": "gauntles_of_strenght",
+            "name": "gauntles of strenght"
+          },
+          {
+            "id": "circlet",
+            "name": "circlet"
+          },
+          {
+            "id": "quelling_blade",
+            "name": "quelling blade"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          }
         ],
         "early": [
-          {"id": "power_treads", "name": "power treads"},
-          {"id": "magic_wand", "name": "magic wand"},
-          {"id": "echo_sabre", "name": "echo sabre"}
+          {
+            "id": "power_treads",
+            "name": "power treads"
+          },
+          {
+            "id": "magic_wand",
+            "name": "magic wand"
+          },
+          {
+            "id": "echo_sabre",
+            "name": "echo sabre"
+          }
         ],
         "mid": [
-          {"id": "blink_dagger", "name": "blink dagger"},
-          {"id": "sange", "name": "sange"}
+          {
+            "id": "blink_dagger",
+            "name": "blink dagger"
+          },
+          {
+            "id": "sange",
+            "name": "sange"
+          }
         ],
         "late": [],
         "situational": [
-          {"id": "yasha", "name": "yasha"},
-          {"id": "aghanim_shard", "name": "aghanim shard"},
-          {"id": "black_king_bar", "name": "Black King Bar"},
-          {"id": "aghanim_scepter", "name": "Aghanim Scepter"}
+          {
+            "id": "yasha",
+            "name": "yasha"
+          },
+          {
+            "id": "aghanim_shard",
+            "name": "aghanim shard"
+          },
+          {
+            "id": "black_king_bar",
+            "name": "Black King Bar"
+          },
+          {
+            "id": "aghanim_scepter",
+            "name": "Aghanim Scepter"
+          }
         ]
       },
       "counters": [
-        {"heroId": "faceless_void", "reason": "хроносфера"},
-        {"heroId": "shadow_demon", "reason": "дизрапт"},
-        {"heroId": "pudge", "reason": "рюк прерывает"}
+        {
+          "heroId": "faceless_void",
+          "reason": "хроносфера"
+        },
+        {
+          "heroId": "shadow_demon",
+          "reason": "дизрапт"
+        },
+        {
+          "heroId": "pudge",
+          "reason": "рюк прерывает"
+        }
       ],
       "counterItems": [],
       "allies": []
@@ -1292,7 +2874,11 @@
       "nameRu": "Tidehunter",
       "attr": "str",
       "attackType": "melee",
-      "positions": [3, 4, 5],
+      "positions": [
+        3,
+        4,
+        5
+      ],
       "tags": [],
       "summary": "",
       "abilities": [],
@@ -1300,34 +2886,88 @@
       "skillBuild": [],
       "items": {
         "starting": [
-          {"id": "tango", "name": "tango"},
-          {"id": "gauntles_of_strenght", "name": "gauntles of strenght"},
-          {"id": "circlet", "name": "circlet"},
-          {"id": "quelling_blade", "name": "quelling blade"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"}
+          {
+            "id": "tango",
+            "name": "tango"
+          },
+          {
+            "id": "gauntles_of_strenght",
+            "name": "gauntles of strenght"
+          },
+          {
+            "id": "circlet",
+            "name": "circlet"
+          },
+          {
+            "id": "quelling_blade",
+            "name": "quelling blade"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          }
         ],
         "early": [
-          {"id": "arcane_boots", "name": "arcane boots"},
-          {"id": "magic_wand", "name": "magic wand"},
-          {"id": "vanguard", "name": "vanguard"}
+          {
+            "id": "arcane_boots",
+            "name": "arcane boots"
+          },
+          {
+            "id": "magic_wand",
+            "name": "magic wand"
+          },
+          {
+            "id": "vanguard",
+            "name": "vanguard"
+          }
         ],
         "mid": [
-          {"id": "blink_dagger", "name": "blink dagger"},
-          {"id": "vladimir_offering", "name": "vladimir offering"}
+          {
+            "id": "blink_dagger",
+            "name": "blink dagger"
+          },
+          {
+            "id": "vladimir_offering",
+            "name": "vladimir offering"
+          }
         ],
         "late": [],
         "situational": [
-          {"id": "aghanim_shard", "name": "aghanim shard"},
-          {"id": "force_staff", "name": "force staff"},
-          {"id": "black_king_bar", "name": "Black King Bar"},
-          {"id": "aghanim_scepter", "name": "Aghanim Scepter"}
+          {
+            "id": "aghanim_shard",
+            "name": "aghanim shard"
+          },
+          {
+            "id": "force_staff",
+            "name": "force staff"
+          },
+          {
+            "id": "black_king_bar",
+            "name": "Black King Bar"
+          },
+          {
+            "id": "aghanim_scepter",
+            "name": "Aghanim Scepter"
+          }
         ]
       },
       "counters": [
-        {"heroId": "rubick", "reason": "кража ульты"},
-        {"heroId": "shadow_demon", "reason": "диспел"},
-        {"heroId": "silencer", "reason": "не даёт кастовать"}
+        {
+          "heroId": "rubick",
+          "reason": "кража ульты"
+        },
+        {
+          "heroId": "shadow_demon",
+          "reason": "диспел"
+        },
+        {
+          "heroId": "silencer",
+          "reason": "не даёт кастовать"
+        }
       ],
       "counterItems": [],
       "allies": []
@@ -1338,7 +2978,10 @@
       "nameRu": "Timbersaw",
       "attr": "str",
       "attackType": "melee",
-      "positions": [2, 3],
+      "positions": [
+        2,
+        3
+      ],
       "tags": [],
       "summary": "",
       "abilities": [],
@@ -1346,34 +2989,88 @@
       "skillBuild": [],
       "items": {
         "starting": [
-          {"id": "tango", "name": "tango"},
-          {"id": "gauntles_of_strenght", "name": "gauntles of strenght"},
-          {"id": "circlet", "name": "circlet"},
-          {"id": "quelling_blade", "name": "quelling blade"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"}
+          {
+            "id": "tango",
+            "name": "tango"
+          },
+          {
+            "id": "gauntles_of_strenght",
+            "name": "gauntles of strenght"
+          },
+          {
+            "id": "circlet",
+            "name": "circlet"
+          },
+          {
+            "id": "quelling_blade",
+            "name": "quelling blade"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          }
         ],
         "early": [
-          {"id": "arcane_boots", "name": "arcane boots"},
-          {"id": "magic_wand", "name": "magic wand"},
-          {"id": "vanguard", "name": "vanguard"}
+          {
+            "id": "arcane_boots",
+            "name": "arcane boots"
+          },
+          {
+            "id": "magic_wand",
+            "name": "magic wand"
+          },
+          {
+            "id": "vanguard",
+            "name": "vanguard"
+          }
         ],
         "mid": [
-          {"id": "blink_dagger", "name": "blink dagger"},
-          {"id": "aghanim_shard", "name": "aghanim shard"}
+          {
+            "id": "blink_dagger",
+            "name": "blink dagger"
+          },
+          {
+            "id": "aghanim_shard",
+            "name": "aghanim shard"
+          }
         ],
         "late": [],
         "situational": [
-          {"id": "veil_of_discord", "name": "veil of discord"},
-          {"id": "force_staff", "name": "force staff"},
-          {"id": "black_king_bar", "name": "Black King Bar"},
-          {"id": "aghanim_scepter", "name": "Aghanim Scepter"}
+          {
+            "id": "veil_of_discord",
+            "name": "veil of discord"
+          },
+          {
+            "id": "force_staff",
+            "name": "force staff"
+          },
+          {
+            "id": "black_king_bar",
+            "name": "Black King Bar"
+          },
+          {
+            "id": "aghanim_scepter",
+            "name": "Aghanim Scepter"
+          }
         ]
       },
       "counters": [
-        {"heroId": "pudge", "reason": "рюк против вертушки"},
-        {"heroId": "shadow_demon", "reason": "диспел"},
-        {"heroId": "silencer", "reason": "не даёт кастовать"}
+        {
+          "heroId": "pudge",
+          "reason": "рюк против вертушки"
+        },
+        {
+          "heroId": "shadow_demon",
+          "reason": "диспел"
+        },
+        {
+          "heroId": "silencer",
+          "reason": "не даёт кастовать"
+        }
       ],
       "counterItems": [],
       "allies": []
@@ -1384,7 +3081,10 @@
       "nameRu": "Tiny",
       "attr": "str",
       "attackType": "melee",
-      "positions": [2, 3],
+      "positions": [
+        2,
+        3
+      ],
       "tags": [],
       "summary": "",
       "abilities": [],
@@ -1392,34 +3092,88 @@
       "skillBuild": [],
       "items": {
         "starting": [
-          {"id": "tango", "name": "tango"},
-          {"id": "gauntles_of_strenght", "name": "gauntles of strenght"},
-          {"id": "circlet", "name": "circlet"},
-          {"id": "quelling_blade", "name": "quelling blade"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"}
+          {
+            "id": "tango",
+            "name": "tango"
+          },
+          {
+            "id": "gauntles_of_strenght",
+            "name": "gauntles of strenght"
+          },
+          {
+            "id": "circlet",
+            "name": "circlet"
+          },
+          {
+            "id": "quelling_blade",
+            "name": "quelling blade"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          }
         ],
         "early": [
-          {"id": "phase_boots", "name": "phase boots"},
-          {"id": "magic_wand", "name": "magic wand"},
-          {"id": "blink_dagger", "name": "blink dagger"}
+          {
+            "id": "phase_boots",
+            "name": "phase boots"
+          },
+          {
+            "id": "magic_wand",
+            "name": "magic wand"
+          },
+          {
+            "id": "blink_dagger",
+            "name": "blink dagger"
+          }
         ],
         "mid": [
-          {"id": "echo_sabre", "name": "echo sabre"},
-          {"id": "sange", "name": "sange"}
+          {
+            "id": "echo_sabre",
+            "name": "echo sabre"
+          },
+          {
+            "id": "sange",
+            "name": "sange"
+          }
         ],
         "late": [],
         "situational": [
-          {"id": "yasha", "name": "yasha"},
-          {"id": "aghanim_shard", "name": "aghanim shard"},
-          {"id": "black_king_bar", "name": "Black King Bar"},
-          {"id": "aghanim_scepter", "name": "Aghanim Scepter"}
+          {
+            "id": "yasha",
+            "name": "yasha"
+          },
+          {
+            "id": "aghanim_shard",
+            "name": "aghanim shard"
+          },
+          {
+            "id": "black_king_bar",
+            "name": "Black King Bar"
+          },
+          {
+            "id": "aghanim_scepter",
+            "name": "Aghanim Scepter"
+          }
         ]
       },
       "counters": [
-        {"heroId": "lifestealer", "reason": "режет % здоровья"},
-        {"heroId": "faceless_void", "reason": "хроносфера"},
-        {"heroId": "shadow_demon", "reason": "дизрапт"}
+        {
+          "heroId": "lifestealer",
+          "reason": "режет % здоровья"
+        },
+        {
+          "heroId": "faceless_void",
+          "reason": "хроносфера"
+        },
+        {
+          "heroId": "shadow_demon",
+          "reason": "дизрапт"
+        }
       ],
       "counterItems": [],
       "allies": []
@@ -1430,7 +3184,10 @@
       "nameRu": "Treant Protector",
       "attr": "str",
       "attackType": "melee",
-      "positions": [4, 5],
+      "positions": [
+        4,
+        5
+      ],
       "tags": [],
       "summary": "",
       "abilities": [],
@@ -1438,34 +3195,88 @@
       "skillBuild": [],
       "items": {
         "starting": [
-          {"id": "tango", "name": "tango"},
-          {"id": "gauntles_of_strenght", "name": "gauntles of strenght"},
-          {"id": "circlet", "name": "circlet"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"}
+          {
+            "id": "tango",
+            "name": "tango"
+          },
+          {
+            "id": "gauntles_of_strenght",
+            "name": "gauntles of strenght"
+          },
+          {
+            "id": "circlet",
+            "name": "circlet"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          }
         ],
         "early": [
-          {"id": "arcane_boots", "name": "arcane boots"},
-          {"id": "magic_wand", "name": "magic wand"},
-          {"id": "vladimir_offering", "name": "vladimir offering"}
+          {
+            "id": "arcane_boots",
+            "name": "arcane boots"
+          },
+          {
+            "id": "magic_wand",
+            "name": "magic wand"
+          },
+          {
+            "id": "vladimir_offering",
+            "name": "vladimir offering"
+          }
         ],
         "mid": [
-          {"id": "glimer_cape", "name": "glimer cape"},
-          {"id": "force_staff", "name": "force staff"}
+          {
+            "id": "glimer_cape",
+            "name": "glimer cape"
+          },
+          {
+            "id": "force_staff",
+            "name": "force staff"
+          }
         ],
         "late": [],
         "situational": [
-          {"id": "aghanim_shard", "name": "aghanim shard"},
-          {"id": "solar_crest", "name": "solar crest"},
-          {"id": "black_king_bar", "name": "Black King Bar"},
-          {"id": "aghanim_scepter", "name": "Aghanim Scepter"}
+          {
+            "id": "aghanim_shard",
+            "name": "aghanim shard"
+          },
+          {
+            "id": "solar_crest",
+            "name": "solar crest"
+          },
+          {
+            "id": "black_king_bar",
+            "name": "Black King Bar"
+          },
+          {
+            "id": "aghanim_scepter",
+            "name": "Aghanim Scepter"
+          }
         ]
       },
       "counters": [
-        {"heroId": "rubick", "reason": "кража ульты"},
-        {"heroId": "silencer", "reason": "не даёт кастовать"},
-        {"heroId": "shadow_demon", "reason": "диспел"}
+        {
+          "heroId": "rubick",
+          "reason": "кража ульты"
+        },
+        {
+          "heroId": "silencer",
+          "reason": "не даёт кастовать"
+        },
+        {
+          "heroId": "shadow_demon",
+          "reason": "диспел"
+        }
       ],
       "counterItems": [],
       "allies": []
@@ -1476,7 +3287,10 @@
       "nameRu": "Tusk",
       "attr": "str",
       "attackType": "melee",
-      "positions": [3, 4],
+      "positions": [
+        3,
+        4
+      ],
       "tags": [],
       "summary": "",
       "abilities": [],
@@ -1484,34 +3298,88 @@
       "skillBuild": [],
       "items": {
         "starting": [
-          {"id": "tango", "name": "tango"},
-          {"id": "gauntles_of_strenght", "name": "gauntles of strenght"},
-          {"id": "circlet", "name": "circlet"},
-          {"id": "quelling_blade", "name": "quelling blade"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"}
+          {
+            "id": "tango",
+            "name": "tango"
+          },
+          {
+            "id": "gauntles_of_strenght",
+            "name": "gauntles of strenght"
+          },
+          {
+            "id": "circlet",
+            "name": "circlet"
+          },
+          {
+            "id": "quelling_blade",
+            "name": "quelling blade"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          }
         ],
         "early": [
-          {"id": "phase_boots", "name": "phase boots"},
-          {"id": "magic_wand", "name": "magic wand"},
-          {"id": "vanguard", "name": "vanguard"}
+          {
+            "id": "phase_boots",
+            "name": "phase boots"
+          },
+          {
+            "id": "magic_wand",
+            "name": "magic wand"
+          },
+          {
+            "id": "vanguard",
+            "name": "vanguard"
+          }
         ],
         "mid": [
-          {"id": "blink_dagger", "name": "blink dagger"},
-          {"id": "aghanim_shard", "name": "aghanim shard"}
+          {
+            "id": "blink_dagger",
+            "name": "blink dagger"
+          },
+          {
+            "id": "aghanim_shard",
+            "name": "aghanim shard"
+          }
         ],
         "late": [],
         "situational": [
-          {"id": "blade_mail", "name": "blade mail"},
-          {"id": "force_staff", "name": "force staff"},
-          {"id": "black_king_bar", "name": "Black King Bar"},
-          {"id": "aghanim_scepter", "name": "Aghanim Scepter"}
+          {
+            "id": "blade_mail",
+            "name": "blade mail"
+          },
+          {
+            "id": "force_staff",
+            "name": "force staff"
+          },
+          {
+            "id": "black_king_bar",
+            "name": "Black King Bar"
+          },
+          {
+            "id": "aghanim_scepter",
+            "name": "Aghanim Scepter"
+          }
         ]
       },
       "counters": [
-        {"heroId": "lifestealer", "reason": "рейдж против комбо"},
-        {"heroId": "juggernaut", "reason": "спин уклоняется"},
-        {"heroId": "shadow_demon", "reason": "дизрапт"}
+        {
+          "heroId": "lifestealer",
+          "reason": "рейдж против комбо"
+        },
+        {
+          "heroId": "juggernaut",
+          "reason": "спин уклоняется"
+        },
+        {
+          "heroId": "shadow_demon",
+          "reason": "дизрапт"
+        }
       ],
       "counterItems": [],
       "allies": []
@@ -1522,7 +3390,9 @@
       "nameRu": "Underlord",
       "attr": "str",
       "attackType": "melee",
-      "positions": [3],
+      "positions": [
+        3
+      ],
       "tags": [],
       "summary": "",
       "abilities": [],
@@ -1530,34 +3400,88 @@
       "skillBuild": [],
       "items": {
         "starting": [
-          {"id": "tango", "name": "tango"},
-          {"id": "gauntles_of_strenght", "name": "gauntles of strenght"},
-          {"id": "circlet", "name": "circlet"},
-          {"id": "quelling_blade", "name": "quelling blade"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"}
+          {
+            "id": "tango",
+            "name": "tango"
+          },
+          {
+            "id": "gauntles_of_strenght",
+            "name": "gauntles of strenght"
+          },
+          {
+            "id": "circlet",
+            "name": "circlet"
+          },
+          {
+            "id": "quelling_blade",
+            "name": "quelling blade"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          }
         ],
         "early": [
-          {"id": "arcane_boots", "name": "arcane boots"},
-          {"id": "vanguard", "name": "vanguard"},
-          {"id": "magic_wand", "name": "magic wand"}
+          {
+            "id": "arcane_boots",
+            "name": "arcane boots"
+          },
+          {
+            "id": "vanguard",
+            "name": "vanguard"
+          },
+          {
+            "id": "magic_wand",
+            "name": "magic wand"
+          }
         ],
         "mid": [
-          {"id": "rod_of_atos", "name": "rod of atos"},
-          {"id": "blink_dagger", "name": "blink dagger"}
+          {
+            "id": "rod_of_atos",
+            "name": "rod of atos"
+          },
+          {
+            "id": "blink_dagger",
+            "name": "blink dagger"
+          }
         ],
         "late": [],
         "situational": [
-          {"id": "aghanim_shard", "name": "aghanim shard"},
-          {"id": "veil_of_discord", "name": "veil of discord"},
-          {"id": "black_king_bar", "name": "Black King Bar"},
-          {"id": "aghanim_scepter", "name": "Aghanim Scepter"}
+          {
+            "id": "aghanim_shard",
+            "name": "aghanim shard"
+          },
+          {
+            "id": "veil_of_discord",
+            "name": "veil of discord"
+          },
+          {
+            "id": "black_king_bar",
+            "name": "Black King Bar"
+          },
+          {
+            "id": "aghanim_scepter",
+            "name": "Aghanim Scepter"
+          }
         ]
       },
       "counters": [
-        {"heroId": "juggernaut", "reason": "спин против ульты"},
-        {"heroId": "lifestealer", "reason": "рейдж против комбо"},
-        {"heroId": "rubick", "reason": "кража ульты"}
+        {
+          "heroId": "juggernaut",
+          "reason": "спин против ульты"
+        },
+        {
+          "heroId": "lifestealer",
+          "reason": "рейдж против комбо"
+        },
+        {
+          "heroId": "rubick",
+          "reason": "кража ульты"
+        }
       ],
       "counterItems": [],
       "allies": []
@@ -1568,7 +3492,10 @@
       "nameRu": "Undying",
       "attr": "str",
       "attackType": "melee",
-      "positions": [4, 5],
+      "positions": [
+        4,
+        5
+      ],
       "tags": [],
       "summary": "",
       "abilities": [],
@@ -1576,34 +3503,88 @@
       "skillBuild": [],
       "items": {
         "starting": [
-          {"id": "tango", "name": "tango"},
-          {"id": "gauntles_of_strenght", "name": "gauntles of strenght"},
-          {"id": "circlet", "name": "circlet"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"}
+          {
+            "id": "tango",
+            "name": "tango"
+          },
+          {
+            "id": "gauntles_of_strenght",
+            "name": "gauntles of strenght"
+          },
+          {
+            "id": "circlet",
+            "name": "circlet"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          }
         ],
         "early": [
-          {"id": "arcane_boots", "name": "arcane boots"},
-          {"id": "magic_wand", "name": "magic wand"},
-          {"id": "vladimir_offering", "name": "vladimir offering"}
+          {
+            "id": "arcane_boots",
+            "name": "arcane boots"
+          },
+          {
+            "id": "magic_wand",
+            "name": "magic wand"
+          },
+          {
+            "id": "vladimir_offering",
+            "name": "vladimir offering"
+          }
         ],
         "mid": [
-          {"id": "glimer_cape", "name": "glimer cape"},
-          {"id": "aghanim_shard", "name": "aghanim shard"}
+          {
+            "id": "glimer_cape",
+            "name": "glimer cape"
+          },
+          {
+            "id": "aghanim_shard",
+            "name": "aghanim shard"
+          }
         ],
         "late": [],
         "situational": [
-          {"id": "force_staff", "name": "force staff"},
-          {"id": "solar_crest", "name": "solar crest"},
-          {"id": "black_king_bar", "name": "Black King Bar"},
-          {"id": "aghanim_scepter", "name": "Aghanim Scepter"}
+          {
+            "id": "force_staff",
+            "name": "force staff"
+          },
+          {
+            "id": "solar_crest",
+            "name": "solar crest"
+          },
+          {
+            "id": "black_king_bar",
+            "name": "Black King Bar"
+          },
+          {
+            "id": "aghanim_scepter",
+            "name": "Aghanim Scepter"
+          }
         ]
       },
       "counters": [
-        {"heroId": "silencer", "reason": "не даёт кастовать"},
-        {"heroId": "rubick", "reason": "кража тумбы"},
-        {"heroId": "lich", "reason": "щит спасает от зомби"}
+        {
+          "heroId": "silencer",
+          "reason": "не даёт кастовать"
+        },
+        {
+          "heroId": "rubick",
+          "reason": "кража тумбы"
+        },
+        {
+          "heroId": "lich",
+          "reason": "щит спасает от зомби"
+        }
       ],
       "counterItems": [],
       "allies": []
@@ -1614,7 +3595,9 @@
       "nameRu": "Wraith King",
       "attr": "str",
       "attackType": "melee",
-      "positions": [1],
+      "positions": [
+        1
+      ],
       "tags": [],
       "summary": "",
       "abilities": [],
@@ -1622,34 +3605,88 @@
       "skillBuild": [],
       "items": {
         "starting": [
-          {"id": "tango", "name": "tango"},
-          {"id": "gauntles_of_strenght", "name": "gauntles of strenght"},
-          {"id": "circlet", "name": "circlet"},
-          {"id": "quelling_blade", "name": "quelling blade"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"}
+          {
+            "id": "tango",
+            "name": "tango"
+          },
+          {
+            "id": "gauntles_of_strenght",
+            "name": "gauntles of strenght"
+          },
+          {
+            "id": "circlet",
+            "name": "circlet"
+          },
+          {
+            "id": "quelling_blade",
+            "name": "quelling blade"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          }
         ],
         "early": [
-          {"id": "phase_boots", "name": "phase boots"},
-          {"id": "armlet_of_mobirgan", "name": "armlet of mobirgan"},
-          {"id": "magic_wand", "name": "magic wand"}
+          {
+            "id": "phase_boots",
+            "name": "phase boots"
+          },
+          {
+            "id": "armlet_of_mobirgan",
+            "name": "armlet of mobirgan"
+          },
+          {
+            "id": "magic_wand",
+            "name": "magic wand"
+          }
         ],
         "mid": [
-          {"id": "maelstorm", "name": "maelstorm"},
-          {"id": "sange", "name": "sange"}
+          {
+            "id": "maelstorm",
+            "name": "maelstorm"
+          },
+          {
+            "id": "sange",
+            "name": "sange"
+          }
         ],
         "late": [],
         "situational": [
-          {"id": "yasha", "name": "yasha"},
-          {"id": "aghanim_shard", "name": "aghanim shard"},
-          {"id": "black_king_bar", "name": "Black King Bar"},
-          {"id": "aghanim_scepter", "name": "Aghanim Scepter"}
+          {
+            "id": "yasha",
+            "name": "yasha"
+          },
+          {
+            "id": "aghanim_shard",
+            "name": "aghanim shard"
+          },
+          {
+            "id": "black_king_bar",
+            "name": "Black King Bar"
+          },
+          {
+            "id": "aghanim_scepter",
+            "name": "Aghanim Scepter"
+          }
         ]
       },
       "counters": [
-        {"heroId": "phantom_lancer", "reason": "сжигает ману"},
-        {"heroId": "invoker", "reason": "эмп сжигает ману"},
-        {"heroId": "faceless_void", "reason": "хроносфера"}
+        {
+          "heroId": "phantom_lancer",
+          "reason": "сжигает ману"
+        },
+        {
+          "heroId": "invoker",
+          "reason": "эмп сжигает ману"
+        },
+        {
+          "heroId": "faceless_void",
+          "reason": "хроносфера"
+        }
       ],
       "counterItems": [],
       "allies": []
@@ -1660,41 +3697,128 @@
       "nameRu": "Anti-Mage",
       "attr": "agi",
       "attackType": "melee",
-      "positions": [1],
+      "positions": [
+        1
+      ],
       "tags": [],
       "summary": "",
       "abilities": [],
-      "talents": [],
+      "talents": [
+        {
+          "level": 10,
+          "left": "",
+          "right": "1"
+        },
+        {
+          "level": 15,
+          "left": "",
+          "right": "2"
+        },
+        {
+          "level": 20,
+          "left": "3",
+          "right": ""
+        },
+        {
+          "level": 25,
+          "left": "4",
+          "right": ""
+        }
+      ],
       "skillBuild": [],
       "items": {
         "starting": [
-          {"id": "tango", "name": "tango"},
-          {"id": "quelling_blade", "name": "quelling blade"},
-          {"id": "circlet", "name": "circlet"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"}
+          {
+            "id": "tango",
+            "name": "tango"
+          },
+          {
+            "id": "quelling_blade",
+            "name": "quelling blade"
+          },
+          {
+            "id": "circlet",
+            "name": "circlet"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          }
         ],
         "early": [
-          {"id": "power_treads", "name": "power treads"},
-          {"id": "magic_wand", "name": "magic wand"},
-          {"id": "maelstorm", "name": "maelstorm"}
+          {
+            "id": "power_treads",
+            "name": "Power Treads"
+          },
+          {
+            "id": "battle_fury",
+            "name": "Battle Fury"
+          }
         ],
         "mid": [
-          {"id": "yasha", "name": "yasha"},
-          {"id": "difusal_blade", "name": "difusal blade"}
+          {
+            "id": "manta_style",
+            "name": "Manta Style"
+          },
+          {
+            "id": "butterfly",
+            "name": "Butterfly"
+          }
         ],
-        "late": [],
+        "late": [
+          {
+            "id": "abyssal_blade",
+            "name": "Abyssal Blade"
+          },
+          {
+            "id": "eye_of_skadi",
+            "name": "Eye of Skadi"
+          }
+        ],
         "situational": [
-          {"id": "aghanim_shard", "name": "aghanim shard"},
-          {"id": "black_king_bar", "name": "Black King Bar"},
-          {"id": "aghanim_scepter", "name": "Aghanim Scepter"}
+          {
+            "id": "black_king_bar",
+            "name": "Black King Bar"
+          },
+          {
+            "id": "nullifier",
+            "name": "Nullifier"
+          },
+          {
+            "id": "aghanim_scepter",
+            "name": "Aghanim Scepter"
+          },
+          {
+            "id": "radiance",
+            "name": "Radiance"
+          },
+          {
+            "id": "monkey_king_bar",
+            "name": "Monkey King Bar"
+          },
+          {
+            "id": "assult_cuiras",
+            "name": "Assult Cuiras"
+          }
         ]
       },
       "counters": [
-        {"heroId": "lion", "reason": "мана-дрейн и хекс"},
-        {"heroId": "shadow_shaman", "reason": "хекс и варды"},
-        {"heroId": "silencer", "reason": "глобала не даёт блинковаться"}
+        {
+          "heroId": "lion",
+          "reason": "мана-дрейн и хекс"
+        },
+        {
+          "heroId": "shadow_shaman",
+          "reason": "хекс и варды"
+        },
+        {
+          "heroId": "silencer",
+          "reason": "глобала не даёт блинковаться"
+        }
       ],
       "counterItems": [],
       "allies": []
@@ -1705,7 +3829,10 @@
       "nameRu": "Arc Warden",
       "attr": "agi",
       "attackType": "ranged",
-      "positions": [1, 2],
+      "positions": [
+        1,
+        2
+      ],
       "tags": [],
       "summary": "",
       "abilities": [],
@@ -1713,34 +3840,92 @@
       "skillBuild": [],
       "items": {
         "starting": [
-          {"id": "tango", "name": "tango"},
-          {"id": "circlet", "name": "circlet"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "quelling_blade", "name": "quelling blade"}
+          {
+            "id": "tango",
+            "name": "tango"
+          },
+          {
+            "id": "circlet",
+            "name": "circlet"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "quelling_blade",
+            "name": "quelling blade"
+          }
         ],
         "early": [
-          {"id": "power_treads", "name": "power treads"},
-          {"id": "magic_wand", "name": "magic wand"},
-          {"id": "maelstorm", "name": "maelstorm"}
+          {
+            "id": "power_treads",
+            "name": "power treads"
+          },
+          {
+            "id": "magic_wand",
+            "name": "magic wand"
+          },
+          {
+            "id": "maelstorm",
+            "name": "maelstorm"
+          },
+          {
+            "id": "hand_of_midas",
+            "name": "Hand Of Midas"
+          }
         ],
         "mid": [
-          {"id": "dragon_lance", "name": "dragon lance"},
-          {"id": "yasha", "name": "yasha"}
+          {
+            "id": "dragon_lance",
+            "name": "dragon lance"
+          },
+          {
+            "id": "yasha",
+            "name": "yasha"
+          }
         ],
         "late": [],
         "situational": [
-          {"id": "aghanim_shard", "name": "aghanim shard"},
-          {"id": "blink_dagger", "name": "blink dagger"},
-          {"id": "black_king_bar", "name": "Black King Bar"},
-          {"id": "aghanim_scepter", "name": "Aghanim Scepter"}
+          {
+            "id": "aghanim_shard",
+            "name": "aghanim shard"
+          },
+          {
+            "id": "blink_dagger",
+            "name": "blink dagger"
+          },
+          {
+            "id": "black_king_bar",
+            "name": "Black King Bar"
+          },
+          {
+            "id": "aghanim_scepter",
+            "name": "Aghanim Scepter"
+          }
         ]
       },
       "counters": [
-        {"heroId": "nyx_assassin", "reason": "мана-бёрн и сбивает ульт"},
-        {"heroId": "bounty_hunter", "reason": "трэкает двойника"},
-        {"heroId": "rubick", "reason": "кража ульты"}
+        {
+          "heroId": "nyx_assassin",
+          "reason": "мана-бёрн и сбивает ульт"
+        },
+        {
+          "heroId": "bounty_hunter",
+          "reason": "трэкает двойника"
+        },
+        {
+          "heroId": "rubick",
+          "reason": "кража ульты"
+        }
       ],
       "counterItems": [],
       "allies": []
@@ -1751,44 +3936,146 @@
       "nameRu": "Bloodseeker",
       "attr": "agi",
       "attackType": "melee",
-      "positions": [1, 2, 3],
+      "positions": [
+        1,
+        2,
+        3
+      ],
       "tags": [],
       "summary": "",
       "abilities": [],
       "talents": [],
-      "skillBuild": [],
+      "skillBuild": [
+        {
+          "level": 1,
+          "skill": "Blood Rite",
+          "note": "если хотите сделать фб если нет то лучше пассивку"
+        },
+        {
+          "level": 2,
+          "skill": "Thirst",
+          "note": ""
+        },
+        {
+          "level": 3,
+          "skill": "Blood Rite",
+          "note": ""
+        },
+        {
+          "level": 4,
+          "skill": "Blood Rage",
+          "note": ""
+        },
+        {
+          "level": 5,
+          "skill": "Thirst",
+          "note": ""
+        },
+        {
+          "level": 6,
+          "skill": "Rupture",
+          "note": ""
+        },
+        {
+          "level": 7,
+          "skill": "Blood Rite",
+          "note": ""
+        },
+        {
+          "level": 8,
+          "skill": "Thirst",
+          "note": ""
+        }
+      ],
       "items": {
         "starting": [
-          {"id": "tango", "name": "tango"},
-          {"id": "quelling_blade", "name": "quelling blade"},
-          {"id": "gauntles_of_strenght", "name": "gauntles of strenght"},
-          {"id": "circlet", "name": "circlet"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"}
+          {
+            "id": "tango",
+            "name": "tango"
+          },
+          {
+            "id": "quelling_blade",
+            "name": "quelling blade"
+          },
+          {
+            "id": "gauntles_of_strenght",
+            "name": "gauntles of strenght"
+          },
+          {
+            "id": "circlet",
+            "name": "circlet"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          }
         ],
         "early": [
-          {"id": "phase_boots", "name": "phase boots"},
-          {"id": "magic_wand", "name": "magic wand"},
-          {"id": "maelstorm", "name": "maelstorm"}
+          {
+            "id": "phase_boots",
+            "name": "phase boots"
+          },
+          {
+            "id": "magic_wand",
+            "name": "magic wand"
+          },
+          {
+            "id": "maelstorm",
+            "name": "maelstorm"
+          }
         ],
         "mid": [
-          {"id": "mjolnir", "name": "Mjolnir"},
-          {"id": "skull_basher", "name": "Skull Basher"}
+          {
+            "id": "mjolnir",
+            "name": "Mjolnir"
+          },
+          {
+            "id": "skull_basher",
+            "name": "Skull Basher"
+          }
         ],
         "late": [
-          {"id": "black_king_bar", "name": "Black King Bar"},
-          {"id": "aghanim_scepter", "name": "Aghanim Scepter"},
-          {"id": "satanic", "name": "Satanic"}
+          {
+            "id": "black_king_bar",
+            "name": "Black King Bar"
+          },
+          {
+            "id": "aghanim_scepter",
+            "name": "Aghanim Scepter"
+          },
+          {
+            "id": "satanic",
+            "name": "Satanic"
+          }
         ],
         "situational": [
-          {"id": "aghanim_shard", "name": "aghanim shard"},
-          {"id": "butterfly", "name": "Butterfly"}
+          {
+            "id": "aghanim_shard",
+            "name": "aghanim shard"
+          },
+          {
+            "id": "butterfly",
+            "name": "Butterfly"
+          }
         ]
       },
       "counters": [
-        {"heroId": "ancient_apparition", "reason": "ульт отменяет лечение"},
-        {"heroId": "ursa", "reason": "взрывной урон"},
-        {"heroId": "faceless_void", "reason": "хроносфера"}
+        {
+          "heroId": "ancient_apparition",
+          "reason": "ульт отменяет лечение"
+        },
+        {
+          "heroId": "ursa",
+          "reason": "взрывной урон"
+        },
+        {
+          "heroId": "faceless_void",
+          "reason": "хроносфера"
+        }
       ],
       "counterItems": [],
       "allies": []
@@ -1799,7 +4086,10 @@
       "nameRu": "Bounty Hunter",
       "attr": "agi",
       "attackType": "melee",
-      "positions": [3, 4],
+      "positions": [
+        3,
+        4
+      ],
       "tags": [],
       "summary": "",
       "abilities": [],
@@ -1807,33 +4097,84 @@
       "skillBuild": [],
       "items": {
         "starting": [
-          {"id": "tango", "name": "tango"},
-          {"id": "gauntles_of_strenght", "name": "gauntles of strenght"},
-          {"id": "circlet", "name": "circlet"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"}
+          {
+            "id": "tango",
+            "name": "tango"
+          },
+          {
+            "id": "gauntles_of_strenght",
+            "name": "gauntles of strenght"
+          },
+          {
+            "id": "circlet",
+            "name": "circlet"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          }
         ],
         "early": [
-          {"id": "phase_boots", "name": "phase boots"},
-          {"id": "magic_wand", "name": "magic wand"},
-          {"id": "vladimir_offering", "name": "vladimir offering"}
+          {
+            "id": "phase_boots",
+            "name": "phase boots"
+          },
+          {
+            "id": "magic_wand",
+            "name": "magic wand"
+          },
+          {
+            "id": "vladimir_offering",
+            "name": "vladimir offering"
+          }
         ],
         "mid": [
-          {"id": "drum_of_endurance", "name": "drum of endurance"},
-          {"id": "aghanim_shard", "name": "aghanim shard"}
+          {
+            "id": "drum_of_endurance",
+            "name": "drum of endurance"
+          },
+          {
+            "id": "aghanim_shard",
+            "name": "aghanim shard"
+          }
         ],
         "late": [],
         "situational": [
-          {"id": "force_staff", "name": "force staff"},
-          {"id": "black_king_bar", "name": "Black King Bar"},
-          {"id": "aghanim_scepter", "name": "Aghanim Scepter"}
+          {
+            "id": "force_staff",
+            "name": "force staff"
+          },
+          {
+            "id": "black_king_bar",
+            "name": "Black King Bar"
+          },
+          {
+            "id": "aghanim_scepter",
+            "name": "Aghanim Scepter"
+          }
         ]
       },
       "counters": [
-        {"heroId": "slardar", "reason": "ульт раскрывает инвиз"},
-        {"heroId": "spirit_breaker", "reason": "заряд и баш"},
-        {"heroId": "bloodseeker", "reason": "жажда раскрывает инвиз"}
+        {
+          "heroId": "slardar",
+          "reason": "ульт раскрывает инвиз"
+        },
+        {
+          "heroId": "spirit_breaker",
+          "reason": "заряд и баш"
+        },
+        {
+          "heroId": "bloodseeker",
+          "reason": "жажда раскрывает инвиз"
+        }
       ],
       "counterItems": [],
       "allies": []
@@ -1844,7 +4185,11 @@
       "nameRu": "Broodmother",
       "attr": "agi",
       "attackType": "melee",
-      "positions": [1, 2, 3],
+      "positions": [
+        1,
+        2,
+        3
+      ],
       "tags": [],
       "summary": "",
       "abilities": [],
@@ -1852,33 +4197,84 @@
       "skillBuild": [],
       "items": {
         "starting": [
-          {"id": "tango", "name": "tango"},
-          {"id": "quelling_blade", "name": "quelling blade"},
-          {"id": "gauntles_of_strenght", "name": "gauntles of strenght"},
-          {"id": "circlet", "name": "circlet"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"}
+          {
+            "id": "tango",
+            "name": "tango"
+          },
+          {
+            "id": "quelling_blade",
+            "name": "quelling blade"
+          },
+          {
+            "id": "gauntles_of_strenght",
+            "name": "gauntles of strenght"
+          },
+          {
+            "id": "circlet",
+            "name": "circlet"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          }
         ],
         "early": [
-          {"id": "power_treads", "name": "power treads"},
-          {"id": "magic_wand", "name": "magic wand"},
-          {"id": "vladimir_offering", "name": "vladimir offering"}
+          {
+            "id": "power_treads",
+            "name": "power treads"
+          },
+          {
+            "id": "magic_wand",
+            "name": "magic wand"
+          },
+          {
+            "id": "vladimir_offering",
+            "name": "vladimir offering"
+          }
         ],
         "mid": [
-          {"id": "rod_of_atos", "name": "rod of atos"},
-          {"id": "aghanim_shard", "name": "aghanim shard"}
+          {
+            "id": "rod_of_atos",
+            "name": "rod of atos"
+          },
+          {
+            "id": "aghanim_shard",
+            "name": "aghanim shard"
+          }
         ],
         "late": [],
         "situational": [
-          {"id": "force_staff", "name": "force staff"},
-          {"id": "black_king_bar", "name": "Black King Bar"},
-          {"id": "aghanim_scepter", "name": "Aghanim Scepter"}
+          {
+            "id": "force_staff",
+            "name": "force staff"
+          },
+          {
+            "id": "black_king_bar",
+            "name": "Black King Bar"
+          },
+          {
+            "id": "aghanim_scepter",
+            "name": "Aghanim Scepter"
+          }
         ]
       },
       "counters": [
-        {"heroId": "earthshaker", "reason": "эхо-слэм против пауков"},
-        {"heroId": "tidehunter", "reason": "урон по области"},
-        {"heroId": "sven", "reason": "ваншотит пауков"}
+        {
+          "heroId": "earthshaker",
+          "reason": "эхо-слэм против пауков"
+        },
+        {
+          "heroId": "tidehunter",
+          "reason": "урон по области"
+        },
+        {
+          "heroId": "sven",
+          "reason": "ваншотит пауков"
+        }
       ],
       "counterItems": [],
       "allies": []
@@ -1889,7 +4285,10 @@
       "nameRu": "Clinkz",
       "attr": "agi",
       "attackType": "ranged",
-      "positions": [1, 2],
+      "positions": [
+        1,
+        2
+      ],
       "tags": [],
       "summary": "",
       "abilities": [],
@@ -1897,33 +4296,84 @@
       "skillBuild": [],
       "items": {
         "starting": [
-          {"id": "tango", "name": "tango"},
-          {"id": "circlet", "name": "circlet"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "quelling_blade", "name": "quelling blade"}
+          {
+            "id": "tango",
+            "name": "tango"
+          },
+          {
+            "id": "circlet",
+            "name": "circlet"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "quelling_blade",
+            "name": "quelling blade"
+          }
         ],
         "early": [
-          {"id": "power_treads", "name": "power treads"},
-          {"id": "magic_wand", "name": "magic wand"},
-          {"id": "maelstorm", "name": "maelstorm"}
+          {
+            "id": "power_treads",
+            "name": "power treads"
+          },
+          {
+            "id": "magic_wand",
+            "name": "magic wand"
+          },
+          {
+            "id": "maelstorm",
+            "name": "maelstorm"
+          }
         ],
         "mid": [
-          {"id": "dragon_lance", "name": "dragon lance"},
-          {"id": "yasha", "name": "yasha"}
+          {
+            "id": "dragon_lance",
+            "name": "dragon lance"
+          },
+          {
+            "id": "yasha",
+            "name": "yasha"
+          }
         ],
         "late": [],
         "situational": [
-          {"id": "aghanim_shard", "name": "aghanim shard"},
-          {"id": "black_king_bar", "name": "Black King Bar"},
-          {"id": "aghanim_scepter", "name": "Aghanim Scepter"}
+          {
+            "id": "aghanim_shard",
+            "name": "aghanim shard"
+          },
+          {
+            "id": "black_king_bar",
+            "name": "Black King Bar"
+          },
+          {
+            "id": "aghanim_scepter",
+            "name": "Aghanim Scepter"
+          }
         ]
       },
       "counters": [
-        {"heroId": "bounty_hunter", "reason": "трэкает и снимает"},
-        {"heroId": "slardar", "reason": "ульт раскрывает"},
-        {"heroId": "spirit_breaker", "reason": "заряд раскрывает"}
+        {
+          "heroId": "bounty_hunter",
+          "reason": "трэкает и снимает"
+        },
+        {
+          "heroId": "slardar",
+          "reason": "ульт раскрывает"
+        },
+        {
+          "heroId": "spirit_breaker",
+          "reason": "заряд раскрывает"
+        }
       ],
       "counterItems": [],
       "allies": []
@@ -1934,7 +4384,9 @@
       "nameRu": "Drow Ranger",
       "attr": "agi",
       "attackType": "ranged",
-      "positions": [1],
+      "positions": [
+        1
+      ],
       "tags": [],
       "summary": "",
       "abilities": [],
@@ -1942,34 +4394,88 @@
       "skillBuild": [],
       "items": {
         "starting": [
-          {"id": "tango", "name": "tango"},
-          {"id": "circlet", "name": "circlet"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "quelling_blade", "name": "quelling blade"}
+          {
+            "id": "tango",
+            "name": "tango"
+          },
+          {
+            "id": "circlet",
+            "name": "circlet"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "quelling_blade",
+            "name": "quelling blade"
+          }
         ],
         "early": [
-          {"id": "power_treads", "name": "power treads"},
-          {"id": "magic_wand", "name": "magic wand"},
-          {"id": "dragon_lance", "name": "dragon lance"}
+          {
+            "id": "power_treads",
+            "name": "power treads"
+          },
+          {
+            "id": "magic_wand",
+            "name": "magic wand"
+          },
+          {
+            "id": "dragon_lance",
+            "name": "dragon lance"
+          }
         ],
         "mid": [
-          {"id": "yasha", "name": "yasha"},
-          {"id": "maelstorm", "name": "maelstorm"}
+          {
+            "id": "yasha",
+            "name": "yasha"
+          },
+          {
+            "id": "maelstorm",
+            "name": "maelstorm"
+          }
         ],
         "late": [],
         "situational": [
-          {"id": "aghanim_shard", "name": "aghanim shard"},
-          {"id": "force_staff", "name": "force staff"},
-          {"id": "black_king_bar", "name": "Black King Bar"},
-          {"id": "aghanim_scepter", "name": "Aghanim Scepter"}
+          {
+            "id": "aghanim_shard",
+            "name": "aghanim shard"
+          },
+          {
+            "id": "force_staff",
+            "name": "force staff"
+          },
+          {
+            "id": "black_king_bar",
+            "name": "Black King Bar"
+          },
+          {
+            "id": "aghanim_scepter",
+            "name": "Aghanim Scepter"
+          }
         ]
       },
       "counters": [
-        {"heroId": "phantom_assassin", "reason": "прыжок и уклонение"},
-        {"heroId": "spirit_breaker", "reason": "заряд в упор"},
-        {"heroId": "tusk", "reason": "сближение и комбо"}
+        {
+          "heroId": "phantom_assassin",
+          "reason": "прыжок и уклонение"
+        },
+        {
+          "heroId": "spirit_breaker",
+          "reason": "заряд в упор"
+        },
+        {
+          "heroId": "tusk",
+          "reason": "сближение и комбо"
+        }
       ],
       "counterItems": [],
       "allies": []
@@ -1980,7 +4486,9 @@
       "nameRu": "Ember Spirit",
       "attr": "agi",
       "attackType": "melee",
-      "positions": [2],
+      "positions": [
+        2
+      ],
       "tags": [],
       "summary": "",
       "abilities": [],
@@ -1988,34 +4496,88 @@
       "skillBuild": [],
       "items": {
         "starting": [
-          {"id": "tango", "name": "tango"},
-          {"id": "quelling_blade", "name": "quelling blade"},
-          {"id": "circlet", "name": "circlet"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"}
+          {
+            "id": "tango",
+            "name": "tango"
+          },
+          {
+            "id": "quelling_blade",
+            "name": "quelling blade"
+          },
+          {
+            "id": "circlet",
+            "name": "circlet"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          }
         ],
         "early": [
-          {"id": "phase_boots", "name": "phase boots"},
-          {"id": "magic_wand", "name": "magic wand"},
-          {"id": "maelstorm", "name": "maelstorm"}
+          {
+            "id": "phase_boots",
+            "name": "phase boots"
+          },
+          {
+            "id": "magic_wand",
+            "name": "magic wand"
+          },
+          {
+            "id": "maelstorm",
+            "name": "maelstorm"
+          }
         ],
         "mid": [
-          {"id": "sange", "name": "sange"},
-          {"id": "aghanim_shard", "name": "aghanim shard"}
+          {
+            "id": "sange",
+            "name": "sange"
+          },
+          {
+            "id": "aghanim_shard",
+            "name": "aghanim shard"
+          }
         ],
         "late": [],
         "situational": [
-          {"id": "blink_dagger", "name": "blink dagger"},
-          {"id": "eul", "name": "eul"},
-          {"id": "black_king_bar", "name": "Black King Bar"},
-          {"id": "aghanim_scepter", "name": "Aghanim Scepter"}
+          {
+            "id": "blink_dagger",
+            "name": "blink dagger"
+          },
+          {
+            "id": "eul",
+            "name": "eul"
+          },
+          {
+            "id": "black_king_bar",
+            "name": "Black King Bar"
+          },
+          {
+            "id": "aghanim_scepter",
+            "name": "Aghanim Scepter"
+          }
         ]
       },
       "counters": [
-        {"heroId": "lion", "reason": "хекс и мана-дрейн"},
-        {"heroId": "shadow_shaman", "reason": "хекс и варды"},
-        {"heroId": "silencer", "reason": "не даёт кастовать"}
+        {
+          "heroId": "lion",
+          "reason": "хекс и мана-дрейн"
+        },
+        {
+          "heroId": "shadow_shaman",
+          "reason": "хекс и варды"
+        },
+        {
+          "heroId": "silencer",
+          "reason": "не даёт кастовать"
+        }
       ],
       "counterItems": [],
       "allies": []
@@ -2026,7 +4588,9 @@
       "nameRu": "Faceless Void",
       "attr": "agi",
       "attackType": "melee",
-      "positions": [1],
+      "positions": [
+        1
+      ],
       "tags": [],
       "summary": "",
       "abilities": [],
@@ -2034,34 +4598,88 @@
       "skillBuild": [],
       "items": {
         "starting": [
-          {"id": "tango", "name": "tango"},
-          {"id": "quelling_blade", "name": "quelling blade"},
-          {"id": "circlet", "name": "circlet"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"}
+          {
+            "id": "tango",
+            "name": "tango"
+          },
+          {
+            "id": "quelling_blade",
+            "name": "quelling blade"
+          },
+          {
+            "id": "circlet",
+            "name": "circlet"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          }
         ],
         "early": [
-          {"id": "power_treads", "name": "power treads"},
-          {"id": "magic_wand", "name": "magic wand"},
-          {"id": "maelstorm", "name": "maelstorm"}
+          {
+            "id": "power_treads",
+            "name": "power treads"
+          },
+          {
+            "id": "magic_wand",
+            "name": "magic wand"
+          },
+          {
+            "id": "maelstorm",
+            "name": "maelstorm"
+          }
         ],
         "mid": [
-          {"id": "sange", "name": "sange"},
-          {"id": "yasha", "name": "yasha"}
+          {
+            "id": "sange",
+            "name": "sange"
+          },
+          {
+            "id": "yasha",
+            "name": "yasha"
+          }
         ],
         "late": [],
         "situational": [
-          {"id": "aghanim_shard", "name": "aghanim shard"},
-          {"id": "blink_dagger", "name": "blink dagger"},
-          {"id": "black_king_bar", "name": "Black King Bar"},
-          {"id": "aghanim_scepter", "name": "Aghanim Scepter"}
+          {
+            "id": "aghanim_shard",
+            "name": "aghanim shard"
+          },
+          {
+            "id": "blink_dagger",
+            "name": "blink dagger"
+          },
+          {
+            "id": "black_king_bar",
+            "name": "Black King Bar"
+          },
+          {
+            "id": "aghanim_scepter",
+            "name": "Aghanim Scepter"
+          }
         ]
       },
       "counters": [
-        {"heroId": "shadow_demon", "reason": "дизрапт спасает из хроно"},
-        {"heroId": "oracle", "reason": "ульт спасает"},
-        {"heroId": "abaddon", "reason": "щит и ульт"}
+        {
+          "heroId": "shadow_demon",
+          "reason": "дизрапт спасает из хроно"
+        },
+        {
+          "heroId": "oracle",
+          "reason": "ульт спасает"
+        },
+        {
+          "heroId": "abaddon",
+          "reason": "щит и ульт"
+        }
       ],
       "counterItems": [],
       "allies": []
@@ -2072,7 +4690,9 @@
       "nameRu": "Gyrocopter",
       "attr": "agi",
       "attackType": "ranged",
-      "positions": [1],
+      "positions": [
+        1
+      ],
       "tags": [],
       "summary": "",
       "abilities": [],
@@ -2080,33 +4700,84 @@
       "skillBuild": [],
       "items": {
         "starting": [
-          {"id": "tango", "name": "tango"},
-          {"id": "circlet", "name": "circlet"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "iron_branch", "name": "iron branch"},
-          {"id": "quelling_blade", "name": "quelling blade"}
+          {
+            "id": "tango",
+            "name": "tango"
+          },
+          {
+            "id": "circlet",
+            "name": "circlet"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "iron_branch",
+            "name": "iron branch"
+          },
+          {
+            "id": "quelling_blade",
+            "name": "quelling blade"
+          }
         ],
         "early": [
-          {"id": "phase_boots", "name": "phase boots"},
-          {"id": "magic_wand", "name": "magic wand"},
-          {"id": "maelstorm", "name": "maelstorm"}
+          {
+            "id": "phase_boots",
+            "name": "phase boots"
+          },
+          {
+            "id": "magic_wand",
+            "name": "magic wand"
+          },
+          {
+            "id": "maelstorm",
+            "name": "maelstorm"
+          }
         ],
         "mid": [
-          {"id": "dragon_lance", "name": "dragon lance"},
-          {"id": "sange", "name": "sange"}
+          {
+            "id": "dragon_lance",
+            "name": "dragon lance"
+          },
+          {
+            "id": "sange",
+            "name": "sange"
+          }
         ],
         "late": [],
         "situational": [
-          {"id": "aghanim_shard", "name": "aghanim shard"},
-          {"id": "black_king_bar", "name": "Black King Bar"},
-          {"id": "aghanim_scepter", "name": "Aghanim Scepter"}
+          {
+            "id": "aghanim_shard",
+            "name": "aghanim shard"
+          },
+          {
+            "id": "black_king_bar",
+            "name": "Black King Bar"
+          },
+          {
+            "id": "aghanim_scepter",
+            "name": "Aghanim Scepter"
+          }
         ]
       },
       "counters": [
-        {"heroId": "faceless_void", "reason": "хроносфера"},
-        {"heroId": "juggernaut", "reason": "спин и омнислэш"},
-        {"heroId": "spectre", "reason": "спектр"}
+        {
+          "heroId": "faceless_void",
+          "reason": "хроносфера"
+        },
+        {
+          "heroId": "juggernaut",
+          "reason": "спин и омнислэш"
+        },
+        {
+          "heroId": "spectre",
+          "reason": "спектр"
+        }
       ],
       "counterItems": [],
       "allies": []
@@ -2447,31 +5118,35 @@
             "name": "magic wand"
           },
           {
-            "id": "maelstorm",
-            "name": "maelstorm"
+            "id": "mask_of_madnes",
+            "name": "Mask of Madnes"
           }
         ],
         "mid": [
           {
-            "id": "dragon_lance",
-            "name": "dragon lance"
+            "id": "manta_style",
+            "name": "Manta Style"
           },
           {
-            "id": "yasha",
-            "name": "yasha"
+            "id": "hurricane_pike",
+            "name": "Hurricane Pike"
+          },
+          {
+            "id": "black_king_bar",
+            "name": "Black KIng Bar"
           }
         ],
-        "late": [],
-        "situational": [
+        "late": [
           {
-            "id": "aghanim_shard",
-            "name": "aghanim shard"
+            "id": "satanic",
+            "name": "Satanic"
           },
           {
-            "id": "force_staff",
-            "name": "force staff"
+            "id": "linken_sphere",
+            "name": "Linken Sphere"
           }
-        ]
+        ],
+        "situational": []
       },
       "counters": [
         {
@@ -9622,6 +12297,12 @@
     "wind_waker": "data:image/webp;base64,UklGRugFAABXRUJQVlA4INwFAABwGgCdASo8ACwAPjEYiEMiIaEVXAUAIAMEoAqSc5AQyGLJ2VAk23J56PTVefd9lPyjLutxO8X/kD2U0Bv459m/zvDb7ff5L1AvVX+F/LTgYq6egF7SfTf9Z4QUddyalAT83f8j+zeuV/0f43z3fmf+F/4HuB/y3+o/6r85Pi89mfo+/tEu3/zen+R3oB3X/Le9oTLVKPELBfgcQL/3mf2Ou0jErYuMAlUkT2GracQ/l0E4FX7E4ZfmHb1ppvHFvEqFOD1momcS8Xq3+GN58JPiTNAeOqxPkmxo9ESAAP7//pj5SrH9SIGPKnyXUPs4Jl6WIXMYDmj+5laYirSoSKqUxkKmdj5KjRyClOE54T09eQrOLV/q9/W34pz3/qUL60c3KRfCz4VxM+TcO/8c+Hfm9/BiEVTntb97V0rbZTDyPbiiVvpnE+CJwu98lJrAwgN6FM0cKdFyqnmNmUfuBjRbN3TrHLbWAm1qg/J3Tx0UJKV8391VTWPr7rPmjjwk5/eHZbwiXGYv6i8UO9N1HG1IeyOg1eQbLGuu9OxtqMyi7gO20OCypbwt//LAX5bVi9CFp54VIudyu7mPZaXlfNNXujD+gFZpkCEYnlDyKpG7RxB2XSJMgNzzhCITMi4G6K/QoMoRj0ifz4Vw4rrXvj29WIS/+WwT9kswLep9JiLyt6ct+8XqatiMbS37CGypmmzh4z79mU5nP07hkZdQY/cUZFkMqkBS8QvN0he27EpUv8YoFzLei+D6zj3/SDLN6mjH+y3D/6HMsTnOq0Pc5UdRGPR/5pxP8FK/1Bw+MQgyd/YLrw3sXBbuPnFKszzpmKRMECQMCf0qaRVdNXu51tBUGFiC797copOcdbL/AL8Cb53obSrmJiZ0pZzR06x8HSMdy8cNAOKZ9Ofg4k33nP/JE8W9aDfeU9KWikc+g8lossV/vCockZnh6r6qVQeg7buIBtVnJADgmIErLW+H7/7ZLC2xCXgovPDXHUBB6r1fZMj9LdY7fUPmmT9qW9e2LuQe62r+39O2uHoSCtBHN5LTskpAQm+hNEpuz6V/5ZhuhEa7Sz3PQFAzXzuT6VbXfwZmo2UV1n+B7UjeYaaGGAtKNqux5w0HbNbZAcfnZ66lT8DNqMrrEXwRGG8UWFJrXzFD5MSNH7EmjkVRBq7U96W5T+byDyTbQfi7Qd082llH5Vb78mEO/dDDptJIxxwQa12YWMelJbVy+KpF9fv+5+OOtA4/Jn6NUGpmNVlrtHf/gnJMLDLhXlFXuWOY8whoY39u/sLs3dGnuRTkEEdivPPwhXn5P8OOYaNK+K7M8kN8i3ZbNXtsyk3iRrGqipbMrgnlP4c48U86q3xnFsJ2GZ/WjUQmo8IX/382GhsMXlp8J57EuWbqD/I0RilA9+teKS7syESNitLdKFLPd83FISSFKbZQVh9IPMiEW7ZY1y4Qteae/XUdp6RxhPX9OcYw3tG7EXlUP/FBYzjmLseIsth4hRpUCHexg7zATDJddwodxlqamRdy5LcQUch0jqh5W6+mo1KaGyDiVVij1m9A/+xeS/BIW8+jx8mFtVSMMH2nt3g6rG0t+CxPuMTzeQs6GwhWFPAdrfPIAyEzdIzz2cKvf57YLgUrdFm7f0/zpiKaMDvSRPQVotw+Q7RayZ/8Yy6njmcJf9swIcDTXDd3Fb6XIcG9iWV78VZZk94xu1k6JgkjnCM76vy/nNiSroUgD/kaX14PBt1Fj0uIINmX8C1i+qtDxhpxZfwi2KeDp6zQqiYUYTTpwRJ+DeqlnK3x5oOcr2jdaMbqpdM3MkQ5of2lAMzZ76B29GvoygZKHehHjhXi8BHl490R9h44V8frfh3uDiwlgO8c2L6OmDUpXwv3iYUazPuyLz7VBIEgeBJGULFZUwdahgM0Ymr5cs1lVtI/OGZNNAswO3IPTZfDIGM2K44sQEkejkCQRt0SJ56lYIPhaKROfA70wC6ADzOCv6QAHVYGIcLFRRFCAAA=",
     "yasha_and_kaya": "data:image/webp;base64,UklGRmAHAABXRUJQVlA4IFQHAACQIQCdASo8ACwAPi0QhkKhoQ3+q1QMAWJbACdMoRyn4v+SXsCUv+Z/enaESKdj/6H7wO0j+Y/+B7g3OI8w365/tV7SH6q+5f0AP1Y6yL0Ef239NX9t/g4/an9wPgG/YvABNq3z7wV8K3jH2q0Av5H9j/zn5B/lzrgXq//N/khwqld/QC9j/rP+a40Prp6H/5x/qvyv5uagB+bv+j7KX81/zvuS9sv51/nP+p/e/gD/lX9S/1n9o/dz/FeCj9a/Za/bEfOKXU8C13zNKz+nkjac2y/GQpuqroSfmAUN521lXLal5N/UzIqto6S4DzYOrqWuRq2uq6BSpmv9Y8mG/HjgeAsR4w/bqXCPKcY/Xa+fHGncYWkoAP7/QAV/ysMOQ/RUVC8CuNQ4nPYi6UqFR/wZtPxIvmpvXzap+0TjmetezKhc4S9ob95V5dbC0hgLpiqyt2ofUJFNwd/Yr0SaAxQtquT+fItcSwC6mo56ka6pFizMMDkBHCr59bifGWW64//5aCmTOz3F/t/Afe8gOeCSrXQugf/0XERwx7Le6rByWqQaN25sYqqoODv3b0SZ1SEAD/z2azYfwhbDUg20hqtAx51RWyrQxRrb615SprMbqNQLtOjyZ6PNBthT2294Ozum1b9I+EdHbtp71SWs36yYrinLDYy4SBRYvIfTClX/x+DBwoku6Pt5w1CxAu3YaP0dud+uV7DAqH/OPf5oy13pYv5GS1bOHA+Rr9IPYPJxGIrXhK9wMiBWovGvCJGlOeKXt3zxXhedVnJVc4gUeNT/YHsVUnkhgK6YL6w65sO4yXg1lJMeWyJoEgELtYhEBIrwpoC3fS/iqldtkazxNeD0TpJyhsDn4xKeJM0NmqQ+2sMnuGeNW9dHWmXyCUUHDlpfA5hXlp97P/OWkEh+f93jeslJORd2Ewbs/cZOF+xmi59uu3xX1W5pqsRcw34uf/+ZO0QUF8xRFaV5COe7be/O+5+zBdayGZOiU9JLDxe7ycjjG/6Bnw4yNwVnSSX8RGXHXj/iQD/5XC1QezJZ2/RovMNNomZnksJOw//6hyhyJ563GacFmErll1YLMYzF1wsNeCy9MnA2gC3paBf3eielvaMP/LhDSUHEXBR8vQgkIvsISOz9Vs4bjSxObrek0HJtfVP2JJd8lYuQNsfEFTMU/GDytk3WHQvh2vZUR+WPJ0kXqYY8QgegxED56aAMiKXLde0/8IS3mBTSnjDDOIEyd/o9UdPvp/9N7XtZy784CxyUCgX/baK49dLgnRlGW1Q8apMU8YNBfad9s1Igzs6KbQZ//YkYFC4nL4COf59CwSejf/7Z7t8uG0FKu1p+hz+7Nj1vJryVAhTD1w2dAWE73DFG7ySET/7Gxkt2SVgfxNjlpTiiOUFyoeRBVQOUXeN+rjh7HxhN6udL/oF3/BnfDvpJBdEJ/+/tadB55QRIDjnYo8obGoUX31isp9OG/p9hqFr/k6L5bIfc///93f+nzwNN1x8Bx4k5ovSXE5CFeNEX3Q+SOOePUVoc3bKtInHTex57MBrp4YkG/Aksy1YfCMLAlQ0cIC/b6UCfajv3meL9/YCTnBiV1d/9UP4v0Kd52BCpqz9ZfQ07xxxxdrlqxQrweHhIofWqcngzHcg1Ove0LMFBsvX6fErZ+o0Cu6icrN7/4f5yyN40+X/fbI//+Go7DnUC8/RzXmFKnPu+afv+Bj/6MefBL/gKRs1IZFuEo+NaqDqWAPRzTVw7BSQEp/SPXB4TfzBZlV3bbCfcSMlGd8Pn3n6Ozo3c7G1W7g03fMlYX7j/IIoBILhyyI+98TxlRUlVSp/fikJtdHdKSsxGJ5DaRNu/+bohPFyfvQiUMnPE8oBd0jEdXbwtJLQSnEdGMB1TkWE7IHCc3/mjBf+W98z73lIMXD/TA6uBezWSOf5xkRN6jKF1f+7EppquhFPwjPP3GysNIOVtgpJy4rmX7h94MGOKHbDiQQpne8y4jkaFnPb9w7vKx+GZGEhMOAgHcypp+asK62NCu0iHzLsINREptZJjwwwvL03O8y5/kI+JPuWr7yz77Z+YSYH9GfKqy7jvr9+jD0VjY0P6x98YXFAKgbPGWzXE6jlPXn56DRLA8ZNvf/4KQYWt/TUjaspwrkKUXxY4Gyv51Ega0HvnZ+LuYLowbcNG9mdrD2/HMZkFPj5Z5iAB1kmZcZWFXMtp35sBB2h3yCR8Nqj//PV+WRBjPuQer/EjZdP/RGNR8kHLdxTNZqd7vkmxn0Vzy62BSpWZ0hVXYIR3AiUkpNjMMfpcap7GheVFVDu42EYsmOvtE7RtcW3FalBaMPxH+TUxkCZhtwRlsAnCixgrxKNlcCNOD5jYm99FE1yAI4iYDS7KQUNPq5bxcEr7ZYzXUtD+rpea/UcLrJBUEBfgG+7rZcYaSAem1Meh62WbsRg5sWL3a6O0vxO3LryQDHZieG+rgOKDoE/JAMn63wpYw2lJkIhcvlYvEriMH/CnyNTQAAAA",
     "wraith_band": "data:image/webp;base64,UklGRmIEAABXRUJQVlA4IFYEAADwEwCdASo8ACwAPjEWiEKiISEVXAb8IAMEsQBdmZMBEkY2luhh0YTO2u8wG5GdTN6AHSm/ttXeeWC9pcoHwR/4LGpeNj6q+ZZ/tNTd55ucr6T/43uCfzD+w/7PggP10RruCsnxlvH+Ocq+HH28x7GrHSrJziabkCkFum74HYnEThEeiiJ5wEukfez/izipKpgeFWJZoRsdZxpTnEr8JxC9jPhHqFcIteAA/v/+NfzwZi/vjVPm1rqKJ9cfw/I22hH2IYO7dX4Iv/YN8mGD2h82tOlqtl8oubbjB/s3Pp/ZFsmvUAFn6Lwzp/6GP8WsTmIDMqjqOnl1QeHfoUU7QpNSOJ1KCADAA4o6GP30XcetLKlaRUWDkdDrbBKO6+Z1tuTFGIqsb4LmsZOQJ/+JgGcLaGfPfB1OHDj5RHJbB902eggZCQPe/A52PlSAomW3jI8qwsy3yYrg9s82u/lX//v+eYhflOyLHvziUooAtU5/i7j5use5majsOTjNv3pV/gqQdkJ1Y7R8DssgJbUDSNMfGYqYMTzkn/2NzfI1rHqR6km5PRecmQ7f+yCpa3RN+6UZ5vYlvrH0LmRz3IgzloFN1oH2DJ+eW24dzsTV8lHW7sKQj6s/G2XnY/xewjgp7aEjLINnJvc4jpGMaddR1OQ4Eq5n1EultFzrptOw/fFEWz9FDmEIhAlMQ5TfR6IGjghdaMwf9yN/f/xm5Oe6/EJP43Re9TxT3u1GMQ3Kv/g8RxPbhA/788v3bUU+XnK3JhgHbwz6WPFORGcH5qE8zbbpj9a5puOMkP+8h2tt227vbr9g+cn9+LOAuYR+SY1h/TfYQ/t6wv3TP9hQU5WoVn/giX8S3vePyyfz26kw2OAU3KOu0JcbJugzJIpsseRIXym9s//xrqtQaGhYaf5xbuX5S1yLmdBj36lOMCaRL29Uw1s/ydwGvgPPiepIx8GEWq2HrFrnak/oRB45eCww9i7RnP5AzmIf06cFG1XNu7cp9JkU/P+vxTGeM8Mm6wM9aqAt2e7Lw+MayIzgziWC5GcbXQw56kHTjRH4PQmUrwG8VXx1N6HXiF6fdv047WTFwPltnXxFXSAyYBlET38/UVeEbKGpRbfzM2m6/6vsLmNjSr+WedaaBaN//Ifu81iB1gsGCIc/p1dJOZtCOKh1BowmuEokk7Dto2/Ww+v0Vjbaxrc2Zlb16Lpgx5QdT9r0i9QCs1PfN7THkfB+ZN8i65R+QNR1F7v/4NCUAGvtzN4ejA2OEIsoH90YXZ7whWximUKVlNZFW4QSya5AZbuzW54YKKGgyqhwc0R0Rv25XaDiSyQlG1z0TsHeVGElRvBxve6jWaVLbCeDKSca8TOab3+60QbdQXnBtMJrSkH43wij+m8oJTiX8og71SCjDdEIORneNn9HxheGfNHENITJorhG4tvNRBCyMcIZ/lw4hEiIy5nyRDK+5FAErjJ+OhHO9FwADuioAAA=",
-    "mask_of_madness": "data:image/webp;base64,UklGRmQFAABXRUJQVlA4WAoAAAAQAAAAOwAAKwAAQUxQSCEAAAABUBRJaiQNV0jDEwYg9wjYfyoiJsAWD1nnoRtSKVX8rgIAVlA4IBwFAAAQGQCdASo8ACwAPjEUh0KiIQqqwBABglqALEfmALPyHHr9Ux2Hco2HiYdKLzAdC3oO/VM9ADy4PYx/bX9oPbAud/Rf+dvXzJ+fgM5Z/j/yU2G7ya/nv+w4yu2v4+2gB/Jf6B/x/Tc/4vLp9B/9v3Bv5R/Xv85+cf+E8GflAHCkLCZ3M4qVKNruk46UiWVTdKyfPMK/wVUCGI077VfHhKvDq16f+va+W0JBDONoPD4lA2GIr2jS0PjbAle1SPVAtBrux5wz1OYTxARqa9nvD1dYAAD+//5+Bs4x1F5iEI0sK/9juZD7CmKOnga4bKp3/xqrbp/X4vaSVT85Zg391/DP6W0RefHTFiiDldGjWCDrM+tN/qiiyvQ4TQBL/CiGh/Sk/bkrbSeTP0bfI5g/nnPhgt9vruVg4B7yCg8VEMrW1EtBdPkvbP+vb3CxFv+SA3soDBThDjykDTiL8jRkYvRtXWNDoAt/PT0KvP+jp6Q/dKRrQpgC1MOIy2zteuvEHyfR+jcuJnnJ0MJwV1LI6inQ+uZlgtx2Mj7marY2tJ6c7CwO1vCbAFru+xsemkBiVaXbbju0cIof9N/qAh4gc+pwIeO5zHszf9JOlnT0hinMYGw0uo88KN0u+f/8q959Yah/P0BodWJ+ZwmrFeDtvPYXu+eDmgLkVyd+eR6gD/xcqiuGIoT5Xw9YY0UQrL3e5MZirjgq6uomU4wdX37oIzkomcG1XrtRBgAN3yn4c+8ksCPbDz3VWMrTRnWN7sy5REdMx2IO/bklVcpJ3bIIaU40uObxlpWLVVGDrhUjjx8PPVdS5OHBj+JNqK7l/2gXslWQ12jusTLoZePO1Xkke1/0oYQRit6Yb8AH1rf/I/oYlvpJUVYx4s7fyITi5XkJyQ+6zyw4lXewd3wsQfyUI8STxP9AnLfL+seKvXNJXOr7iqcZe8HVknK7i6VdjrH9KwuaI6z7ATDuwN+5X7W63nxJQeDHPX6Bg1h+Ybwy89sXkOA9aYAmQDal1c/uCFsTVu7Zk386rRUJYBIzx3n/9e15by4teiUNpF6EX81Cscikn4RG0r/S2Xf47wV1kFr7gW3Ew7Ox30isaGgccEo6LvwRQfBnGD2rvF7+6UXJ+eGofVS/e62XTa9/E/ozvKhA5FmACX6OUVxixdI3kvqjX92nRqorpqZWprNrD5TohVjgMUK0g3SwIueOYfj6gk1GJuaVqHC4OQ41tYRTxsm7dxyoJYLNrti3QxbVNB9UppGtgbDMxAdK/z/3/8iPUEpE4DzMWDmaHi3vC9ei4qr3eAs8u3JzNGH2zFxYM/94UawqT+kmCMG0jS2lbbH3vkhZ47503tCJkBWvvlFHB81Dvl1TH64ZB6oIBNgRp+izm/245vTEx2HhrpgEAuHcyvuW3YD/a5awwsuIf+GJL9C2ubsni2Vod1zk/Mlv7wYftXrRbEVloHLx7fAQJplCjPQ3AAkIT1GHCXuembNl/y5BEGnKNlvrUzsFj+H+V8KB7TBWsCb8RiV4am/f6MmR6E6EhrUz/b3XCH4kCxcl3L6oj/g7Txk6OeXfC8HHTt7+FvgV1slgxQZw064EmSW6UNrMaM1uLHJ3gBbbkfb69DtwWpRHYGWa6iIIRfGPExDlELSzlZ2ChbQFf4NTDMypH+e6WKOP0anUqF/s1RcFDmInMuMF3r1NFSpqABlF8SJHG+ZdKFFlPOZK3aYj+vIlpfrmO1RcS9l9qsa8CvAAAAA="
+    "mask_of_madness": "data:image/webp;base64,UklGRmQFAABXRUJQVlA4WAoAAAAQAAAAOwAAKwAAQUxQSCEAAAABUBRJaiQNV0jDEwYg9wjYfyoiJsAWD1nnoRtSKVX8rgIAVlA4IBwFAAAQGQCdASo8ACwAPjEUh0KiIQqqwBABglqALEfmALPyHHr9Ux2Hco2HiYdKLzAdC3oO/VM9ADy4PYx/bX9oPbAud/Rf+dvXzJ+fgM5Z/j/yU2G7ya/nv+w4yu2v4+2gB/Jf6B/x/Tc/4vLp9B/9v3Bv5R/Xv85+cf+E8GflAHCkLCZ3M4qVKNruk46UiWVTdKyfPMK/wVUCGI077VfHhKvDq16f+va+W0JBDONoPD4lA2GIr2jS0PjbAle1SPVAtBrux5wz1OYTxARqa9nvD1dYAAD+//5+Bs4x1F5iEI0sK/9juZD7CmKOnga4bKp3/xqrbp/X4vaSVT85Zg391/DP6W0RefHTFiiDldGjWCDrM+tN/qiiyvQ4TQBL/CiGh/Sk/bkrbSeTP0bfI5g/nnPhgt9vruVg4B7yCg8VEMrW1EtBdPkvbP+vb3CxFv+SA3soDBThDjykDTiL8jRkYvRtXWNDoAt/PT0KvP+jp6Q/dKRrQpgC1MOIy2zteuvEHyfR+jcuJnnJ0MJwV1LI6inQ+uZlgtx2Mj7marY2tJ6c7CwO1vCbAFru+xsemkBiVaXbbju0cIof9N/qAh4gc+pwIeO5zHszf9JOlnT0hinMYGw0uo88KN0u+f/8q959Yah/P0BodWJ+ZwmrFeDtvPYXu+eDmgLkVyd+eR6gD/xcqiuGIoT5Xw9YY0UQrL3e5MZirjgq6uomU4wdX37oIzkomcG1XrtRBgAN3yn4c+8ksCPbDz3VWMrTRnWN7sy5REdMx2IO/bklVcpJ3bIIaU40uObxlpWLVVGDrhUjjx8PPVdS5OHBj+JNqK7l/2gXslWQ12jusTLoZePO1Xkke1/0oYQRit6Yb8AH1rf/I/oYlvpJUVYx4s7fyITi5XkJyQ+6zyw4lXewd3wsQfyUI8STxP9AnLfL+seKvXNJXOr7iqcZe8HVknK7i6VdjrH9KwuaI6z7ATDuwN+5X7W63nxJQeDHPX6Bg1h+Ybwy89sXkOA9aYAmQDal1c/uCFsTVu7Zk386rRUJYBIzx3n/9e15by4teiUNpF6EX81Cscikn4RG0r/S2Xf47wV1kFr7gW3Ew7Ox30isaGgccEo6LvwRQfBnGD2rvF7+6UXJ+eGofVS/e62XTa9/E/ozvKhA5FmACX6OUVxixdI3kvqjX92nRqorpqZWprNrD5TohVjgMUK0g3SwIueOYfj6gk1GJuaVqHC4OQ41tYRTxsm7dxyoJYLNrti3QxbVNB9UppGtgbDMxAdK/z/3/8iPUEpE4DzMWDmaHi3vC9ei4qr3eAs8u3JzNGH2zFxYM/94UawqT+kmCMG0jS2lbbH3vkhZ47503tCJkBWvvlFHB81Dvl1TH64ZB6oIBNgRp+izm/245vTEx2HhrpgEAuHcyvuW3YD/a5awwsuIf+GJL9C2ubsni2Vod1zk/Mlv7wYftXrRbEVloHLx7fAQJplCjPQ3AAkIT1GHCXuembNl/y5BEGnKNlvrUzsFj+H+V8KB7TBWsCb8RiV4am/f6MmR6E6EhrUz/b3XCH4kCxcl3L6oj/g7Txk6OeXfC8HHTt7+FvgV1slgxQZw064EmSW6UNrMaM1uLHJ3gBbbkfb69DtwWpRHYGWa6iIIRfGPExDlELSzlZ2ChbQFf4NTDMypH+e6WKOP0anUqF/s1RcFDmInMuMF3r1NFSpqABlF8SJHG+ZdKFFlPOZK3aYj+vIlpfrmO1RcS9l9qsa8CvAAAAA=",
+    "refresher": "data:image/webp;base64,UklGRvgEAABXRUJQVlA4IOwEAABwFwCdASo8ACwAPjEQh0KiIQ39xqoQAYJbACuTxe6f7l+M3sMVF+z/hXjkUGwq9u55mOht5MHWV+gB5bnsdeUBgbbV7Uf8fkCbW1kq/wuTAfUv8/pI3+f5Czwrn5f9vzE/Sf/J9wX+Xf0n/fcCB+u7jVRPPDtjCWQaYc5J/sie309Trw+v4TcOklIZbuGrLazaOmhibVw19+CG8kuOxY5GB+j7EZS6UZjblClYaP3YvHzlhu8WSBJNIBngL9YFwKIPfbfAAP7//uBfKPoeC5XLDRLEs2QwbQj8RLbGwtvk1Pzgtnqi0Iq/jfis1/e32DjEX9F/jN88E7gsf/mtd8wvCtjj8/n+vsTt9M27kVZsrjFWeta4rrg5g/MgtgvDDbQCtr4J5gnEEiiBh8yqeSMFuTxIOK4whnp7hIt5HX+LadPXz+PVu2xH7dvK3yqe7DOmdyvILzVY+Hp3uyQ1jmSq4EdMsu7JSeCZOIe8R062RPDS9RtCkJK88/mb//TZd0+GstniNkmOR+iFceILTwmfss/DxQyk/+3ahz8iTaHxGwAbA6lDespVrxHTpIPY2B3OJgDbvAFzBG7cj3GNY2SOhsc55+23+/ofPLTb/ujrPTgrjGUf+JeNajILjgnblJZwHqT6iWXdqG3Ue/cydFX/wp/3XNhchUhyv/LolaLqhPpR7EZ5EeuRLzKmMTUG35GJ4dnvmlJpT5KRCCZvdrPmlfw7VY3E5DzZWMmIn6N/+CWyquFeE/7aA+T7Kw0KuKyevttqg5zFCboXT31t689ozW/vuLkXE2i4n0lF1bWexypHQ5rxeXSMLGAT5Jq2NGgZCBRiT5zLq8MM842c/zAjrFHaHMcdsKNxxx2np3bGsIWM1I/3x5cC2PZO/ijk14LV419ZOYfmS79KqUpa3NFKSsIBSsSzqLuxa7GOTQf/IJ2XXUnjIQl5f/eZBfPcEt4q1Nf0pDjhHTy9D5NrCcaaDnKU6jUMR3EpSyVBS351Kf5hej58LtjK5gqTlGwR/Lojz8usFP/78NiKYIY706NxxCk/v0WkxfQJ8aD8ZeKcDP2s06cltaOLv6KaVHGbdX6pGf8ZOApyG1D2zYylfT1HxX1jJMCq+EJoVEp82dH9Wq0jHQyiHwpyAQFO4/7I/GY/ZHJw3p3KNZnRAlnbGIDIPgf8WfBrbuVRoq1ZJ7o3+T5pq9AN5LCxPe/R+zEc6nBoMjsRygsXYKTIWdjZ7LDs7+5WBLso2i9M8uIQc/Si+Yf54NyTL77vek5PLivu5J28lKc6Z6pfBKHyabxxolMd1Zp+sE2hemPvLC9+9zL2Ru84BSHrkqg+ZUk2gbYl+kzhQxl/6Ynsc3r5nzN1bEny39gn1aguJEP3paQKgnmYkGtGH1qX16/OasSC6BTgXDwijsBufyZ+keQI0wwF/oHrLYxVGWnPHNm+1ED2jHxU30/kkcuwq/7Pfep6AoPMqaFxUO20by2oUUA4/4v7okxoOcM3Tn7icdz4+x6f+HaXQc6kYqZl4KSxgV7TwRCxLcSiWgCyAzFRFU9pIUOoEUNHW2YofRGrPPN8uCgPxBizJ1+SsvsHn+ZleYhztV1Lfcqcy9MaSnXIUfkSDyJXUmOn8v7qZ83m4enB64xTw4SKkgwz+Clizx+o0kFYMsgv/iBywMhqACsyyZ4DQAA=",
+    "vladmir_offering": "data:image/webp;base64,UklGRggFAABXRUJQVlA4IPwEAADwFQCdASo8ACwAPjEUiEKiISEYCq1UIAMEtgBOmVU8s9s/Gbmb+EPAHHIlc7QOWbIe88h6O/KO6z70APLg9lSzgc8/Cnxjei/ankpxAvjn3L/HcTewjwF11vGz9avKv9QPAzMbZ+npn/tDsQZJH5T4v4TyXOckNSZzb/+qQf6xSYVAh7Ag53wCGfC0xjGRuCcQiZ4i98g+rkMRvaOVv6n15ww7dMSpq8+iDJTBZLPH0W1eKkztxLjQAP7+52lTx+s2zMeNiuS57wnbCgZZWSei+y4YgzrpefkScu3u8KNze1KSCwIIDzEkDOfHaKJapiz35nqCgwuKrjo2uo/6eR9HB9F6P3pafcE/DwL0v/NxVN3/pR2qb453/9Tyjkh9/KunjGQ3Jqb0YQi3f/t6pGjvF51wAkn+q7C1IXKia65iR+13/qmDPozjtDSkUjpdx1PQAGW22gyDDmXy2X+XDpjwkZ46TrXzqj7i3hbMPlvqD9MxNDSQAg6dx9b+pBzLXq/qeDHwhN2uNGS/hqxv5LLXPtasMzRSA3MvQLRmmNVrvMxrTOVwDrqV6WKDzNvyQ2qboTOtExSbJ+M8mgaSHhoSmZgLS7OdF6Wa2FHNHqhbiE8E6rZlBElgO7NneSI75kzT8SjpRuR19nN8bz+DqrMugn+f+qntZl5rxsNb02mV0yq+2BIfCU/VtCqbKlFjDDnCuDPcD6Qdp3E5D6qU72FFVmIOj6poyA7HRlXDVZFpp8nJdVZ52dVv29OhfzuUHcqyFGpYrtWDfGuzHSAamECLidNtQ5lxzkfPey2VB1jA9RCoX4nX5GUzh1DvKXsm7UCEeiB/B2QeSJnoHNqDmw6r281Ebi73xeJ8VRnhT43pZyeB0UA+HLtmCjIqY74FVerl9iykuacSxEIiEWUKEUAAo5cmvbrPzUcAstN8HTzvA2qKeCEpBHbFC+2ZckPFKPOArz91QB0H91noCULZTbtft78fo7AJ89Q7d1ES2bbJlG+ylSWN/7FuB8BtSfrvrd04YAHsDKZV12Kwm/3zfhzUcgryiWuEc+CTmDv4LaTOn5YFPa5/F3ieOU75xUKV9E9wa5hQ2yXZm8juR7L3X34PxWRKPjKWQ73RZlcejR8Mlmdp/EGOlmCvjS7JBdgXQvt6hIJ4tjFMBB2iy9K52viakKloZPTybJ7xkH9KaHMX4E4Ea7ZzXNVsqkDva74K+qHtXc5Fcbr5IrIVapopaL+OV64MC3Cp2pxlUUgwe6GZkNWJVxYWsQQKS4N/Mep84CMiW8bZXZH1q5cxkOxmh7NP/0Yz4lFtHXZDHY/Ywxx4M7ZiOqDY0/Os3mDkxh6S5FVPPCbBJDsvlIEs47O2wZOOW+K6RV5tlcrNu3W4BLVdlInpnIJ4GvG/HPaUYpxIUh9w/JCV4V92sl6e6VJHDwPovA5+SHz3KfabS0arlovD1jvrwHxCcBzXviUxilba0//Hb5Vw2t/tHMpyH43D/o3qG0FS/t8cNnPo0W9QqmEyyufnpImJ7zGHO+BWDesYhtDbrI2dheFPKrugZOeZ96AvUpxjUAYEJ16XlLl0onVEXK7Of7IuV/T32IxckG/m82BKIX2VMdqWGouSncoNkqJw75t/v3DA4zZA7ZEnfPWedO/0yPy0OIgdcUPv/PZMyHT5ttSpvBTiVY5bTtHGm/T47L83j3bUyUG4AAAA",
+    "boots_of_travel": "data:image/webp;base64,UklGRn4EAABXRUJQVlA4IHIEAACQFQCdASo8ACwAPjEUh0KiIQtVm2wQAYJZACdMq9CJ7Z+OnsWV1/AcGobX3r8x3nY+hT0AP2V6xT0AOlV/xX/A9Iy5oeFvkM90e0mgH9cnz/ETtV/5THucUekymafTN7hvp72CP1g/4+8qpZnp1dliLgim/jDOPDZzcWUvU+urt0DFubBrTfBZyzCQRrdXf8kNNExV8274rrUQoKjiFVYSHxQ84DNa0+xrnblvEmRyKOn1ZceAAP7tCuLiRJ81R8fvyU/1bn2aUDLEPtx/5KzC/KfDH5WMUJKXMUz7QJFYPWFP8wAgrar8Jfp4xZQFi+u7jdiZTPvlEn/K97YhgW4LmR4ax9O+4f+l78wofHSf//ldtRgVpqV6oGE8wms8aE26B4GUGk3yK6JXHPk3w/Lkj/l/FAlVb8c+A0cp2L18GKUiFOXC9JBVD5zmdcw8jZfvxac+hSZc1XYp6z/4oHZhvo/YwLQjBvA+RtHRf8uQ73X2qVW5FQgxY6mLBwA2Jv+t24vhP4C3/khX8+I04NEccjHTl7EU0ToPA8HjHoS+hXr/nhgaJyoqmj82vDAI1zWNsZ7xy7/9y5387wZpHeVSGf4rv7rKEqmv/Kdt9vkZV7q+AklLgECbqeWxzA5fE/ea4yDOlQdDa//rLpkGiVTUs2Sb5rENWrvFdRazmHKglMpXROf+ALYYyjJ1zq/d4tbo3il2HivXBH6Joo/2+gFPj1LdUh8vxJivv2LxS//FXsvM6UX/xsKhVOWYZaegJTEDHYrRXCUbhqZZNuqNmXRyQGRuElBw4tgJvoF+lx5T3K/PnTHAtgYZZ0d25gqfKoqg5/bUqIJDbI5qtOF4krn5ScBpfitWBg+m7EZX/UaFEttiXmgh8FFx3GEQBV7p/o7aikO7DH53ywks5/KxIlW7IbNfbSOf39HbL6SXlmfRe7tFofoKQ/BC+khLYUITtAfq/qMVJNfgwm3GSX590PBv8zh1xd+kvi4AKx1THDvxq9F/Li67fIS18yVS/1StMaZKlZeC/667+F1K96UH+RTpW/AkIsNW4BjUn3ye4k1Ki0oLcmdJUOOYfMvE7Lud8ndllwIOLd0CFi+bOyCq0mnQEJlHZP2nNeyo2qOQo+gjEuv5vU86wSxiS4s2f3ZLhfm0sx7C21ZROo7I0a/nc4AiHxpk2zIoRmuEXsBXzoiujQmjxlrnRyy6sTbSHX1KXCyo+GLO2ua8W9+zuMj9fO9ms9uO6fpayQ2zJ1PT50YQsExiyx9mCR3Y7pNkk/4gbQKH2fSz8DxlnVIDoUA9QxaKqkr4Joew32GOsuX9Tit5CyvTP6ete1JQyFrufRWTji6HYvfs5voJO0pLlyb7q41ww3+Gtg6SRf+Z6I3FoRnBRyJsPUV5dbXviRPVKsxEWVGAJ8OYpeY9IXI9l5Zvz+69i7KlrHqv+wO5pIUdSLy7yZenjwCc6XDYxVwg0v3/0xOfHm5B3GNL+4t+tz+X/Pl7S4YnNsSYJU742UJqlPIgAAAA",
+    "spirit_vessel": "data:image/webp;base64,UklGRlQFAABXRUJQVlA4IEgFAAAQGQCdASo8ACsAPjEUiEKiISEWrM0kIAMEtgBOnKC/AOPiiH3nzGK2/eNwBM3DM233mP84b0AecZ/ZutS9ADpRP3U9Iy718U3HT559qspn+o8ou/Xap/unANgA+p/+I/Mb+l6szx+ngHnU/439g91L+a/7/mJ+kv+n7gn8k/p3+26YBgOKWwlY7CzWT/tl02eC1oZxABv/UvricU2fITeF2WTJYyY+rAGd7RN2ZE2aomVpCNCWX5ZLFODdDIBGI9Dlzw5wZCIdlUxO5wg30kLYAAD+//6rQe25ud8FidFRiiQGZqeej/HhO8ndVDeu3IN7a6TWen/DEs/1BUDt/ZSnqG1DuzOpVCmoCSFCb3M9nCzpOm/3dWtKK++XASaNmG7xMu5an7sdSzsr5v1yow0A/xvlf1ynu20ySCG2TdY3fyZ+PzugMLt8gCI1pG9Djrq8PYHLRrlWazPyleI+oyh6KWlSs2RQ+e/jWezPYkiIVx6xgerG38nowwqaIDalPnGh8Pp1cbQBTp3oiA2U3JZ9OH3x37mSq9UWKUfdej876pf9H15Yw34fC3ddA69Nx/KB0F26YEpnJyPdpJWD/7VBJrY0zDMoCMBGEZRWawjVwfrswNF96neRyL0yUuUnct3wW7455Ut1MN9DCndi6RVAeep11bntrSFQTHygAMplD1g9Xs2DOnO+YD+NuNKM/XdOuN0C4tjcHiA9bcn/nELPAGgSR6J1PoGIcNPdq8rRekhIa4+QQQfY5J0WfY86iJcDNpkVndLr88+mLRYdfNxBqUabpO81Q/KpYB+YhxMp2Lj51GTBdxPrvU6Uoa4GcMn2XrWogHnMGJF4m8F3//CanQgi5/JZoqty0dKGnw0d/GRRQDLUFN59c7UTPDnEhUgBt/RfcVLo7Npzv43U5V+WFvFZ5ynC9d/sxIviG+b6T2//ifhl85DpftuJnoHgUz6+UQ8M8JZ7zcbAUdDZMPXyAhiFEKfyW6xUUnJ0p6bmm2a3oCNvAolQ/Z/wTg8rNHP0xKpWgYs6OfuFGACDRYjE15R9sgepqhUlhq1GjrFp8VzYNxn676Vom0mBNu6D950pxC8+yaoteOHGJ3FGmzyj96E7hevSBB9mhmVsiMCp+YvZId/Unnsq3v5VJCo13d5RcuqzihvKqEARvUQuQdjUX5Hq/YFtA6EFSR+cYUxo8kxnn5QO6L12lW5LpozdPA0+ZVd5WzD2wJX+++RixJRYEbcSmQZ84Qb3Jd7hkiq7jJ6oCZEzQlTSWP9Q6fbXpAE/O6gY1vgd1zvQTNpTp3ozwqbWL2coDKLfpceH9aPfSx/y11UHWY5Hkz36+MRE5weW1oVcOKazxuUQPjoUDpjFcSlOId8WSTHYq/w/dsY7uguKkRERcTt8JDNrI//8Q2XyXxVm39A8iGsTasEjTbw+FE+YZRJy48a8a4D6Edr+iqfgRUScBgelsEAceLbEGvsJ+TljKZvPKXtWoaMvmDGqlCvFdhGdgQphuv46jPgf/Kletl+lwrbN2gzvNJMfEyzgL3sKsJR8BL+aJg16F3Fu3l9fXAa79NG6Pjye1PfTqGsiBm2eV/k//PMgv/RcSIyCxgij0x2SDSTzOxGdqiGAaxv+XRG0yvtIxKR41GmyzeJDg6EdjytaO5Ht/0KvApxVQvuH/MAG2sIvl6bpaB4P/IURTzqX1BCInMxdH7xnKcNR9Ns5jj9oU4dt6vrL5BwczlnIlZjKSpId8WfKKnwoyB7hJJEwZ3Y7BkfP3jKXu2iiDkI1CXAgcaUXqDzbM7szkcQgXAAAAA==",
+    "mask_of_madnes": "data:image/webp;base64,UklGRmQFAABXRUJQVlA4WAoAAAAQAAAAOwAAKwAAQUxQSCEAAAABUBRJaiQNV0jDEwYg9wjYfyoiJsAWD1nnoRtSKVX8rgIAVlA4IBwFAAAQGQCdASo8ACwAPjEUh0KiIQqqwBABglqALEfmALPyHHr9Ux2Hco2HiYdKLzAdC3oO/VM9ADy4PYx/bX9oPbAud/Rf+dvXzJ+fgM5Z/j/yU2G7ya/nv+w4yu2v4+2gB/Jf6B/x/Tc/4vLp9B/9v3Bv5R/Xv85+cf+E8GflAHCkLCZ3M4qVKNruk46UiWVTdKyfPMK/wVUCGI077VfHhKvDq16f+va+W0JBDONoPD4lA2GIr2jS0PjbAle1SPVAtBrux5wz1OYTxARqa9nvD1dYAAD+//5+Bs4x1F5iEI0sK/9juZD7CmKOnga4bKp3/xqrbp/X4vaSVT85Zg391/DP6W0RefHTFiiDldGjWCDrM+tN/qiiyvQ4TQBL/CiGh/Sk/bkrbSeTP0bfI5g/nnPhgt9vruVg4B7yCg8VEMrW1EtBdPkvbP+vb3CxFv+SA3soDBThDjykDTiL8jRkYvRtXWNDoAt/PT0KvP+jp6Q/dKRrQpgC1MOIy2zteuvEHyfR+jcuJnnJ0MJwV1LI6inQ+uZlgtx2Mj7marY2tJ6c7CwO1vCbAFru+xsemkBiVaXbbju0cIof9N/qAh4gc+pwIeO5zHszf9JOlnT0hinMYGw0uo88KN0u+f/8q959Yah/P0BodWJ+ZwmrFeDtvPYXu+eDmgLkVyd+eR6gD/xcqiuGIoT5Xw9YY0UQrL3e5MZirjgq6uomU4wdX37oIzkomcG1XrtRBgAN3yn4c+8ksCPbDz3VWMrTRnWN7sy5REdMx2IO/bklVcpJ3bIIaU40uObxlpWLVVGDrhUjjx8PPVdS5OHBj+JNqK7l/2gXslWQ12jusTLoZePO1Xkke1/0oYQRit6Yb8AH1rf/I/oYlvpJUVYx4s7fyITi5XkJyQ+6zyw4lXewd3wsQfyUI8STxP9AnLfL+seKvXNJXOr7iqcZe8HVknK7i6VdjrH9KwuaI6z7ATDuwN+5X7W63nxJQeDHPX6Bg1h+Ybwy89sXkOA9aYAmQDal1c/uCFsTVu7Zk386rRUJYBIzx3n/9e15by4teiUNpF6EX81Cscikn4RG0r/S2Xf47wV1kFr7gW3Ew7Ox30isaGgccEo6LvwRQfBnGD2rvF7+6UXJ+eGofVS/e62XTa9/E/ozvKhA5FmACX6OUVxixdI3kvqjX92nRqorpqZWprNrD5TohVjgMUK0g3SwIueOYfj6gk1GJuaVqHC4OQ41tYRTxsm7dxyoJYLNrti3QxbVNB9UppGtgbDMxAdK/z/3/8iPUEpE4DzMWDmaHi3vC9ei4qr3eAs8u3JzNGH2zFxYM/94UawqT+kmCMG0jS2lbbH3vkhZ47503tCJkBWvvlFHB81Dvl1TH64ZB6oIBNgRp+izm/245vTEx2HhrpgEAuHcyvuW3YD/a5awwsuIf+GJL9C2ubsni2Vod1zk/Mlv7wYftXrRbEVloHLx7fAQJplCjPQ3AAkIT1GHCXuembNl/y5BEGnKNlvrUzsFj+H+V8KB7TBWsCb8RiV4am/f6MmR6E6EhrUz/b3XCH4kCxcl3L6oj/g7Txk6OeXfC8HHTt7+FvgV1slgxQZw064EmSW6UNrMaM1uLHJ3gBbbkfb69DtwWpRHYGWa6iIIRfGPExDlELSzlZ2ChbQFf4NTDMypH+e6WKOP0anUqF/s1RcFDmInMuMF3r1NFSpqABlF8SJHG+ZdKFFlPOZK3aYj+vIlpfrmO1RcS9l9qsa8CvAAAAA=",
+    "assult_cuiras": "data:image/webp;base64,UklGRhYHAABXRUJQVlA4IAoHAADwHwCdASo8ACwAPi0QhkKhoQ1Wf34MAWJbACdMoRyn5t+Q/5HfIxWP6X+Fd/uJr2249vUxtmvMB+xvqzf6r9gPcT6AH9P/uXWgegb+t3pyext/b/+L+y3tVYENsj+9eBPfK8q+ye4laiPx36v/gftb1QL8X/l3+F3pWu3+k9QL16+X/5v8yPNwwteaV/lOPRoB/lf1V/5b/xeWj84/wn/Y/x/wDfy7+j/8j+9cNL+1QoWe8FnHssRhv7+lcxtXQ2cctg3Cgq5WGeOHCF2OUhHXUqEKvUIWtiDHg1YyzxjqtPalI0Tc8iKNRZRHZIiR567wx9V5VKD7RC9As/HkQAXu+vyNsf5JL+AA/vxm5FjDIuZy5O+JFzvJ9BVtiFfP+eIXEmEoM2tPMiSudiOkqARn/MefZhagiN+jrnet5dOcIdmUHSr6lkcNkdUKEyRyzr7HLvzY49fvE42b/I1H21DGzxie5L/0FRdiC6q/hwuXPeKywWgTLB0SBU50Q/f/a99/EuznBF/ww/F2LqYMuQSC41uStTZBSTlNtrMIMmGk61OTcRMSg55hpPq0fGDkkcv7zROfoqlK4WRsJf5uP9Eefwpy8xFE3G8bPmoH0UP2HYCJP2ftkT+Owv80UxIpJfzavmUwXMTf+2hbJo9xe9j2ZIUWGd9Av5tMt73+enNkom1NvlUs9ucXyr7fvSQIsLPqw7WMnZOk1uTb9/gPKtwB+U+FIrf2ejkiQNofqun+Yfr0CHzYDtzBIR/vRxCjTBje3tYC0+mShHqEwjCNeZwbjd0wqoguPkkP0FRNTD11Z8RDVgvEhA1P11vc0oRZElzDyVhrZe5cgR/+A+fbPxzapbOUKeHgsnALOCPRJUQgS7GIipW0FtCIkPqxZPbwQpf9BK+nib1Aoer42XGTyAkTK/yGm+qoCtYAOUKggp/s1S6H87xmprT90+FdTRidpPXZWXFseDNSFuufgiwRNAqBVVwOaiyoTAkPa/VMy/LfK/5Ccm3S18PmdpGvSv8CAzvu+LyoPc2+7pkR3omlcadswZzX8/+e94D0xgFZOcLS8SDKvF3sknsVoW3PI4F5Rx/BZ6VIXjYeJNnk8hlIBVoPDsIo/xfl+feEsCjGNeA0Vk3uPmenZyoACg6//st0uL8A2yngz/Wn6Gw/kbRWgd6XyTnn2Ykzsfrul44et8W9PeShm5p9wG/ZPbvy8Wa6TxW/oHjlSJwuBxq++7nWutw3/mH+IagwEqjaIfH8A0ryOBJ9DsYWvSmLgxBDWm/iiioBEWdpJ8U1SWgSuUGXr3C8pVcWE51xcWf1ZTJmLmBlujG0iGgeu/NF+ZTWc1vqsrJ+pomdh7jVtmM4f9TFUdNAhmb4R4IVKnGM/n+9VzkPJtgrFzq88zXXsFOeihnXXMt+yV3CP7JdIy573mj0wihINETaUkUE9ObSos60ZmTdWcFrsFau5rOTK5iV7XOh05Rb2Fl4XyiZf5PR0nkMJBxW1ShhIaRV1Z9a1BPH+phvxDgHQyfQbRdHX/Bz1yPMyTDfdg58GLr9lRXuIGiIAN0ZpBle56MJ/fQpRFbN9G1d0KMuHwQTfWuQhK8l1hxhIZQ353x9oYiQ/hJfm6V0w7Gm9lZY75vOp8XAugdSYDrtLL619r9ysW2PYLgJB7a9nA5KppRrqTzQfxkwwGlhMZ/kguNA7XIFXvT3QPjY14kW60t3/BcalXTwfTdq/tGksgRl4nejk3SOPwsf35UIBvNcQBkKnoM5v+VVG/5SVk5KBlyQjtOaT9TBe6HcKCM/XKZm1rXv5q65BuCfT3hZ912sbNWfvDtm0Jlj1oiVJmSV5GiH/f85Fjo7lVKtofNFx67O9ffkdbv5P/af/N0/5AzwZ06/wO/sCxG8PLez6DAXQdp3dxnIfvlMYoXZrIXnvx2NSUm1ARnxLrUedbwgN9Ys1RUtoS/jXbv3689x8gup/8sAKSQQxvnIp/tZAVi6SdiuVYLgG/nOOqvb9aI8S+BHXlT8Ug4PfGydeDNgg4olt8EfVTD79pbY+zHLX+QVr+lgyflJ1/a7yepk0WFi80iLgTFlbBKBFPOTo5feAbUUQFVbAUlDtKKtJDYt2VkvxVUnYftq9yhoT/HJ4CJH5/rw0RdnBPum0b1jmCMCUza4rhpZWjTnFvJ+rBJyD/FG1/TXGQFyME2/GePlNlasUDfmjJHXT/iTrKjP/WrXGXerLbs7saMhHh6xE2R3/Y4E6avJPIfE4tbZ+yyrh9N7SYlTZIO/15bCmH/wuTFJ9jrAsIu/sh4ClwAG5Y7qEi0chQwcXhTac53wqSNtV2lt6tDgvig7zXUO2ok73nVSMe9s9FEfFj26EGoSuckABYW18/mJ8GHpATO5f86PdlUAxYaDdxb1M9M7cAAAAA=="
   }
 }
